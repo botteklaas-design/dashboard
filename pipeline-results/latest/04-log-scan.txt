@@ -1,4 +1,9 @@
+=== Post-run log scan (2026-02-15-185844) ===
+Log file: /Users/mcbot/.openclaw/workspace/pipeline-results/latest/pipeline-debug.log
+
 3:# Purpose: append every pipeline stage, command/session id, and errors.
+9:[2026-02-13 18:46:33] Stage 1: preparing Dutch source signals (no Brave).
+16:[2026-02-13 18:45:22] Stage 1 init: Forum Scout using fixed Dutch source list from agent-tasks/forum-scout-task.md (no Brave).
 26:[2026-02-13 18:46:11] ERROR source fetch failed: nationaleombudsman.nl (web_fetch: fetch failed)
 39:3:# Purpose: append every pipeline stage, command/session id, and errors.
 40:26:[2026-02-13 18:46:11] ERROR source fetch failed: nationaleombudsman.nl (web_fetch: fetch failed)
@@ -10,6 +15,7 @@
 58:[2026-02-14 02:59:47] Stage6 complete: post-run error scan written to 04-log-scan.txt.
 62:[2026-02-14 06:57:28] STAGE1_ERROR session=agent:main:subagent:019392e0-cead-4c9f-9efc-80577832848e err='subagent used web_fetch on file:// then stalled; sessions_send timed out'
 64:[2026-02-14 06:58:55] STAGE6_COMPLETE run=2026-02-14-065604 post-run error scan written latest/04-log-scan.txt
+70:[2026-02-14 10:56:54] STAGE1 issue session=2c06ac0e... stalled after invalid local web_fetch; launching retry with inline task
 71:[2026-02-14 10:58:18] STAGE1 preferred=ollama/qwen2.5:7b fallback=ollama/llama3.2:latest attempts=3 outcome=failed_invalid_toolflow
 72:[2026-02-14 10:58:18] STAGE2 agent=business-analyst session=agent:main:subagent:4fd5bffd-1cfc-4f94-b79a-f81207abf570 outcome=incomplete_timeout_or_running used=latest_snapshot
 84:[2026-02-14 14:56:54 CET] Stage6 post-run error scan complete (latest/04-log-scan.txt + history/04-log-scan-2026-02-14-145654.txt)
@@ -18,9 +24,16 @@
 104:[2026-02-14 22:59:46 CET] STAGE: Forum Scout attempted with ollama/qwen2.5:7b (failed due invalid tool call in subagent).
 107:[2026-02-14 22:59:54] STAGE: Post-run error scan completed; output=04-log-scan.txt
 110:[2026-02-15 02:58:53] [RUN 2026-02-15-025558] Stage1 ollama attempt qwen2.5:7b failed (tool-routing behavior; produced message-tool target error).
+112:[2026-02-15 02:58:53] [RUN 2026-02-15-025558] Stage1 completed via direct-source extraction (no Brave) and written latest/01-forum-scout.md.
 124:[2026-02-15 06:57:11] ERROR stage1 preferred scout session=agent:main:subagent:cae0a514-c85e-4aee-bf5b-bf95ad14331a non-compliant (attempted invalid sources/web_search dependency), no valid scout payload produced.
 125:[2026-02-15 06:57:58] ERROR stage1 fallback scout session=agent:main:subagent:ee48743b-5b89-49b0-805a-7c469226cadb non-compliant response (instruction reformat only), no valid scout payload produced.
 132:[2026-02-15 06:58:48] stage6 complete: post-run error scan generated (latest/04-log-scan.txt).
+135:[2026-02-15 10:56:42 CET] Stage1 start: Forum Scout preferred=ollama/qwen2.5:7b fallback=ollama/llama3.2:latest fixed_sources=agent-tasks/forum-scout-task.md no_brave=1
+137:[2026-02-15 10:56:57 CET] Stage1 start: Forum Scout preferred=ollama/qwen2.5:7b fallback=ollama/llama3.2:latest fixed_sources=agent-tasks/forum-scout-task.md no_brave=1
 138:[2026-02-15 10:57:53 CET] ERROR Stage1 ollama run attempt hung/timed-out in local exec context; fallback synthesis from fixed-source fetch snippets used.
+139:[2026-02-15 10:57:53 CET] Stage1 complete: latest/01-forum-scout.md refreshed for current run (no Brave).
 145:[2026-02-15 10:59:20 CET] Stage6 complete: post-run error scan written latest/04-log-scan.txt.
 149:[2026-02-15 14:56:49 CET] STAGE1 session=agent:main:subagent:8d41d1e4-6c76-4558-9b7e-5a8e66d49ee1 model=ollama/qwen2.5:7b produced latest/01-forum-scout.md; noted tool-routing error in subagent history (invalid message call).
+154:[2026-02-15 14:58:10 CET] STAGE6 complete: post-run error scan written latest/04-log-scan.txt
+158:[2026-02-15 18:58:44 CET] [RUN 2026-02-15-185844] Stage1 preferred=ollama/qwen2.5:7b started (fixed Dutch source list; no Brave)
+159:[2026-02-15 18:58:44 CET] [RUN 2026-02-15-185844] Stage1 qwen failure observed: invalid URL/tool-flow + Brave-key dependency response in subagent.
