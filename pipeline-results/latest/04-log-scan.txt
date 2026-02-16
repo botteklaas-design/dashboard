@@ -1,3 +1,6 @@
+Post-run error scan for run 2026-02-16-145823
+Generated: 2026-02-16 14:58:23 CET
+
 3:# Purpose: append every pipeline stage, command/session id, and errors.
 26:[2026-02-13 18:46:11] ERROR source fetch failed: nationaleombudsman.nl (web_fetch: fetch failed)
 39:3:# Purpose: append every pipeline stage, command/session id, and errors.
@@ -11,9 +14,11 @@
 62:[2026-02-14 06:57:28] STAGE1_ERROR session=agent:main:subagent:019392e0-cead-4c9f-9efc-80577832848e err='subagent used web_fetch on file:// then stalled; sessions_send timed out'
 64:[2026-02-14 06:58:55] STAGE6_COMPLETE run=2026-02-14-065604 post-run error scan written latest/04-log-scan.txt
 66:[2026-02-14 06:59:09] STAGE1_FALLBACK_RESULT session=agent:main:subagent:9adf8dfa-e107-44c0-afb0-512d56736c58 model=ollama/llama3.2:latest result='non-compliant generic output'
+70:[2026-02-14 10:56:54] STAGE1 issue session=2c06ac0e... stalled after invalid local web_fetch; launching retry with inline task
 71:[2026-02-14 10:58:18] STAGE1 preferred=ollama/qwen2.5:7b fallback=ollama/llama3.2:latest attempts=3 outcome=failed_invalid_toolflow
 72:[2026-02-14 10:58:18] STAGE2 agent=business-analyst session=agent:main:subagent:4fd5bffd-1cfc-4f94-b79a-f81207abf570 outcome=incomplete_timeout_or_running used=latest_snapshot
 84:[2026-02-14 14:56:54 CET] Stage6 post-run error scan complete (latest/04-log-scan.txt + history/04-log-scan-2026-02-14-145654.txt)
+94:[2026-02-14 19:33:23 CET] Stage1 issue: qwen attempt stalled/no completion within budget; terminated and switched to deterministic fixed-source synthesis
 101:[2026-02-14 19:33:23 CET] Fixes applied/suggested: (a) URL scheme gate http/https only, (b) strict 90s qwen timeout then deterministic fallback, (c) Stage2 non-empty input gate (>=10 ideas), (d) always-on local Stage2 report fallback.
 103:[2026-02-14 22:57:19] ERROR: forum-scout qwen run stalled after invalid message tool call; retrying with fallback ollama/llama3.2:latest.
 104:[2026-02-14 22:59:46 CET] STAGE: Forum Scout attempted with ollama/qwen2.5:7b (failed due invalid tool call in subagent).
@@ -27,10 +32,16 @@
 145:[2026-02-15 10:59:20 CET] Stage6 complete: post-run error scan written latest/04-log-scan.txt.
 149:[2026-02-15 14:56:49 CET] STAGE1 session=agent:main:subagent:8d41d1e4-6c76-4558-9b7e-5a8e66d49ee1 model=ollama/qwen2.5:7b produced latest/01-forum-scout.md; noted tool-routing error in subagent history (invalid message call).
 154:[2026-02-15 14:58:10 CET] STAGE6 complete: post-run error scan written latest/04-log-scan.txt
+159:[2026-02-15 18:58:44 CET] [RUN 2026-02-15-185844] Stage1 qwen failure observed: invalid URL/tool-flow + Brave-key dependency response in subagent.
+166:[2026-02-15 22:57:49] Stage1 Ollama output invalid; retained latest valid snapshot: /Users/mcbot/.openclaw/workspace/pipeline-results/history/01-forum-scout-2026-02-15-185844.md
 172:[2026-02-16 02:58:47 CET] [RUN 2026-02-16-025600] ERROR Stage1 preferred model non-compliant tool call (web_fetch on local file path); no valid fresh scout payload.
 174:[2026-02-16 02:58:47 CET] [RUN 2026-02-16-025600] ERROR Stage1 fallback model returned invalid output payload; no valid fresh scout payload.
 177:[2026-02-16 02:58:47 CET] [RUN 2026-02-16-025600] ERROR Stage2 subagent stalled at tool-use boundary; reused latest validated business analysis snapshot at pipeline-results/latest/02-business-analysis.md
 182:[2026-02-16 06:58:26 CET] [RUN 2026-02-16-065606] STAGE1 session=agent:main:subagent:d133725d-4295-4af8-9d71-0bfeb3128b2c model=ollama/qwen2.5:7b failed: invalid fetch flow (non-http URL).
 183:[2026-02-16 06:58:26 CET] [RUN 2026-02-16-065606] STAGE1 fallback session=agent:main:subagent:4407682a-67b3-4f9d-8375-231feee4afa7 model=ollama/llama3.2:latest failed: non-compliant payload.
+186:[2026-02-16 06:58:26 CET] [RUN 2026-02-16-065606] Stage2 stalled at tool boundary; reused latest validated business snapshot latest/02-business-analysis.md
 188:[2026-02-16 06:58:26 CET] [RUN 2026-02-16-065606] Stage6 complete: post-run error scan written latest/04-log-scan.txt
 191:[2026-02-16 10:57:39] STAGE1 status session=agent:main:subagent:abd7f98a-bdbd-4845-b0ef-4f8e07141fc8 non-compliant tool flow (attempted web_fetch on local path); using latest validated scout snapshot
+197:[2026-02-16 10:58:22] STAGE6 complete: post-run error scan written latest/04-log-scan.txt
+201:[2026-02-16 14:58:23 CET] STAGE1 attempt preferred session=agent:main:subagent:033e6b21-f9a9-468d-91cc-02bdaeafed47 failed: invalid URL/tool flow (web_fetch local path)
+202:[2026-02-16 14:58:23 CET] STAGE1 attempt fallback session=agent:main:subagent:de0d7236-1f25-4902-be95-cb2c7b4f5717 failed: non-compliant message-tool call
