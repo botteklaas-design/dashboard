@@ -1,5 +1,6 @@
-Post-run log scan - 2026-02-15-225744
-== ERROR lines ==
+=== Post-run log scan (2026-02-16-025600) ===
+Log file: /Users/mcbot/.openclaw/workspace/pipeline-results/latest/pipeline-debug.log
+
 3:# Purpose: append every pipeline stage, command/session id, and errors.
 26:[2026-02-13 18:46:11] ERROR source fetch failed: nationaleombudsman.nl (web_fetch: fetch failed)
 39:3:# Purpose: append every pipeline stage, command/session id, and errors.
@@ -8,11 +9,14 @@ Post-run log scan - 2026-02-15-225744
 47:[2026-02-13 23:01:01] ERROR: business-analyst subagent first run had empty input; retried by injecting scout payload, then continued with local stage output to keep schedule.
 50:[2026-02-14 02:57:08] ERROR Stage1 qwen2.5:7b failed/timed out; fallback to llama3.2:latest
 52:[2026-02-14 02:57:08] ERROR Stage1 produced empty output; wrote placeholder.
+53:[2026-02-14 02:57:20] Stage1 retry start: run=2026-02-14-025720 (timeout utility missing previously).
 58:[2026-02-14 02:59:47] Stage6 complete: post-run error scan written to 04-log-scan.txt.
 62:[2026-02-14 06:57:28] STAGE1_ERROR session=agent:main:subagent:019392e0-cead-4c9f-9efc-80577832848e err='subagent used web_fetch on file:// then stalled; sessions_send timed out'
 64:[2026-02-14 06:58:55] STAGE6_COMPLETE run=2026-02-14-065604 post-run error scan written latest/04-log-scan.txt
 71:[2026-02-14 10:58:18] STAGE1 preferred=ollama/qwen2.5:7b fallback=ollama/llama3.2:latest attempts=3 outcome=failed_invalid_toolflow
+72:[2026-02-14 10:58:18] STAGE2 agent=business-analyst session=agent:main:subagent:4fd5bffd-1cfc-4f94-b79a-f81207abf570 outcome=incomplete_timeout_or_running used=latest_snapshot
 84:[2026-02-14 14:56:54 CET] Stage6 post-run error scan complete (latest/04-log-scan.txt + history/04-log-scan-2026-02-14-145654.txt)
+101:[2026-02-14 19:33:23 CET] Fixes applied/suggested: (a) URL scheme gate http/https only, (b) strict 90s qwen timeout then deterministic fallback, (c) Stage2 non-empty input gate (>=10 ideas), (d) always-on local Stage2 report fallback.
 103:[2026-02-14 22:57:19] ERROR: forum-scout qwen run stalled after invalid message tool call; retrying with fallback ollama/llama3.2:latest.
 104:[2026-02-14 22:59:46 CET] STAGE: Forum Scout attempted with ollama/qwen2.5:7b (failed due invalid tool call in subagent).
 107:[2026-02-14 22:59:54] STAGE: Post-run error scan completed; output=04-log-scan.txt
@@ -24,3 +28,6 @@ Post-run log scan - 2026-02-15-225744
 145:[2026-02-15 10:59:20 CET] Stage6 complete: post-run error scan written latest/04-log-scan.txt.
 149:[2026-02-15 14:56:49 CET] STAGE1 session=agent:main:subagent:8d41d1e4-6c76-4558-9b7e-5a8e66d49ee1 model=ollama/qwen2.5:7b produced latest/01-forum-scout.md; noted tool-routing error in subagent history (invalid message call).
 154:[2026-02-15 14:58:10 CET] STAGE6 complete: post-run error scan written latest/04-log-scan.txt
+172:[2026-02-16 02:58:47 CET] [RUN 2026-02-16-025600] ERROR Stage1 preferred model non-compliant tool call (web_fetch on local file path); no valid fresh scout payload.
+174:[2026-02-16 02:58:47 CET] [RUN 2026-02-16-025600] ERROR Stage1 fallback model returned invalid output payload; no valid fresh scout payload.
+177:[2026-02-16 02:58:47 CET] [RUN 2026-02-16-025600] ERROR Stage2 subagent stalled at tool-use boundary; reused latest validated business analysis snapshot at pipeline-results/latest/02-business-analysis.md
