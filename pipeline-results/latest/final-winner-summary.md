@@ -1,15 +1,15 @@
 # Final Winner Summary
-Run: 2026-02-15-105753
+Run: 2026-02-16-065606
 
-## Winner
-**Huurgebreken dossierbouwer**
+Winner signal:
+1. Juridische briefgenerator met bewijskoppeling - Totaalscore: 25/30 - Hoogste gecombineerde business value + viability in de huidige gevalideerde snapshot.
 
-## Why it won
-- Hoge en terugkerende pijn (onderhoud/gebreken) met directe urgentie.
-- Duidelijke MVP: bewijsopbouw + briefgenerator + zaak-export.
-- Sterke betalingsprikkel (tijd, stress en financieel risico beperken).
+Primary artifacts:
+- 01-forum-scout.md
+- 02-business-analysis.md
 
-## Run Notes
-- Forum Scout op Ollama is geprobeerd met preferred/fallback-modelvolgorde; run hing in lokale exec-context.
-- Stage 1 is hersteld via vaste NL-bronsignalen zonder Brave, conform scope.
-- Agent 2 handoff is uitgevoerd (subagent gestart), maar payload niet binnen runvenster terug; lokale Stage 2-fallback gepubliceerd.
+Run notes:
+- Stage 1 attempted on Ollama with preferred model (ollama/qwen2.5:7b) and required fallback (ollama/llama3.2:latest), with fixed Dutch source scope and no Brave dependency.
+- Stage 1 did not return a compliant fresh scout payload on either model; latest validated scout snapshot retained.
+- Stage 2 handoff to Agent 2 executed using /Users/mcbot/.openclaw/workspace/agent-tasks/business-analyst-task.md.
+- Stage 2 run did not complete a usable fresh report in-session; latest validated business analysis snapshot retained.
