@@ -4,12 +4,11 @@
   "winner": "**SMS-kosten transparantie-assistent** — 24/35 (business), Tech Feasibility **8/10**",
   "winnerScore": "24/35",
   "quality": {
-    "freshness": {
-      "label": "fresh",
-      "minutes": 21
-    },
-    "validationPass": true,
-    "errorCodes": []
+    "freshness": "fallback",
+    "validationPass": false,
+    "errorCodes": [
+      "SCOUT_TOO_FEW_IDEAS"
+    ]
   },
-  "updatedAt": "2026-02-17T16:39:17.589148"
+  "updatedAt": "2026-02-17T17:09:17.024587"
 }

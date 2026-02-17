@@ -1,0 +1,19 @@
+{
+  "version": "2.0",
+  "generatedAt": "2026-02-17T16:09:17.004535+00:00",
+  "singleProductBet": {
+    "title": "**SMS-kosten transparantie-assistent** — 24/35 (business), Tech Feasibility **8/10**",
+    "confidence": 0.61,
+    "rationale": [
+      "Latest validated winner remains: **SMS-kosten transparantie-assistent** — 24/35 (business), Tech Feasibility **8/10**.",
+      "Trend repetition count (last 10): 1.",
+      "Operational reliability context: success30=0.0, fallback30=100.0.",
+      "Recommendation favors a narrow MVP with single painful workflow and payment trigger."
+    ],
+    "killCriteria": [
+      "If <10 qualified users complete core flow in 14 days, stop.",
+      "If no clear willingness-to-pay signal (>=3 paid pilots/LOIs) in 21 days, stop.",
+      "If support burden exceeds target (manual ops >2h/day) by week 3, pivot."
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "version": "2.0",
+  "generatedAt": "2026-02-17T16:09:16.971221+00:00",
+  "runId": "67a06f20-7f93-4279-9c0f-885f1e689da2",
+  "status": "FAILED",
+  "currentStage": "FAILED",
+  "recoveryUsed": true,
+  "errorCodes": [
+    "REVALIDATE_CMD_FAILED",
+    "SCOUT_TOO_FEW_IDEAS",
+    "VALIDATE_CMD_FAILED"
+  ],
+  "winner": "**SMS-kosten transparantie-assistent** — 24/35 (business), Tech Feasibility **8/10**",
+  "winnerScore": "24/35",
+  "ideasCount": 10,
+  "recommendedCount": null,
+  "quality": {
+    "freshness": {
+      "label": "fresh",
+      "minutes": 21
+    },
+    "validationPass": true,
+    "errorCodes": []
+  },
+  "weeklyDecision": null
+}

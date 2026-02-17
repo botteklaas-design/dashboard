@@ -3,28 +3,19 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Pipeline Dashboard</title>
+  <title>Pipeline Dashboard v2.0</title>
   <style>
     body{font-family:Inter,system-ui,Arial;background:#0b1220;color:#e8eefc;margin:0}
-    .wrap{max-width:1150px;margin:0 auto;padding:20px}
-    .card{background:#131d33;border:1px solid #2a3a61;border-radius:12px;padding:14px;margin:10px 0}
-    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
-    .k{font-size:12px;color:#9fb1d9}.v{font-size:22px;font-weight:700}
-    .winner{background:linear-gradient(120deg,#1b3358,#1f3f43)}
-    .pill{display:inline-block;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:700}
+    .wrap{max-width:1150px;margin:0 auto;padding:20px}.card{background:#131d33;border:1px solid #2a3a61;border-radius:12px;padding:14px;margin:10px 0}
+    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.k{font-size:12px;color:#9fb1d9}.v{font-size:22px;font-weight:700}
+    .winner{background:linear-gradient(120deg,#1b3358,#1f3f43)}.pill{display:inline-block;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:700}
     .green{background:#123a2f;color:#7ef0c8}.amber{background:#3c3114;color:#ffd782}.red{background:#4a1f23;color:#ff9ca8}
-    a{color:#9fd0ff}
-    select{background:#0f1729;color:#e8eefc;border:1px solid #2a3a61;border-radius:8px;padding:8px;min-width:280px}
-    .bars{display:flex;align-items:flex-end;gap:8px;height:150px;padding:8px;background:#0f1729;border:1px solid #2a3a61;border-radius:10px}
-    .bar{width:34px;background:linear-gradient(180deg,#60a5fa,#34d399);border-radius:6px 6px 0 0;position:relative}
-    .bar span{position:absolute;bottom:100%;left:50%;transform:translateX(-50%);font-size:10px;color:#bcd0f4;white-space:nowrap}
-    .winner-list{font-size:13px;color:#c7d8f7;line-height:1.5}
-    .bmc{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-    .box{background:#0f1729;border:1px solid #2a3a61;border-radius:10px;padding:10px;min-height:95px}
-    .lbl{font-size:11px;color:#9fb1d9;text-transform:uppercase}
-    .badges{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
-    .badge{display:inline-block;padding:4px 8px;border-radius:999px;background:#1b2744;border:1px solid #34508a;font-size:11px;color:#cfe0ff}
-    @media(max-width:900px){.grid,.bmc{grid-template-columns:1fr 1fr}}
+    a{color:#9fd0ff}select{background:#0f1729;color:#e8eefc;border:1px solid #2a3a61;border-radius:8px;padding:8px;min-width:280px}
+    .bars{display:flex;align-items:flex-end;gap:8px;height:150px;padding:8px;background:#0f1729;border:1px solid #2a3a61;border-radius:10px}.bar{width:34px;background:linear-gradient(180deg,#60a5fa,#34d399);border-radius:6px 6px 0 0;position:relative}.bar span{position:absolute;bottom:100%;left:50%;transform:translateX(-50%);font-size:10px;color:#bcd0f4;white-space:nowrap}
+    .winner-list{font-size:13px;color:#c7d8f7;line-height:1.5}.bmc{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.box{background:#0f1729;border:1px solid #2a3a61;border-radius:10px;padding:10px;min-height:95px}
+    .lbl{font-size:11px;color:#9fb1d9;text-transform:uppercase}.badges{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}.badge{display:inline-block;padding:4px 8px;border-radius:999px;background:#1b2744;border:1px solid #34508a;font-size:11px;color:#cfe0ff}
+    .ops-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.heat td{padding:4px 8px;border-bottom:1px solid #243459;font-size:12px}
+    @media(max-width:900px){.grid,.bmc,.ops-grid{grid-template-columns:1fr 1fr}}
   </style>
 </head>
 <body>
@@ -38,7 +29,7 @@
     <div class="card"><div class="k">Status</div><div id="status">-</div></div>
     <div class="card"><div class="k">Ideeën</div><div class="v" id="ideas">-</div></div>
     <div class="card"><div class="k">Winner score</div><div class="v" id="score">-</div></div>
-    <div class="card"><div class="k">Aanbevolen</div><div class="v" id="rec">-</div></div>
+    <div class="card"><div class="k">Confidence bet</div><div class="v" id="betConfidence">-</div></div>
   </div>
 
   <div class="card">
@@ -52,6 +43,16 @@
     <h3 style="margin-top:0">Trendkaart (laatste runs)</h3>
     <div class="bars" id="trendBars"><div class="k">Laden…</div></div>
     <div class="winner-list" id="winnerTrend" style="margin-top:10px">Laden…</div>
+  </div>
+
+  <div class="card">
+    <h3 style="margin-top:0">Ops Dashboard</h3>
+    <div class="ops-grid">
+      <div class="box"><div class="lbl">Success rate</div><div class="v" id="successRate">-</div><div class="k" id="successRateMeta"></div></div>
+      <div class="box"><div class="lbl">Fallback rate</div><div class="v" id="fallbackRate">-</div><div class="k">Last 30 runs</div></div>
+      <div class="box"><div class="lbl">Runtime trend (sec)</div><div class="bars" id="runtimeBars" style="height:120px"></div></div>
+      <div class="box"><div class="lbl">Blocker heatmap</div><table class="heat" id="heatmap"></table></div>
+    </div>
   </div>
 
   <div class="card">
@@ -73,15 +74,13 @@
   <div class="card">
     <h3 style="margin-top:0">Artifacts</h3>
     <ul>
-      <li><a href="01-forum-scout.md">01-forum-scout.md</a></li>
-      <li><a href="02-business-analysis.md">02-business-analysis.md</a></li>
-      <li><a href="03-final-winner-summary.md">03-final-winner-summary.md</a></li>
-      <li><a href="04-log-scan.txt">04-log-scan.txt</a></li>
-      <li><a href="00-run-metadata.txt">00-run-metadata.txt</a></li>
-      <li><a href="dashboard-data.json">dashboard-data.json</a></li>
-      <li><a href="run-state.json">run-state.json</a></li>
-      <li><a href="history-manifest.json">history-manifest.json</a></li>
-      <li><a href="validation-report.json">validation-report.json</a></li>
+      <li><a href="manifests/run-manifest.json">manifests/run-manifest.json</a></li>
+      <li><a href="manifests/ideas-manifest.json">manifests/ideas-manifest.json</a></li>
+      <li><a href="manifests/trend-manifest.json">manifests/trend-manifest.json</a></li>
+      <li><a href="manifests/ops-manifest.json">manifests/ops-manifest.json</a></li>
+      <li><a href="state-machine.json">state-machine.json</a></li>
+      <li><a href="run-events.jsonl">run-events.jsonl</a></li>
+      <li><a href="weekly-decision.json">weekly-decision.json</a></li>
     </ul>
   </div>
 </div>
@@ -89,93 +88,59 @@
 <script>
 const $=id=>document.getElementById(id);
 async function getJson(p){ const r=await fetch(p,{cache:'no-store'}); if(!r.ok) return null; return r.json(); }
-async function getText(p){ const r=await fetch(p,{cache:'no-store'}); if(!r.ok) return ''; return r.text(); }
-function statusPill(s){
-  const c=s==='green'?'green':(s==='amber'?'amber':'red');
-  return `<span class="pill ${c}">${(s||'unknown').toUpperCase()}</span>`;
-}
-function m(re,s,d='-'){ const x=s.match(re); return x?x[1].trim():d; }
-function parseIdeas(md){
-  // Split each idea block by the next idea header or final ranking
-  const re=/## Idee\s+\d+:\s+(.+)\n([\s\S]*?)(?=\n## Idee\s+\d+:|\n# Final Ranking|$)/g;
-  const arr=[]; let x;
-  while((x=re.exec(md))){
-    const body=x[2];
-    arr.push({
-      title:x[1],
-      total:m(/\*\*Totaalscore\*\*:?\s*([^\n]+)/,body,'-'),
-      rep:m(/\*\*Repetition Score\*\*:?\s*([^\n]+)/,body,'-'),
-      conf:m(/\*\*Confidence\*\*:?\s*([^\n]+)/,body,'-'),
-      problem:m(/\*\*Original Context\*\*: ([^\n]+)/,body,'-'),
-      icp:m(/\*\*Target segment\*\*: ([^\n]+)/,body,'Consumenten/KBM'),
-      revenue:m(/\*\*Revenue model\*\*: ([^\n]+)/,body,'Freemium + premium'),
-      mvp:m(/\*\*MVP scope\*\*: ([^\n]+)/,body,'MVP <= 6 weken'),
-      risk:m(/⚠️ \*\*Risk 1\*\*: ([^\n]+)/,body,'Uitvoering/GTM')
-    });
-  }
-  return arr;
-}
+function statusPill(s){const c=s==='green'?'green':(s==='amber'?'amber':'red');return `<span class="pill ${c}">${(s||'unknown').toUpperCase()}</span>`;}
+function statusColorFromRun(st){ if(st==='COMPLETE'||st==='green') return 'green'; if(st==='FAILED'||st==='red') return 'red'; return 'amber'; }
 
 (async()=>{
-  const [data,state,biz] = await Promise.all([
-    getJson('dashboard-data.json'),
-    getJson('run-state.json'),
-    getText('02-business-analysis.md')
+  const [run,ideas,tr,ops,weekly]=await Promise.all([
+    getJson('manifests/run-manifest.json'),
+    getJson('manifests/ideas-manifest.json'),
+    getJson('manifests/trend-manifest.json'),
+    getJson('manifests/ops-manifest.json'),
+    getJson('weekly-decision.json'),
   ]);
-  if(!data){ $('winner').textContent='Geen dashboard-data.json gevonden'; return; }
+  if(!run){ $('winner').textContent='Geen manifests gevonden'; return; }
 
-  $('run').textContent='Laatste run: '+(data.runTimestamp||'-');
-  $('winner').innerHTML=`🏆 <b>${data.winner||'Onbekend'}</b><br><span class="k">Score: ${data.winnerScore||'-'}</span>`;
-  $('status').innerHTML=statusPill((state&&state.status)||data.status||'amber');
-  $('ideas').textContent=data.ideasCount ?? '-';
-  $('score').textContent=data.winnerScore || '-';
-  $('rec').textContent=data.recommendedCount ?? '-';
+  $('run').textContent='Laatste run: '+(run.runId||'-')+' • '+(run.generatedAt||'');
+  $('winner').innerHTML=`🏆 <b>${run.winner||'Onbekend'}</b><br><span class="k">Score: ${run.winnerScore||'-'}</span>`;
+  $('status').innerHTML=statusPill(statusColorFromRun(run.status));
+  $('ideas').textContent=run.ideasCount ?? (ideas&&ideas.count) ?? '-';
+  $('score').textContent=run.winnerScore || '-';
+  $('betConfidence').textContent=(weekly&&weekly.singleProductBet&&weekly.singleProductBet.confidence!=null)?weekly.singleProductBet.confidence:'-';
 
-  const quality=data.quality||{};
-  const fresh=quality.freshness||{};
-  $('freshness').textContent=`Freshness: ${fresh.label||'unknown'}${fresh.minutes==null?'':` (${fresh.minutes} min)`}`;
+  const quality=run.quality||{}; const fresh=quality.freshness||{};
+  $('freshness').textContent=`Freshness: ${fresh.label||quality.freshness||'unknown'}${fresh.minutes==null?'':` (${fresh.minutes} min)`}`;
   $('validationPass').textContent=`Validation: ${quality.validationPass===true?'PASS':(quality.validationPass===false?'FAIL':'UNKNOWN')}`;
-  const codes=(quality.errorCodes||[]).slice(0,8);
+  const codes=(run.errorCodes||[]).slice(0,10);
   $('errorCodes').innerHTML=codes.length?codes.map(c=>`<span class="badge">${c}</span>`).join(''):'<span class="k">Geen error codes</span>';
 
-  const trend=data.trend||[];
-  if(!trend.length){
-    $('trendBars').innerHTML='<div class="k">Nog geen trenddata</div>';
-    $('winnerTrend').textContent='-';
-  } else {
-    const points=trend.map(t=>{
-      const ms=(t.score||'0/35').match(/(\d+)\/(\d+)/)||[];
-      const num=ms[1]?parseInt(ms[1],10):0, den=ms[2]?parseInt(ms[2],10):35;
-      const pct=den?Math.round((num/den)*100):0;
-      return {t:t.timestamp,w:t.winner,num,den,pct};
-    });
-    $('trendBars').innerHTML=points.map(p=>`<div class="bar" style="height:${Math.max(8,p.pct)}px"><span>${p.num}/${p.den}<br>${(p.t||'').slice(5)}</span></div>`).join('');
-    $('winnerTrend').innerHTML=points.map(p=>`• ${p.t}: <b>${p.w}</b>`).join('<br>');
+  const trend=(tr&&tr.points)||[];
+  if(!trend.length){ $('trendBars').innerHTML='<div class="k">Nog geen trenddata</div>'; $('winnerTrend').textContent='-'; }
+  else {
+    const points=trend.slice(-8).map(t=>{const m=(t.score||'').match(/(\d+)\/(\d+)/)||[]; const n=m[1]?parseInt(m[1],10):0; const d=m[2]?parseInt(m[2],10):35; const pct=d?Math.round((n/d)*100):12; return {t:t.timestamp,w:t.winner,n,d,pct};});
+    $('trendBars').innerHTML=points.map(p=>`<div class="bar" style="height:${Math.max(8,p.pct)}px"><span>${p.n}/${p.d}<br>${(p.t||'').slice(5)}</span></div>`).join('');
+    $('winnerTrend').innerHTML=points.map(p=>`• ${p.t}: <b>${p.w||'-'}</b>`).join('<br>');
   }
 
-  const ideas=parseIdeas(biz);
-  const sel=$('ideaSelect');
-  if(!ideas.length){
-    sel.innerHTML='<option>Geen idee-data gevonden</option>';
-    $('ideaMeta').textContent='Tip: check 02-business-analysis.md format.';
-    return;
-  }
-  sel.innerHTML=ideas.map((i,idx)=>`<option value="${idx}">${idx+1}. ${i.title}</option>`).join('');
-
-  function renderIdea(idx){
-    const it=ideas[idx] || ideas[0];
-    $('ideaMeta').textContent=`Score: ${it.total} • Repetition: ${it.rep} • Confidence: ${it.conf}`;
-    $('bmcProblem').textContent=it.problem;
-    $('bmcIcp').textContent=it.icp;
-    $('bmcValue').textContent=`${it.title} — concrete probleemoplossing`;
-    $('bmcRevenue').textContent=it.revenue;
-    $('bmcMvp').textContent=it.mvp;
-    $('bmcRisk').textContent=it.risk;
+  if(ops){
+    $('successRate').textContent=`${ops.successRate?.last7 ?? '-'}%`;
+    $('successRateMeta').textContent=`7-run / 30-run: ${ops.successRate?.last7 ?? '-'}% / ${ops.successRate?.last30 ?? '-'}%`;
+    $('fallbackRate').textContent=`${ops.fallbackRate?.last30 ?? '-'}%`;
+    const rt=(ops.runtimeTrend||[]).filter(x=>x.runtime_sec!=null);
+    if(!rt.length) $('runtimeBars').innerHTML='<div class="k">geen runtime data</div>';
+    else {
+      const max=Math.max(...rt.map(x=>x.runtime_sec),1);
+      $('runtimeBars').innerHTML=rt.slice(-12).map((p,i)=>`<div class="bar" style="height:${Math.max(6,Math.round((p.runtime_sec/max)*100))}px"><span>#${i+1}<br>${p.runtime_sec}s</span></div>`).join('');
+    }
+    const hm=ops.blockerHeatmap||[];
+    $('heatmap').innerHTML=hm.length?hm.map(r=>`<tr><td>${r.errorCode}</td><td>${r.count}</td></tr>`).join(''):'<tr><td colspan="2" class="k">no blockers</td></tr>';
   }
 
-  renderIdea(0);
-  sel.addEventListener('change',e=>renderIdea(parseInt(e.target.value,10)||0));
+  const list=(ideas&&ideas.ideas)||[]; const sel=$('ideaSelect');
+  if(!list.length){sel.innerHTML='<option>Geen idee-data gevonden</option>'; $('ideaMeta').textContent='-'; return;}
+  sel.innerHTML=list.map((i,idx)=>`<option value="${idx}">${i.id}. ${i.title}</option>`).join('');
+  function renderIdea(idx){const it=list[idx]||list[0]; $('ideaMeta').textContent=`Score: ${it.score} • Repetition: ${it.repetition} • Confidence: ${it.confidence}`; $('bmcProblem').textContent=it.bmc.problem; $('bmcIcp').textContent=it.bmc.icp; $('bmcValue').textContent=it.bmc.value; $('bmcRevenue').textContent=it.bmc.revenue; $('bmcMvp').textContent=it.bmc.mvp; $('bmcRisk').textContent=it.bmc.risk;}
+  renderIdea(0); sel.addEventListener('change',e=>renderIdea(parseInt(e.target.value,10)||0));
 })();
 </script>
-</body>
-</html>
+</body></html>

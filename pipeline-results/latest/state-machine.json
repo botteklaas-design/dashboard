@@ -1,0 +1,89 @@
+{
+  "version": "2.0",
+  "run_id": "67a06f20-7f93-4279-9c0f-885f1e689da2",
+  "status": "FAILED",
+  "current_stage": "FAILED",
+  "started_at": "2026-02-17T16:09:14.105745+00:00",
+  "ended_at": "2026-02-17T16:09:14.180167+00:00",
+  "stages": {
+    "INIT": {
+      "status": "success",
+      "started_at": "2026-02-17T16:09:14.106110+00:00",
+      "ended_at": "2026-02-17T16:09:14.106227+00:00",
+      "error_code": null,
+      "details": {}
+    },
+    "SCOUT": {
+      "status": "success",
+      "started_at": "2026-02-17T16:09:14.106366+00:00",
+      "ended_at": "2026-02-17T16:09:14.106470+00:00",
+      "error_code": null,
+      "details": {}
+    },
+    "ANALYST": {
+      "status": "success",
+      "started_at": "2026-02-17T16:09:14.106584+00:00",
+      "ended_at": "2026-02-17T16:09:14.106672+00:00",
+      "error_code": null,
+      "details": {}
+    },
+    "DEV": {
+      "status": "success",
+      "started_at": "2026-02-17T16:09:14.106776+00:00",
+      "ended_at": "2026-02-17T16:09:14.106856+00:00",
+      "error_code": null,
+      "details": {}
+    },
+    "VALIDATE": {
+      "status": "failed",
+      "started_at": "2026-02-17T16:09:14.106958+00:00",
+      "ended_at": "2026-02-17T16:09:14.137406+00:00",
+      "error_code": "VALIDATE_CMD_FAILED",
+      "details": {
+        "command": [
+          "python3",
+          "/Users/mcbot/.openclaw/workspace/scripts/validate_pipeline_outputs.py"
+        ],
+        "returncode": 1,
+        "stdout": "{\"pass\": false, \"errorCodes\": [\"SCOUT_TOO_FEW_IDEAS\"]}",
+        "stderr": ""
+      }
+    },
+    "RECOVER": {
+      "status": "success",
+      "started_at": "2026-02-17T16:09:14.137642+00:00",
+      "ended_at": "2026-02-17T16:09:14.157180+00:00",
+      "error_code": null,
+      "details": {
+        "command": [
+          "python3",
+          "/Users/mcbot/.openclaw/workspace/scripts/pipeline_auto_recovery.py"
+        ],
+        "returncode": 0,
+        "stdout": "{\"recovery\": true, \"reasonCodes\": [\"SCOUT_TOO_FEW_IDEAS\"], \"changed\": []}",
+        "stderr": ""
+      }
+    },
+    "REVALIDATE": {
+      "status": "failed",
+      "started_at": "2026-02-17T16:09:14.157378+00:00",
+      "ended_at": "2026-02-17T16:09:14.179981+00:00",
+      "error_code": "REVALIDATE_CMD_FAILED",
+      "details": {
+        "command": [
+          "python3",
+          "/Users/mcbot/.openclaw/workspace/scripts/validate_pipeline_outputs.py"
+        ],
+        "returncode": 1,
+        "stdout": "{\"pass\": false, \"errorCodes\": [\"SCOUT_TOO_FEW_IDEAS\"]}",
+        "stderr": ""
+      }
+    }
+  },
+  "error_codes": [
+    "VALIDATE_CMD_FAILED",
+    "REVALIDATE_CMD_FAILED"
+  ],
+  "recovery_used": true,
+  "winner": "SMS-kosten transparantie-assistent"
+}
