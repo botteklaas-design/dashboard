@@ -1,10 +1,153 @@
-<!doctype html><html><head><meta charset='utf-8'><title>Pipeline Dashboard</title></head><body>
-<h1>Dutch Idea Pipeline Dashboard (Latest)</h1>
-<p>Run timestamp: 2026-02-17-105559</p>
-<ul>
-<li><a href='01-forum-scout.md'>01-forum-scout.md</a></li>
-<li><a href='02-business-analysis.md'>02-business-analysis.md</a></li>
-<li><a href='03-final-winner-summary.md'>03-final-winner-summary.md</a></li>
-<li><a href='04-log-scan.txt'>04-log-scan.txt</a></li>
-<li><a href='00-run-metadata.txt'>00-run-metadata.txt</a></li>
-</ul></body></html>
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Pipeline Dashboard</title>
+  <style>
+    body{font-family:Inter,system-ui,Arial;background:#0b1220;color:#e8eefc;margin:0}
+    .wrap{max-width:1150px;margin:0 auto;padding:20px}
+    .card{background:#131d33;border:1px solid #2a3a61;border-radius:12px;padding:14px;margin:10px 0}
+    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+    .k{font-size:12px;color:#9fb1d9}.v{font-size:22px;font-weight:700}
+    .winner{background:linear-gradient(120deg,#1b3358,#1f3f43)}
+    a{color:#9fd0ff}
+    select{background:#0f1729;color:#e8eefc;border:1px solid #2a3a61;border-radius:8px;padding:8px}
+    .bmc{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+    .box{background:#0f1729;border:1px solid #2a3a61;border-radius:10px;padding:10px;min-height:90px}
+    .lbl{font-size:11px;color:#9fb1d9;text-transform:uppercase}
+    .bars{display:flex;align-items:flex-end;gap:8px;height:150px;padding:8px;background:#0f1729;border:1px solid #2a3a61;border-radius:10px}
+    .bar{width:34px;background:linear-gradient(180deg,#60a5fa,#34d399);border-radius:6px 6px 0 0;position:relative}
+    .bar span{position:absolute;bottom:100%;left:50%;transform:translateX(-50%);font-size:10px;color:#bcd0f4;white-space:nowrap}
+    .winner-list{font-size:13px;color:#c7d8f7;line-height:1.5}
+    @media(max-width:900px){.grid,.bmc{grid-template-columns:1fr 1fr}}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <h1>📊 Dutch Idea Pipeline Dashboard</h1>
+  <div id="run" class="k">Laden…</div>
+
+  <div class="card winner" id="winner">Winner laden…</div>
+
+  <div class="grid">
+    <div class="card"><div class="k">Ideeën</div><div class="v" id="ideas">-</div></div>
+    <div class="card"><div class="k">Totaalscore (/35)</div><div class="v" id="total">-</div></div>
+    <div class="card"><div class="k">Repetition</div><div class="v" id="rep">-</div></div>
+    <div class="card"><div class="k">Confidence</div><div class="v" id="conf">-</div></div>
+  </div>
+
+  <div class="card">
+    <h3 style="margin-top:0">Trendkaart (laatste runs)</h3>
+    <div class="bars" id="trendBars"><div class="k">Laden…</div></div>
+    <div class="winner-list" id="winnerTrend" style="margin-top:10px">Laden…</div>
+  </div>
+
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap">
+      <h3 style="margin:0">Idee details + Business Model Canvas</h3>
+      <select id="ideaSelect"></select>
+    </div>
+    <div class="bmc" style="margin-top:10px">
+      <div class="box"><div class="lbl">Probleem</div><div id="p">-</div></div>
+      <div class="box"><div class="lbl">Doelgroep (ICP)</div><div id="icp">-</div></div>
+      <div class="box"><div class="lbl">Waardepropositie</div><div id="vp">-</div></div>
+      <div class="box"><div class="lbl">Revenue</div><div id="rev">-</div></div>
+      <div class="box"><div class="lbl">MVP scope</div><div id="mvp">-</div></div>
+      <div class="box"><div class="lbl">Risico</div><div id="risk">-</div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3 style="margin-top:0">Artifacts</h3>
+    <ul>
+      <li><a href="01-forum-scout.md">01-forum-scout.md</a></li>
+      <li><a href="02-business-analysis.md">02-business-analysis.md</a></li>
+      <li><a href="03-final-winner-summary.md">03-final-winner-summary.md</a></li>
+      <li><a href="04-log-scan.txt">04-log-scan.txt</a></li>
+      <li><a href="00-run-metadata.txt">00-run-metadata.txt</a></li>
+      <li><a href="weekly-product-bet-latest.md">weekly-product-bet-latest.md</a></li>
+    </ul>
+  </div>
+</div>
+<script>
+const $=id=>document.getElementById(id);
+async function txt(p){const r=await fetch(p,{cache:'no-store'}); if(!r.ok) return ''; return r.text();}
+function m(re,s,d='-'){const x=s.match(re); return x?x[1].trim():d;}
+function parseIdeas(md){
+  const re=/## Idee\s+\d+:\s+(.+)\n([\s\S]*?)(?=\n---\n\n## Idee\s+\d+:|\n# Final Ranking|$)/g;
+  const arr=[]; let x;
+  while((x=re.exec(md))){
+    const body=x[2];
+    arr.push({
+      title:x[1],
+      total:m(/\*\*Totaalscore\*\*:?\s*([^\n]+)/,body,'-'),
+      rep:m(/\*\*Repetition Score\*\*:?\s*([^\n]+)/,body,'-'),
+      conf:m(/\*\*Confidence\*\*:?\s*([^\n]+)/,body,'-'),
+      problem:m(/\*\*Original Context\*\*: ([^\n]+)/,body,'-'),
+      icp:m(/\*\*Target segment\*\*: ([^\n]+)/,body,'Consumenten/KBM'),
+      rev:m(/\*\*Revenue model\*\*: ([^\n]+)/,body,'Freemium + premium'),
+      mvp:m(/\*\*MVP scope\*\*: ([^\n]+)/,body,'Snelle MVP (<=6 weken)'),
+      risk:m(/⚠️ \*\*Risk 1\*\*: ([^\n]+)/,body,'Uitvoering/GTM')
+    });
+  }
+  return arr;
+}
+
+async function loadTrend(){
+  const listing = await txt('../history/');
+  if(!listing){ $('trendBars').innerHTML='<div class="k">Geen history listing beschikbaar</div>'; return; }
+  const ts=[...listing.matchAll(/03-final-winner-summary-(\d{4}-\d{2}-\d{2}-\d{6})\.md/g)].map(m=>m[1]);
+  const uniq=[...new Set(ts)].slice(-8);
+  if(!uniq.length){ $('trendBars').innerHTML='<div class="k">Nog geen trends</div>'; return; }
+
+  const points=[];
+  for(const t of uniq){
+    const sum=await txt(`../history/03-final-winner-summary-${t}.md`);
+    const winner=m(/\n1\.\s*([^\n]+)/,sum,'-');
+    const score=((winner.match(/(\d+)\/(\d+)/)||[]));
+    const num=score[1]?parseInt(score[1],10):0;
+    const den=score[2]?parseInt(score[2],10):35;
+    const pct=den?Math.round((num/den)*100):0;
+    points.push({t,winner:winner.split(' - ')[0],pct,num,den});
+  }
+
+  $('trendBars').innerHTML=points.map(p=>`<div class="bar" style="height:${Math.max(8,p.pct)}px"><span>${p.num}/${p.den}<br>${p.t.slice(5)}</span></div>`).join('');
+  $('winnerTrend').innerHTML=points.map(p=>`• ${p.t}: <b>${p.winner}</b>`).join('<br>');
+}
+
+(async()=>{
+  const [meta,biz,fin]=await Promise.all([txt('00-run-metadata.txt'),txt('02-business-analysis.md'),txt('03-final-winner-summary.md')]);
+  const runTs = m(/(\d{4}-\d{2}-\d{2}-\d{6})/,meta||fin,new Date().toISOString());
+  $('run').textContent='Laatste run: '+runTs;
+  const winner = m(/1\.\s*([^\n]+)/,fin,'Nog geen winnaar');
+  $('winner').innerHTML='🏆 <b>'+winner.split(' - ')[0]+'</b><br><span class="k">'+winner+'</span>';
+
+  const ideas=parseIdeas(biz);
+  $('ideas').textContent=ideas.length||'-';
+  const top=ideas[0]||{total:'-',rep:'-',conf:'-'};
+  $('total').textContent=top.total;
+  $('rep').textContent=top.rep;
+  $('conf').textContent=top.conf;
+
+  const sel=$('ideaSelect');
+  sel.innerHTML=ideas.map((i,idx)=>`<option value="${idx}">${idx+1}. ${i.title}</option>`).join('');
+  function render(i){
+    const it=ideas[i]||{};
+    $('p').textContent=it.problem||'-';
+    $('icp').textContent=it.icp||'-';
+    $('vp').textContent=(it.title||'-')+' — concrete probleemoplossing';
+    $('rev').textContent=it.rev||'-';
+    $('mvp').textContent=it.mvp||'-';
+    $('risk').textContent=it.risk||'-';
+    $('total').textContent=it.total||'-';
+    $('rep').textContent=it.rep||'-';
+    $('conf').textContent=it.conf||'-';
+  }
+  if(ideas.length){render(0); sel.onchange=e=>render(parseInt(e.target.value,10));}
+
+  loadTrend();
+})();
+</script>
+</body>
+</html>
