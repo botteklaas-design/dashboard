@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1100" viewBox="0 0 1800 1100">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="100%" stop-color="#0e1630"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#9bc8ff"/>
+    </marker>
+    <style>
+      .title { fill:#eaf0ff; font: 700 44px Arial, sans-serif; }
+      .node { fill:#121a33; stroke:#7ca3e6; stroke-width:3; rx:18; }
+      .node2 { fill:#1a2d50; stroke:#84d7ff; stroke-width:3; rx:18; }
+      .node3 { fill:#1c3948; stroke:#86e2be; stroke-width:3; rx:18; }
+      .jobs { fill:#2c3a2a; stroke:#aad48b; stroke-width:3; rx:16; }
+      .store { fill:#2b2542; stroke:#c9a8ff; stroke-width:3; rx:16; }
+      .t1 { fill:#eaf0ff; font: 700 24px Arial, sans-serif; }
+      .t2 { fill:#aac3e8; font: 20px Arial, sans-serif; }
+      .edge { stroke:#9bc8ff; stroke-width:4; fill:none; marker-end:url(#arrow); }
+      .edge2 { stroke:#86e2be; stroke-width:3; fill:none; marker-end:url(#arrow); }
+      .edge3 { stroke:#aad48b; stroke-width:3; fill:none; marker-end:url(#arrow); }
+      .foot { fill:#9fb5d8; font: 20px Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1800" height="1100" fill="url(#bg)"/>
+  <text x="50" y="70" class="title">Agent structuur — Dutch Idea Pipeline</text>
+
+  <rect class="node" x="740" y="110" width="320" height="120"/>
+  <text x="760" y="155" class="t1">👤 Owner (Timo)</text>
+  <text x="760" y="190" class="t2">Stuurt richting en keuzes</text>
+
+  <rect class="node2" x="740" y="280" width="320" height="130"/>
+  <text x="760" y="325" class="t1">🧭 CEO Agent</text>
+  <text x="760" y="360" class="t2">ChatGPT-model • Rapporteert naar owner</text>
+
+  <rect class="node3" x="740" y="470" width="320" height="130"/>
+  <text x="760" y="515" class="t1">♟️ Strategy Agent</text>
+  <text x="760" y="550" class="t2">Claude Sonnet 3.5 • Stuurt next-day focus</text>
+
+  <rect class="node" x="120" y="700" width="360" height="150"/>
+  <text x="140" y="745" class="t1">🔎 Research Agent</text>
+  <text x="140" y="780" class="t2">Ollama qwen2.5:7b</text>
+  <text x="140" y="810" class="t2">Fallback: llama3.2</text>
+
+  <rect class="node" x="610" y="700" width="360" height="150"/>
+  <text x="630" y="745" class="t1">📊 Business Analyst</text>
+  <text x="630" y="780" class="t2">Sonnet • Scoring + ranking</text>
+
+  <rect class="node" x="1100" y="700" width="360" height="150"/>
+  <text x="1120" y="745" class="t1">🛠️ Senior Dev</text>
+  <text x="1120" y="780" class="t2">GPT-5.3 Codex</text>
+  <text x="1120" y="810" class="t2">Technische haalbaarheid</text>
+
+  <rect class="jobs" x="1440" y="110" width="300" height="110"/>
+  <text x="1460" y="155" class="t1">⏱️ 4u Pipeline</text>
+  <text x="1460" y="190" class="t2">Automatische cyclus</text>
+
+  <rect class="jobs" x="1440" y="250" width="300" height="95"/>
+  <text x="1460" y="305" class="t1">🌙 Daily Strategy (22:10)</text>
+
+  <rect class="jobs" x="1440" y="370" width="300" height="95"/>
+  <text x="1460" y="425" class="t1">📌 Daily CEO (22:20)</text>
+
+  <rect class="jobs" x="1440" y="490" width="300" height="95"/>
+  <text x="1460" y="545" class="t1">🗂️ Weekly CEO memo</text>
+
+  <rect class="store" x="120" y="930" width="780" height="120"/>
+  <text x="145" y="980" class="t1">📁 Outputs (latest + history + logs + dashboard)</text>
+
+  <rect class="store" x="960" y="930" width="320" height="120"/>
+  <text x="985" y="980" class="t1">🐙 GitHub (main)</text>
+  <text x="985" y="1015" class="t2">Auto commit/push</text>
+
+  <rect class="store" x="1320" y="930" width="300" height="120"/>
+  <text x="1345" y="980" class="t1">🌐 Render</text>
+  <text x="1345" y="1015" class="t2">Live dashboard</text>
+
+  <path class="edge" d="M900 230 L900 280"/>
+  <path class="edge" d="M900 410 L900 470"/>
+  <path class="edge" d="M820 600 L300 700"/>
+  <path class="edge" d="M900 600 L790 700"/>
+  <path class="edge" d="M980 600 L1280 700"/>
+
+  <path class="edge3" d="M1660 220 L480 760"/>
+  <path class="edge3" d="M1660 220 L970 760"/>
+  <path class="edge3" d="M1660 220 L1460 760"/>
+  <path class="edge3" d="M1660 300 L900 470"/>
+  <path class="edge3" d="M1660 420 L900 345"/>
+  <path class="edge3" d="M1660 540 L900 345"/>
+
+  <path class="edge2" d="M300 850 L300 930"/>
+  <path class="edge2" d="M790 850 L650 930"/>
+  <path class="edge2" d="M1280 850 L780 930"/>
+  <path class="edge2" d="M900 600 L900 930"/>
+  <path class="edge2" d="M900 810 L900 535"/>
+
+  <path class="edge" d="M900 990 L960 990"/>
+  <path class="edge" d="M1280 990 L1320 990"/>
+
+  <text x="50" y="1080" class="foot">Flow: Owner → CEO → Strategy → (Research/Business/Senior Dev) → Outputs → GitHub → Render</text>
+</svg>
