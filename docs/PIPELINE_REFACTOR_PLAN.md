@@ -1,0 +1,30 @@
+# Pipeline Refactor Plan (v1.1 → v2.0)
+
+## Goal
+Increase reliability, reduce cost variance, and make dashboard publishing deterministic.
+
+## v1.1 (start now)
+1. Add `pipeline-results/latest/run-state.json` as single run-status source.
+2. Add `pipeline-results/latest/dashboard-data.json` as structured dashboard payload.
+3. Keep markdown artifacts, but treat JSON as primary frontend input.
+4. Add publish freshness label:
+   - `green`: all core stages succeeded fresh
+   - `amber`: fallback/partial used
+   - `red`: publish blocked or failed
+5. Update dashboard UI to read JSON first, fallback to markdown parsing.
+
+## v1.2 (next)
+1. Central model routing policy (local-first + expensive cap).
+2. Schema validation on stage handoffs (Scout/Analyst/Dev).
+3. Normalized error codes in logs.
+4. Automatic recovery path with explicit `amber` status.
+
+## v2.0
+1. State-machine orchestrator with resumable runs.
+2. Event-driven dashboard (manifest-only reads).
+3. Ops dashboard (success %, fallback %, runtime trends).
+4. Weekly auto product-bet recommendation with confidence.
+
+## Immediate implementation notes
+- Add a generator script to produce `run-state.json` and `dashboard-data.json` from latest artifacts.
+- Ensure cron flow regenerates both files each run before Git push.

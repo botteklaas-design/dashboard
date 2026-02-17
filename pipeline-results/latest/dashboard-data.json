@@ -1,0 +1,51 @@
+{
+  "runTimestamp": "2026-02-17-151756",
+  "winner": "**SMS-kosten transparantie-assistent** — 24/35 (business), Tech Feasibility **8/10**",
+  "winnerScore": "24/35",
+  "ideasCount": 10,
+  "recommendedCount": null,
+  "status": "amber",
+  "trend": [
+    {
+      "timestamp": "2026-02-16-105556",
+      "winner": "Juridische briefgenerator met bewijskoppeling",
+      "score": "25/30"
+    },
+    {
+      "timestamp": "2026-02-16-145823",
+      "winner": "Juridische briefgenerator met bewijskoppeling",
+      "score": "25/30"
+    },
+    {
+      "timestamp": "2026-02-16-185557",
+      "winner": "Juridische briefgenerator met bewijskoppeling",
+      "score": "25/30"
+    },
+    {
+      "timestamp": "2026-02-16-225945",
+      "winner": "-",
+      "score": null
+    },
+    {
+      "timestamp": "2026-02-17-025637",
+      "winner": "-",
+      "score": null
+    },
+    {
+      "timestamp": "2026-02-17-065553",
+      "winner": "-",
+      "score": null
+    },
+    {
+      "timestamp": "2026-02-17-105559",
+      "winner": "Pakketconflict claimbuilder — Tech 9/10",
+      "score": "9/10"
+    },
+    {
+      "timestamp": "2026-02-17-151756",
+      "winner": "**SMS-kosten transparantie-assistent** — 24/35 (business), Tech Feasibility **8/10**",
+      "score": "24/35"
+    }
+  ],
+  "generatedAt": "2026-02-17T16:08:33.698660"
+}
