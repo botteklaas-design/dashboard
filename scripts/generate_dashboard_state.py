@@ -1,14 +1,82 @@
 #!/usr/bin/env python3
-import json, re
+import json
+import re
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone
 
 BASE = Path('/Users/mcbot/.openclaw/workspace/pipeline-results/latest')
 HIST = Path('/Users/mcbot/.openclaw/workspace/pipeline-results/history')
 
+
 def read(name):
     p = BASE / name
     return p.read_text(encoding='utf-8', errors='ignore') if p.exists() else ''
+
+
+def parse_validation_report():
+    p = BASE / 'validation-report.json'
+    if not p.exists():
+        return {
+            'exists': False,
+            'pass': None,
+            'errorCodes': ['DASHBOARD_PARSE'],
+        }
+    try:
+        payload = json.loads(p.read_text(encoding='utf-8', errors='ignore'))
+        codes = payload.get('summary', {}).get('errorCodes', []) or []
+        return {
+            'exists': True,
+            'pass': bool(payload.get('pass', False)),
+            'errorCodes': codes,
+        }
+    except Exception:
+        return {
+            'exists': True,
+            'pass': False,
+            'errorCodes': ['DASHBOARD_PARSE'],
+        }
+
+
+def classify_status(validation_pass, logscan_text):
+    scan_l = (logscan_text or '').lower()
+
+    severe_terms = ['fatal', 'panic', 'hard fail', 'validation failed hard']
+    if validation_pass is False:
+        return 'red'
+    if any(t in scan_l for t in severe_terms):
+        return 'red'
+
+    recovery_terms = ['recovery', 'fallback', 'partial', 'warning', 'pending']
+    if any(t in scan_l for t in recovery_terms):
+        return 'amber'
+
+    return 'green'
+
+
+def freshness(meta, run_ts):
+    src = f"{meta}\n{run_ts or ''}"
+    m = re.search(r'(\d{4}-\d{2}-\d{2}-\d{6})', src)
+    if not m:
+        return {'label': 'unknown', 'minutes': None}
+
+    try:
+        ts = datetime.strptime(m.group(1), '%Y-%m-%d-%H%M%S').replace(tzinfo=timezone.utc)
+        now = datetime.now(timezone.utc)
+        mins = int((now - ts).total_seconds() // 60)
+    except Exception:
+        return {'label': 'unknown', 'minutes': None}
+
+    if mins < 0:
+        label = 'fresh'
+    elif mins <= 300:
+        label = 'fresh'
+    elif mins <= 720:
+        label = 'stale'
+    else:
+        label = 'old'
+
+    return {'label': label, 'minutes': mins}
+
 
 final = read('03-final-winner-summary.md')
 biz = read('02-business-analysis.md')
@@ -44,10 +112,13 @@ m = re.search(r'Aanbevolen voor verdere exploratie:\s*(\d+)', biz)
 if m:
     recommended = int(m.group(1))
 
-status = 'green'
-scan_l = (logscan or '').lower()
-if any(k in scan_l for k in ['error', 'failed', 'timeout', 'incomplete', 'fallback']):
-    status = 'amber'
+validation = parse_validation_report()
+status = classify_status(validation['pass'], logscan)
+quality = {
+    'freshness': freshness(meta, run_ts),
+    'validationPass': validation['pass'],
+    'errorCodes': validation['errorCodes'],
+}
 
 # Trend from history summaries
 runs = []
@@ -70,8 +141,9 @@ payload = {
     'ideasCount': ideas_count,
     'recommendedCount': recommended,
     'status': status,
+    'quality': quality,
     'trend': runs[-8:],
-    'generatedAt': datetime.now().isoformat()
+    'generatedAt': datetime.now().isoformat(),
 }
 
 (BASE / 'dashboard-data.json').write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding='utf-8')
@@ -80,7 +152,8 @@ payload = {
     'status': status,
     'winner': winner,
     'winnerScore': score,
-    'updatedAt': datetime.now().isoformat()
+    'quality': quality,
+    'updatedAt': datetime.now().isoformat(),
 }, ensure_ascii=False, indent=2), encoding='utf-8')
 
 print('generated dashboard-data.json and run-state.json')

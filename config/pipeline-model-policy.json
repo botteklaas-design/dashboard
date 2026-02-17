@@ -1,0 +1,24 @@
+{
+  "version": "1.2",
+  "lastUpdated": "2026-02-17",
+  "stages": {
+    "scout": {
+      "preferred": "ollama/qwen2.5:7b",
+      "fallback": "ollama/llama3.2:latest",
+      "notes": "Local-first scouting for low cost and fast retries."
+    },
+    "analyst": {
+      "default": "openai-codex/gpt-5.3-codex",
+      "notes": "Uses current main model for consistent scoring and ranking quality."
+    },
+    "dev": {
+      "default": "openai-codex/gpt-5.3-codex",
+      "notes": "Uses current main model for technical feasibility and implementation guidance."
+    }
+  },
+  "budgets": {
+    "localFirst": true,
+    "maxExpensiveCallsPerDay": "TODO_SET_LIMIT",
+    "notes": "Replace placeholder with explicit numeric limit after cost baseline is stable."
+  }
+}

@@ -5,6 +5,14 @@
   "ideasCount": 10,
   "recommendedCount": null,
   "status": "amber",
+  "quality": {
+    "freshness": {
+      "label": "fresh",
+      "minutes": 21
+    },
+    "validationPass": true,
+    "errorCodes": []
+  },
   "trend": [
     {
       "timestamp": "2026-02-16-105556",
@@ -47,5 +55,5 @@
       "score": "24/35"
     }
   ],
-  "generatedAt": "2026-02-17T16:08:33.698660"
+  "generatedAt": "2026-02-17T16:39:17.588988"
 }

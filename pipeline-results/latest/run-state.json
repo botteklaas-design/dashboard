@@ -3,5 +3,13 @@
   "status": "amber",
   "winner": "**SMS-kosten transparantie-assistent** — 24/35 (business), Tech Feasibility **8/10**",
   "winnerScore": "24/35",
-  "updatedAt": "2026-02-17T16:08:33.699213"
+  "quality": {
+    "freshness": {
+      "label": "fresh",
+      "minutes": 21
+    },
+    "validationPass": true,
+    "errorCodes": []
+  },
+  "updatedAt": "2026-02-17T16:39:17.589148"
 }

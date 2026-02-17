@@ -22,6 +22,8 @@
     .bmc{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
     .box{background:#0f1729;border:1px solid #2a3a61;border-radius:10px;padding:10px;min-height:95px}
     .lbl{font-size:11px;color:#9fb1d9;text-transform:uppercase}
+    .badges{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+    .badge{display:inline-block;padding:4px 8px;border-radius:999px;background:#1b2744;border:1px solid #34508a;font-size:11px;color:#cfe0ff}
     @media(max-width:900px){.grid,.bmc{grid-template-columns:1fr 1fr}}
   </style>
 </head>
@@ -37,6 +39,13 @@
     <div class="card"><div class="k">Ideeën</div><div class="v" id="ideas">-</div></div>
     <div class="card"><div class="k">Winner score</div><div class="v" id="score">-</div></div>
     <div class="card"><div class="k">Aanbevolen</div><div class="v" id="rec">-</div></div>
+  </div>
+
+  <div class="card">
+    <h3 style="margin:0">Quality Signal</h3>
+    <div class="k" id="freshness">Freshness: -</div>
+    <div class="k" id="validationPass">Validation: -</div>
+    <div class="badges" id="errorCodes"><span class="k">Geen error codes</span></div>
   </div>
 
   <div class="card">
@@ -72,6 +81,7 @@
       <li><a href="dashboard-data.json">dashboard-data.json</a></li>
       <li><a href="run-state.json">run-state.json</a></li>
       <li><a href="history-manifest.json">history-manifest.json</a></li>
+      <li><a href="validation-report.json">validation-report.json</a></li>
     </ul>
   </div>
 </div>
@@ -120,6 +130,13 @@ function parseIdeas(md){
   $('ideas').textContent=data.ideasCount ?? '-';
   $('score').textContent=data.winnerScore || '-';
   $('rec').textContent=data.recommendedCount ?? '-';
+
+  const quality=data.quality||{};
+  const fresh=quality.freshness||{};
+  $('freshness').textContent=`Freshness: ${fresh.label||'unknown'}${fresh.minutes==null?'':` (${fresh.minutes} min)`}`;
+  $('validationPass').textContent=`Validation: ${quality.validationPass===true?'PASS':(quality.validationPass===false?'FAIL':'UNKNOWN')}`;
+  const codes=(quality.errorCodes||[]).slice(0,8);
+  $('errorCodes').innerHTML=codes.length?codes.map(c=>`<span class="badge">${c}</span>`).join(''):'<span class="k">Geen error codes</span>';
 
   const trend=data.trend||[];
   if(!trend.length){

@@ -1,0 +1,25 @@
+{
+  "version": "1.2",
+  "generatedAt": "2026-02-17T15:39:14.568025+00:00",
+  "basePath": "/Users/mcbot/.openclaw/workspace/pipeline-results/latest",
+  "pass": true,
+  "summary": {
+    "hardErrorCount": 0,
+    "errorCount": 0,
+    "errorCodes": []
+  },
+  "stages": {
+    "scout": {
+      "pass": true,
+      "ideasCount": 10,
+      "malformedIdeas": 0
+    },
+    "analyst": {
+      "pass": true
+    },
+    "dev": {
+      "pass": true
+    }
+  },
+  "errors": []
+}
