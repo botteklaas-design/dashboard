@@ -1,125 +1,130 @@
 {
-  "generated_from": "history winner summaries",
-  "count": 24,
-  "items": [
+  "generatedAt": "2026-02-17T21:58:08.011069Z",
+  "count": 25,
+  "runs": [
     {
       "timestamp": "2026-02-13-230056",
-      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-13-230056.md",
+      "file": "pipeline-results/history/03-final-winner-summary-2026-02-13-230056.md",
       "summary": "**Winner:** Bezorgbewijs-forensische tool"
     },
     {
       "timestamp": "2026-02-14-025947",
-      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-14-025947.md",
+      "file": "pipeline-results/history/03-final-winner-summary-2026-02-14-025947.md",
       "summary": "Datum: 2026-02-14"
     },
     {
       "timestamp": "2026-02-14-065604",
-      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-14-065604.md",
+      "file": "pipeline-results/history/03-final-winner-summary-2026-02-14-065604.md",
       "summary": "Datum: 14 februari 2026"
     },
     {
       "timestamp": "2026-02-14-105555",
-      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-14-105555.md",
+      "file": "pipeline-results/history/03-final-winner-summary-2026-02-14-105555.md",
       "summary": "Datum: 14 februari 2026"
     },
     {
       "timestamp": "2026-02-14-145654",
-      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-14-145654.md",
+      "file": "pipeline-results/history/03-final-winner-summary-2026-02-14-145654.md",
       "summary": "Datum: 14 februari 2026"
     },
     {
       "timestamp": "2026-02-14-193223",
-      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-14-193223.md",
+      "file": "pipeline-results/history/03-final-winner-summary-2026-02-14-193223.md",
       "summary": "Datum: 2026-02-14"
     },
     {
       "timestamp": "2026-02-14-225946",
-      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-14-225946.md",
+      "file": "pipeline-results/history/03-final-winner-summary-2026-02-14-225946.md",
       "summary": "Run timestamp: 2026-02-14-225946"
     },
     {
       "timestamp": "2026-02-15-025558",
-      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-15-025558.md",
+      "file": "pipeline-results/history/03-final-winner-summary-2026-02-15-025558.md",
       "summary": "Datum: 2026-02-15 02:55 CET"
     },
     {
       "timestamp": "2026-02-15-065555",
-      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-15-065555.md",
+      "file": "pipeline-results/history/03-final-winner-summary-2026-02-15-065555.md",
       "summary": "Run: 2026-02-15-065555"
     },
     {
       "timestamp": "2026-02-15-105753",
-      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-15-105753.md",
+      "file": "pipeline-results/history/03-final-winner-summary-2026-02-15-105753.md",
       "summary": "Run: 2026-02-15-105753"
     },
     {
       "timestamp": "2026-02-15-145604",
-      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-15-145604.md",
+      "file": "pipeline-results/history/03-final-winner-summary-2026-02-15-145604.md",
       "summary": "Run: 2026-02-15-145604"
     },
     {
       "timestamp": "2026-02-15-185844",
-      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-15-185844.md",
+      "file": "pipeline-results/history/03-final-winner-summary-2026-02-15-185844.md",
       "summary": "Run: 2026-02-15-185844"
     },
     {
       "timestamp": "2026-02-15-225744",
-      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-15-225744.md",
+      "file": "pipeline-results/history/03-final-winner-summary-2026-02-15-225744.md",
       "summary": "Run: 2026-02-15-185844"
     },
     {
       "timestamp": "2026-02-16-025600",
-      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-16-025600.md",
+      "file": "pipeline-results/history/03-final-winner-summary-2026-02-16-025600.md",
       "summary": "Run: 2026-02-16-025600"
     },
     {
       "timestamp": "2026-02-16-065606",
-      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-16-065606.md",
+      "file": "pipeline-results/history/03-final-winner-summary-2026-02-16-065606.md",
       "summary": "Run: 2026-02-16-065606"
     },
     {
       "timestamp": "2026-02-16-105556",
-      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-16-105556.md",
+      "file": "pipeline-results/history/03-final-winner-summary-2026-02-16-105556.md",
       "summary": "Run: 2026-02-16-105556"
     },
     {
       "timestamp": "2026-02-16-145823",
-      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-16-145823.md",
+      "file": "pipeline-results/history/03-final-winner-summary-2026-02-16-145823.md",
       "summary": "Run: 2026-02-16-065606"
     },
     {
       "timestamp": "2026-02-16-185557",
-      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-16-185557.md",
+      "file": "pipeline-results/history/03-final-winner-summary-2026-02-16-185557.md",
       "summary": "Run: 2026-02-16-065606"
     },
     {
       "timestamp": "2026-02-16-225945",
-      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-16-225945.md",
+      "file": "pipeline-results/history/03-final-winner-summary-2026-02-16-225945.md",
       "summary": "Datum: 2026-02-16 22:59:45 CET"
     },
     {
       "timestamp": "2026-02-17-025637",
-      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-17-025637.md",
+      "file": "pipeline-results/history/03-final-winner-summary-2026-02-17-025637.md",
       "summary": "Datum: 2026-02-16 22:59:45 CET"
     },
     {
       "timestamp": "2026-02-17-065553",
-      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-17-065553.md",
+      "file": "pipeline-results/history/03-final-winner-summary-2026-02-17-065553.md",
       "summary": "Datum: 2026-02-16 22:59:45 CET"
     },
     {
       "timestamp": "2026-02-17-105559",
-      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-17-105559.md",
+      "file": "pipeline-results/history/03-final-winner-summary-2026-02-17-105559.md",
       "summary": "Datum: 2026-02-17"
     },
     {
       "timestamp": "2026-02-17-151756",
-      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-17-151756.md",
+      "file": "pipeline-results/history/03-final-winner-summary-2026-02-17-151756.md",
       "summary": "Datum: 2026-02-17"
     },
     {
       "timestamp": "2026-02-17-190345",
-      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-17-190345.md",
+      "file": "pipeline-results/history/03-final-winner-summary-2026-02-17-190345.md",
+      "summary": "Datum: 2026-02-17"
+    },
+    {
+      "timestamp": "2026-02-17-190428",
+      "file": "pipeline-results/history/03-final-winner-summary-2026-02-17-190428.md",
       "summary": "Datum: 2026-02-17"
     }
   ]

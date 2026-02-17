@@ -1,6 +1,7 @@
-run_timestamp=2026-02-17-190428
-platform_mode=v2.0
-scope=exact
-policy_file=/Users/mcbot/.openclaw/workspace/config/pipeline-model-policy.json
-focus_file=/Users/mcbot/.openclaw/workspace/agent-tasks/research-focus-next-day.md
-status=ollama_timeout_used_latest_nonempty_artifacts
+run_timestamp: 2026-02-17-225807
+run_mode: cron-manual-now
+scope: dutch_idea_pipeline_v2_platform_mode_exact
+model_policy: /Users/mcbot/.openclaw/workspace/config/pipeline-model-policy.json
+scout_model_preferred: ollama/qwen2.5:7b
+scout_model_fallback: ollama/llama3.2:latest
+notes: ollama scout subagent issued tool calls but did not complete; fallback rerun initiated.
