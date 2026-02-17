@@ -1,0 +1,7 @@
+Pipeline run timestamp: 2026-02-17-065553
+Run date (Europe/Amsterdam): 2026-02-17 06:57:49 CET
+Stage 1 scout session: agent:main:subagent:73e1a866-f5cc-46c3-89fa-6af52144ac8a
+Stage 2 analyst session: agent:main:subagent:f7efe397-17e1-45a4-b49f-5071c67fe011
+Model preference: ollama/qwen2.5:7b
+Fallback model: ollama/llama3.2:latest
+Notes: latest validated dashboard snapshots refreshed and archived for this run window.
