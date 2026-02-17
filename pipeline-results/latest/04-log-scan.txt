@@ -1,6 +1,6 @@
 Post-run log scan
 Run: 2026-02-17-025637
-Generated: 2026-02-17 02:56:37 CET
+Generated: 2026-02-17 02:57:10 CET
 
 Recent error/warn lines from pipeline-debug.log:
 # Purpose: append every pipeline stage, command/session id, and errors.
@@ -49,3 +49,4 @@ Recent error/warn lines from pipeline-debug.log:
 [2026-02-16 18:57:10 CET] ERROR Stage1 preferred sub-agent non-compliant (attempted local-path web_fetch) session=agent:main:subagent:ecfb94a0-01a4-4361-b8ad-4b620e0648f8
 [2026-02-16 18:57:10 CET] ERROR Stage1 fallback sub-agent non-compliant/no payload session=agent:main:subagent:a535d2c4-1542-43a4-bb8f-13f5d837ee14
 [2026-02-16 18:57:10 CET] Stage6 complete: post-run error scan written latest/04-log-scan.txt
+[2026-02-17 02:56:37 CET] [RUN 2026-02-17-025637] Stage6 complete: wrote post-run error scan to latest/04-log-scan.txt
