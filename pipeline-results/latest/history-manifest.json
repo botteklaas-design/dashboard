@@ -1,0 +1,119 @@
+{
+  "runs": [
+    {
+      "timestamp": "2026-02-13-230056",
+      "winner": "-",
+      "score": null
+    },
+    {
+      "timestamp": "2026-02-14-025947",
+      "winner": "Inname van track&trace + afleverbewijs + communicatie",
+      "score": null
+    },
+    {
+      "timestamp": "2026-02-14-065604",
+      "winner": "Huurgeschil triage + dossierbouwer",
+      "score": null
+    },
+    {
+      "timestamp": "2026-02-14-105555",
+      "winner": "Huurgeschil triage + dossierbouwer",
+      "score": null
+    },
+    {
+      "timestamp": "2026-02-14-145654",
+      "winner": "Huurgeschil triage + dossierbouwer",
+      "score": null
+    },
+    {
+      "timestamp": "2026-02-14-193223",
+      "winner": "MVP op 2 casetypes (onderhoud + servicekosten)",
+      "score": null
+    },
+    {
+      "timestamp": "2026-02-14-225946",
+      "winner": "Huurgeschil triage + dossierbouwer (27/30)",
+      "score": "27/30"
+    },
+    {
+      "timestamp": "2026-02-15-025558",
+      "winner": "Bewijsverzameling (foto/video/tijdlijn)",
+      "score": null
+    },
+    {
+      "timestamp": "2026-02-15-065555",
+      "winner": "-",
+      "score": null
+    },
+    {
+      "timestamp": "2026-02-15-105753",
+      "winner": "-",
+      "score": null
+    },
+    {
+      "timestamp": "2026-02-15-145604",
+      "winner": "Huurgebreken dossierbouwer",
+      "score": "26/30"
+    },
+    {
+      "timestamp": "2026-02-15-185844",
+      "winner": "Juridische briefgenerator",
+      "score": null
+    },
+    {
+      "timestamp": "2026-02-15-225744",
+      "winner": "Juridische briefgenerator",
+      "score": null
+    },
+    {
+      "timestamp": "2026-02-16-025600",
+      "winner": "Juridische briefgenerator",
+      "score": "25/30"
+    },
+    {
+      "timestamp": "2026-02-16-065606",
+      "winner": "Juridische briefgenerator met bewijskoppeling",
+      "score": "25/30"
+    },
+    {
+      "timestamp": "2026-02-16-105556",
+      "winner": "Juridische briefgenerator met bewijskoppeling",
+      "score": "25/30"
+    },
+    {
+      "timestamp": "2026-02-16-145823",
+      "winner": "Juridische briefgenerator met bewijskoppeling",
+      "score": "25/30"
+    },
+    {
+      "timestamp": "2026-02-16-185557",
+      "winner": "Juridische briefgenerator met bewijskoppeling",
+      "score": "25/30"
+    },
+    {
+      "timestamp": "2026-02-16-225945",
+      "winner": "-",
+      "score": null
+    },
+    {
+      "timestamp": "2026-02-17-025637",
+      "winner": "-",
+      "score": null
+    },
+    {
+      "timestamp": "2026-02-17-065553",
+      "winner": "-",
+      "score": null
+    },
+    {
+      "timestamp": "2026-02-17-105559",
+      "winner": "Pakketconflict claimbuilder — Tech 9/10",
+      "score": "9/10"
+    },
+    {
+      "timestamp": "2026-02-17-151756",
+      "winner": "**SMS-kosten transparantie-assistent** — 24/35 (business), Tech Feasibility **8/10**",
+      "score": "24/35"
+    }
+  ]
+}

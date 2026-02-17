@@ -95,6 +95,26 @@ function parseIdeas(md){
 }
 
 async function loadTrend(){
+  // Prefer manifest (works on hosts without directory listing, e.g. Render)
+  try {
+    const mfRaw = await txt('history-manifest.json');
+    const mf = mfRaw ? JSON.parse(mfRaw) : {runs:[]};
+    const runs = (mf.runs || []).slice(-8);
+    if(runs.length){
+      const points=runs.map(r=>{
+        const s=(r.score||'0/35').match(/(\d+)\/(\d+)/)||[];
+        const num=s[1]?parseInt(s[1],10):0;
+        const den=s[2]?parseInt(s[2],10):35;
+        const pct=den?Math.round((num/den)*100):0;
+        return {t:r.timestamp,winner:r.winner||'-',num,den,pct};
+      });
+      $('trendBars').innerHTML=points.map(p=>`<div class="bar" style="height:${Math.max(8,p.pct)}px"><span>${p.num}/${p.den}<br>${p.t.slice(5)}</span></div>`).join('');
+      $('winnerTrend').innerHTML=points.map(p=>`• ${p.t}: <b>${p.winner}</b>`).join('<br>');
+      return;
+    }
+  } catch(e) {}
+
+  // Fallback: try directory listing (works locally with python http.server)
   const listing = await txt('../history/');
   if(!listing){ $('trendBars').innerHTML='<div class="k">Geen history listing beschikbaar</div>'; return; }
   const ts=[...listing.matchAll(/03-final-winner-summary-(\d{4}-\d{2}-\d{2}-\d{6})\.md/g)].map(m=>m[1]);
