@@ -37,8 +37,11 @@ def parse_validation_report():
         }
 
 
-def classify_status(validation_pass, logscan_text):
+def classify_status(validation_pass, logscan_text, recovery_mode=False):
     scan_l = (logscan_text or '').lower()
+
+    if recovery_mode:
+        return 'amber'
 
     severe_terms = ['fatal', 'panic', 'hard fail', 'validation failed hard']
     if validation_pass is False:
@@ -51,6 +54,15 @@ def classify_status(validation_pass, logscan_text):
         return 'amber'
 
     return 'green'
+
+
+def parse_recovery_metadata(meta):
+    mode = bool(re.search(r'^recovery_mode:\s*true\s*$', meta or '', re.M | re.I))
+    codes = []
+    m = re.search(r'^recovery_reason_codes:\s*([^\n]+)\s*$', meta or '', re.M | re.I)
+    if m:
+        codes = [c.strip() for c in m.group(1).split(',') if c.strip()]
+    return mode, codes
 
 
 def freshness(meta, run_ts):
@@ -113,11 +125,13 @@ if m:
     recommended = int(m.group(1))
 
 validation = parse_validation_report()
-status = classify_status(validation['pass'], logscan)
+recovery_mode, recovery_codes = parse_recovery_metadata(meta)
+status = classify_status(validation['pass'], logscan, recovery_mode=recovery_mode)
+error_codes = sorted(list({*(validation['errorCodes'] or []), *recovery_codes}))
 quality = {
-    'freshness': freshness(meta, run_ts),
+    'freshness': 'fallback' if recovery_mode else freshness(meta, run_ts),
     'validationPass': validation['pass'],
-    'errorCodes': validation['errorCodes'],
+    'errorCodes': error_codes,
 }
 
 # Trend from history summaries

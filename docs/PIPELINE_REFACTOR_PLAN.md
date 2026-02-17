@@ -19,6 +19,14 @@ Increase reliability, reduce cost variance, and make dashboard publishing determ
 3. Normalized error codes in logs.
 4. Automatic recovery path with explicit `amber` status.
 
+## v1.2b (completed)
+- [x] Added `scripts/pipeline_auto_recovery.py` for deterministic fallback execution when validation fails.
+- [x] Recovery writes/repairs `02-business-analysis.md` and `03-final-winner-summary.md` with `RECOVERY_DRAFT` marker when needed.
+- [x] Recovery appends metadata to `latest/00-run-metadata.txt` (`recovery_mode`, `recovery_reason_codes`).
+- [x] Recovery appends diagnostics to `latest/pipeline-debug.log` with `AUTO_RECOVERY` prefix.
+- [x] Dashboard state now signals amber + fallback freshness and propagates recovery reason codes.
+- [x] Cron run-order updated to validate → recover → revalidate → generate dashboard.
+
 ## v2.0
 1. State-machine orchestrator with resumable runs.
 2. Event-driven dashboard (manifest-only reads).
