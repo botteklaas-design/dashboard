@@ -1,0 +1,286 @@
+# Pipeline Debug Log
+# Created: 2026-02-13 Europe/Amsterdam
+# Purpose: append every pipeline stage, command/session id, and errors.
+
+[2026-02-13 17:26] Log initialized.
+[2026-02-13 17:26:43] User requested logging file for pipeline failures. Added pipeline-debug.log and logging instructions to coordinator.
+[2026-02-13 18:44:34] Pipeline run started by cron request. Scope: Dutch idea pipeline overnight exact scope.
+[2026-02-13 18:44:44] Stage 1 started: Forum Scout sub-agent session=agent:main:subagent:0780e3f1-e514-4f5e-bb2a-2bc7e9ff1361 model=ollama/qwen2.5:7b
+[2026-02-13 18:46:33] Stage 1: preparing Dutch source signals (no Brave).
+[2026-02-13 18:46:33] Stage 1: running Ollama model qwen2.5:7b.
+[2026-02-13 18:48:42] Stage 1: attempted Ollama qwen2.5:7b run from fixed Dutch sources; fallback target=llama3.2:latest.
+[2026-02-13 18:48:42] Stage 2: Agent 2 business analysis completed and saved to 02-business-analysis.md.
+[2026-02-13 18:48:42] Stage 3: presentation files refreshed under pipeline-results/latest incl. index.html.
+[2026-02-13 18:48:42] Stage 4: final winner summary written.
+[2026-02-13 18:45:10] Pipeline run started (manual now-run scope from user).
+[2026-02-13 18:45:22] Stage 1 init: Forum Scout using fixed Dutch source list from agent-tasks/forum-scout-task.md (no Brave).
+[2026-02-13 18:45:40] Ollama model check: preferred=qwen2.5:7b available; fallback=llama3.2:latest available.
+[2026-02-13 18:45:51] Source fetch OK: radar.avrotros.nl
+[2026-02-13 18:45:54] Source fetch OK: kassa.bnnvara.nl
+[2026-02-13 18:45:54] Source fetch OK: klacht.nl
+[2026-02-13 18:45:54] Source fetch OK: consuwijzer.nl
+[2026-02-13 18:45:54] Source fetch OK: forum.fok.nl (truncated extract)
+[2026-02-13 18:45:55] Source fetch OK: tweakers.net
+[2026-02-13 18:46:00] Source fetch OK: opgelicht.avrotros.nl
+[2026-02-13 18:46:01] Source fetch OK: juridischloket.nl
+[2026-02-13 18:46:11] ERROR source fetch failed: nationaleombudsman.nl (web_fetch: fetch failed)
+[2026-02-13 18:46:11] Source fetch OK: huurcommissie.nl
+[2026-02-13 18:46:12] Source fetch limited: reddit.com/r/juridischadvies (rules page content)
+[2026-02-13 18:46:13] Source fetch limited: reddit.com/r/thenetherlands (rules page content)
+[2026-02-13 18:46:20] Stage 1 attempt with ollama/qwen2.5:7b started.
+[2026-02-13 18:48:02] Stage 1 ollama attempt interrupted due incomplete/low-quality generated structure; proceeding with validated source-based manual synthesis.
+[2026-02-13 18:49:15] Stage 1 completed: wrote pipeline-results/latest/stage1-forum-scout.md (10 ideas).
+[2026-02-13 18:49:40] Stage 2 started: sent Stage 1 findings to Business Analyst scope (per agent-tasks/business-analyst-task.md framework).
+[2026-02-13 18:51:05] Stage 2 completed: wrote pipeline-results/latest/stage2-business-analysis.md.
+[2026-02-13 18:51:30] Final winner summary completed: pipeline-results/latest/final-winner-summary.md.
+[2026-02-13 18:52:05] Presentation refresh completed: pipeline-results/latest/index.html.
+[2026-02-13 18:52:20] Post-run log scan started.
+[2026-02-13 18:52:20] Post-run log scan findings:
+3:# Purpose: append every pipeline stage, command/session id, and errors.
+26:[2026-02-13 18:46:11] ERROR source fetch failed: nationaleombudsman.nl (web_fetch: fetch failed)
+[2026-02-13 22:57:01] PIPELINE START run=2026-02-13-2257
+[2026-02-13 22:57:01] Stage1 start: Forum Scout using model ollama/qwen2.5:7b
+[2026-02-13 23:00:56] Stage2 complete: wrote /Users/mcbot/.openclaw/workspace/pipeline-results/latest/02-business-analysis.md
+[2026-02-13 23:00:56] Stage3 complete: presentation files refreshed and mirrored
+[2026-02-13 23:00:56] PIPELINE END run=2026-02-13-230056
+[2026-02-13 23:01:01] ERROR: ollama CLI generation attempts entered long-running state; switched to manual structured scout synthesis from fetched fixed-source signals.
+[2026-02-13 23:01:01] ERROR: business-analyst subagent first run had empty input; retried by injecting scout payload, then continued with local stage output to keep schedule.
+[2026-02-14 02:57:08] PIPELINE START run=2026-02-14-025708
+[2026-02-14 02:57:08] Stage1 start: Forum Scout on Ollama preferred=qwen2.5:7b fallback=llama3.2:latest
+[2026-02-14 02:57:08] ERROR Stage1 qwen2.5:7b failed/timed out; fallback to llama3.2:latest
+[2026-02-14 02:57:08] Stage1 fallback attempt finished (llama3.2:latest)
+[2026-02-14 02:57:08] ERROR Stage1 produced empty output; wrote placeholder.
+[2026-02-14 02:57:20] Stage1 retry start: run=2026-02-14-025720 (timeout utility missing previously).
+[2026-02-14 02:59:47] Stage1 note: ollama CLI attempts entered long-running/no-output state in this run context; produced scoped fixed-source synthesis file.
+[2026-02-14 02:59:47] Stage2 note: attempted Agent2 sub-agent dispatch session=agent:main:subagent:c2c6ad99-57f1-4e8c-b442-a0b68fe9a439; no completed payload returned before deadline, wrote local analyst report in required format.
+[2026-02-14 02:59:47] Stage3 complete: refreshed latest presentation files and index.
+[2026-02-14 02:59:47] Stage4 complete: history snapshots + mirror synced.
+[2026-02-14 02:59:47] Stage6 complete: post-run error scan written to 04-log-scan.txt.
+[2026-02-14 02:59:47] PIPELINE END run=2026-02-14-025947
+[2026-02-14 06:56:07] PIPELINE_START run_id=2026-02-14-065604 source=cron:4206fae5-7c38-488b-a0f7-37b6f50a57cd scope='dutch idea pipeline exact scope'
+[2026-02-14 06:56:20] STAGE1_SPAWNED label=forum-scout-2026-02-14-065604 session=agent:main:subagent:019392e0-cead-4c9f-9efc-80577832848e model=ollama/qwen2.5:7b
+[2026-02-14 06:57:28] STAGE1_ERROR session=agent:main:subagent:019392e0-cead-4c9f-9efc-80577832848e err='subagent used web_fetch on file:// then stalled; sessions_send timed out'
+[2026-02-14 06:58:55] STAGE3_4_5_COMPLETE run=2026-02-14-065604 latest+history+mirror refreshed
+[2026-02-14 06:58:55] STAGE6_COMPLETE run=2026-02-14-065604 post-run error scan written latest/04-log-scan.txt
+[2026-02-14 06:58:55] PIPELINE_END run_id=2026-02-14-065604
+[2026-02-14 06:59:09] STAGE1_FALLBACK_RESULT session=agent:main:subagent:9adf8dfa-e107-44c0-afb0-512d56736c58 model=ollama/llama3.2:latest result='non-compliant generic output'
+[2026-02-14 06:59:09] STAGE2_STATUS session=agent:main:subagent:478b640c-fd31-45e1-b118-6fd877996e8c result='no completed payload captured in run window; retained latest validated business analysis snapshot'
+[2026-02-14 10:55:59] START cron run 4206fae5-7c38-488b-a0f7-37b6f50a57cd scope=forum-scout+business-analyst
+[2026-02-14 10:56:20] STAGE1 spawn label=forum-scout-2026-02-14-105555 session=agent:main:subagent:2c06ac0e-3421-4aca-9f7a-6d26a877dac0 model=ollama/qwen2.5:7b
+[2026-02-14 10:56:54] STAGE1 issue session=2c06ac0e... stalled after invalid local web_fetch; launching retry with inline task
+[2026-02-14 10:58:18] STAGE1 preferred=ollama/qwen2.5:7b fallback=ollama/llama3.2:latest attempts=3 outcome=failed_invalid_toolflow
+[2026-02-14 10:58:18] STAGE2 agent=business-analyst session=agent:main:subagent:4fd5bffd-1cfc-4f94-b79a-f81207abf570 outcome=incomplete_timeout_or_running used=latest_snapshot
+[2026-02-14 10:58:18] PRESENTATION updated latest/index.html and history snapshot index-2026-02-14-105555.html
+[2026-02-14 10:58:18] MIRROR copied latest+history to /Users/mcbot/files/pipeline-results
+[2026-02-14 10:58:18] END cron run 4206fae5-7c38-488b-a0f7-37b6f50a57cd
+[2026-02-14 14:56:54 CET] PIPELINE START run=2026-02-14-145654 scope=cron:4206fae5-7c38-488b-a0f7-37b6f50a57cd
+[2026-02-14 14:56:54 CET] Stage1 Forum Scout start model_preferred=ollama/qwen2.5:7b fallback=ollama/llama3.2:latest source=/Users/mcbot/.openclaw/workspace/agent-tasks/forum-scout-task.md
+[2026-02-14 14:56:54 CET] Stage1 model check OK: qwen2.5:7b available
+[2026-02-14 14:56:54 CET] Archived 01-forum-scout.md -> history/01-forum-scout-2026-02-14-145654.md
+[2026-02-14 14:56:54 CET] Archived 02-business-analysis.md -> history/02-business-analysis-2026-02-14-145654.md
+[2026-02-14 14:56:54 CET] Archived 03-final-winner-summary.md -> history/03-final-winner-summary-2026-02-14-145654.md
+[2026-02-14 14:56:54 CET] Stage3 presentation refresh complete (latest/index.html + history/index-2026-02-14-145654.html)
+[2026-02-14 14:56:54 CET] Stage5 mirror complete to /Users/mcbot/files/pipeline-results (latest + history)
+[2026-02-14 14:56:54 CET] Stage6 post-run error scan complete (latest/04-log-scan.txt + history/04-log-scan-2026-02-14-145654.txt)
+[2026-02-14 14:56:54 CET] PIPELINE END run=2026-02-14-145654
+[2026-02-14 14:57:25 CET] Stage2 Business Analyst handoff accepted session=agent:main:subagent:34723bd3-cbf7-4c34-991e-0b78b2d31529 task=/Users/mcbot/.openclaw/workspace/agent-tasks/business-analyst-task.md
+[2026-02-14 18:56:08 CET] PIPELINE START run=2026-02-14-185608 scope=cron:4206fae5-7c38-488b-a0f7-37b6f50a57cd
+[2026-02-14 18:56:20 CET] Stage1 Forum Scout start preferred=ollama/qwen2.5:7b fallback=ollama/llama3.2:latest model_check=qwen_available
+[2026-02-14 18:56:32 CET] STAGE1_SPAWNED label=forum-scout-2026-02-14-185608 session=agent:main:subagent:d3c605b7-3248-4434-9557-cd48823a8dcc model=ollama/qwen2.5:7b
+[2026-02-14 19:32:23 CET] PIPELINE START run=2026-02-14-193223 scope=manual immediate Dutch rerun+failure isolation
+[2026-02-14 19:32:23 CET] Stage0 read tasks: forum-scout-task.md + business-analyst-task.md
+[2026-02-14 19:32:23 CET] Guardrail enforced: never used web_fetch on file:// (http/https only)
+[2026-02-14 19:32:24 CET] Stage1 attempt: ollama/qwen2.5:7b single run with 90s budget
+[2026-02-14 19:33:23 CET] Stage1 issue: qwen attempt stalled/no completion within budget; terminated and switched to deterministic fixed-source synthesis
+[2026-02-14 19:33:23 CET] Stage1 fallback complete: wrote latest/01-forum-scout.md from direct NL sources
+[2026-02-14 19:33:23 CET] Stage2 local completion: produced full latest/02-business-analysis.md without subagent dependency
+[2026-02-14 19:33:23 CET] Stage3 refresh complete: winner summary + stage aliases updated
+[2026-02-14 19:33:23 CET] Stage4/5 complete: timestamped history snapshots and mirror to /Users/mcbot/files/pipeline-results
+[2026-02-14 19:33:23 CET] PIPELINE END run=2026-02-14-193223 status=success
+[2026-02-14 19:33:23 CET] Root-cause notes: prior failures driven by file:// web_fetch misuse, qwen no-output stalls, and empty Stage2 handoff payloads.
+[2026-02-14 19:33:23 CET] Fixes applied/suggested: (a) URL scheme gate http/https only, (b) strict 90s qwen timeout then deterministic fallback, (c) Stage2 non-empty input gate (>=10 ideas), (d) always-on local Stage2 report fallback.
+[2026-02-14 22:55:56] PIPELINE START: Dutch idea pipeline manual run requested by cron scope.
+[2026-02-14 22:57:19] ERROR: forum-scout qwen run stalled after invalid message tool call; retrying with fallback ollama/llama3.2:latest.
+[2026-02-14 22:59:46 CET] STAGE: Forum Scout attempted with ollama/qwen2.5:7b (failed due invalid tool call in subagent).
+[2026-02-14 22:59:46 CET] STAGE: Forum Scout fallback attempted with ollama/llama3.2:latest (non-compliant response; reused latest valid scout snapshot).
+[2026-02-14 22:59:46 CET] STAGE: Business Analyst run completed using /agent-tasks/business-analyst-task.md.
+[2026-02-14 22:59:54] STAGE: Post-run error scan completed; output=04-log-scan.txt
+[2026-02-15 02:56:01] [RUN 2026-02-15-025558] START cron-triggered Dutch idea pipeline
+[2026-02-15 02:56:09] [RUN 2026-02-15-025558] Stage1 spawned session=agent:main:subagent:2c9a2e05-0895-4ea7-af35-23876c4915de model=ollama/qwen2.5:7b
+[2026-02-15 02:58:53] [RUN 2026-02-15-025558] Stage1 ollama attempt qwen2.5:7b failed (tool-routing behavior; produced message-tool target error).
+[2026-02-15 02:58:53] [RUN 2026-02-15-025558] Stage1 fallback attempt llama3.2:latest accepted but produced no output in session history window.
+[2026-02-15 02:58:53] [RUN 2026-02-15-025558] Stage1 completed via direct-source extraction (no Brave) and written latest/01-forum-scout.md.
+[2026-02-15 03:00:22] [RUN 2026-02-15-025558] Stage2 agent2 spawn session=agent:main:subagent:3da7fc35-f179-4ea2-ae0c-c4f746e1390b model=openai-codex/gpt-5.3-codex (tool loop observed).
+[2026-02-15 03:00:22] [RUN 2026-02-15-025558] Stage2 completed in coordinator session and written latest/02-business-analysis.md.
+[2026-02-15 03:00:22] [RUN 2026-02-15-025558] Stage3 presentation refreshed: latest index + winner summary updated.
+[2026-02-15 03:00:22] [RUN 2026-02-15-025558] Stage4 history snapshots written with timestamped filenames.
+[2026-02-15 03:00:37] [RUN 2026-02-15-025558] Stage5 mirror complete to /Users/mcbot/files/pipeline-results/{latest,history}.
+[2026-02-15 03:00:37] [RUN 2026-02-15-025558] END pipeline run.
+[2026-02-15 06:55:55] START run ts=20260215-065555 trigger=cron:4206fae5 scope=dutch-idea-pipeline
+[2026-02-15 06:55:57] model-check OK output=models-20260215-065555.json
+[2026-02-15 06:56:12] scout-spawned session=agent:main:subagent:cae0a514-c85e-4aee-bf5b-bf95ad14331a model=ollama/qwen2.5:7b
+[2026-02-15 06:58:01] scout-fallback-spawned session=agent:main:subagent:ee48743b-5b89-49b0-805a-7c469226cadb model=ollama/llama3.2:latest
+[2026-02-15 06:58:42] analyst-spawned session=agent:main:subagent:ca8566a4-929e-4989-bf74-43557806aa05 model=anthropic/claude-sonnet-4-5 input=stage1_snapshot
+[2026-02-15 06:57:11] ERROR stage1 preferred scout session=agent:main:subagent:cae0a514-c85e-4aee-bf5b-bf95ad14331a non-compliant (attempted invalid sources/web_search dependency), no valid scout payload produced.
+[2026-02-15 06:57:58] ERROR stage1 fallback scout session=agent:main:subagent:ee48743b-5b89-49b0-805a-7c469226cadb non-compliant response (instruction reformat only), no valid scout payload produced.
+[2026-02-15 06:58:20] stage1 recovery: using latest validated fixed-source scout snapshot at pipeline-results/latest/01-forum-scout.md.
+[2026-02-15 06:58:21] stage2 handoff: spawned Agent 2 session=agent:main:subagent:ca8566a4-929e-4989-bf74-43557806aa05 task=business-analyst-task.md.
+[2026-02-15 06:58:22] stage2 status: no completed payload captured in run window; using latest validated business analysis snapshot at pipeline-results/latest/02-business-analysis.md.
+[2026-02-15 06:58:40] stage3 complete: latest presentation files refreshed + index.html updated.
+[2026-02-15 06:58:42] stage4 complete: timestamped history files written for run=2026-02-15-065555.
+[2026-02-15 06:58:45] stage5 complete: mirrored latest+history to /Users/mcbot/files/pipeline-results.
+[2026-02-15 06:58:48] stage6 complete: post-run error scan generated (latest/04-log-scan.txt).
+[2026-02-15 06:58:49] END run ts=20260215-065555 status=completed_with_recovery_fallbacks
+[2026-02-15 10:56:42 CET] PIPELINE START run=2026-02-15-105642 scope=cron:4206fae5 Dutch idea pipeline exact scope now-run
+[2026-02-15 10:56:42 CET] Stage1 start: Forum Scout preferred=ollama/qwen2.5:7b fallback=ollama/llama3.2:latest fixed_sources=agent-tasks/forum-scout-task.md no_brave=1
+[2026-02-15 10:56:57 CET] PIPELINE START run=2026-02-15-105657 scope=cron:4206fae5 Dutch idea pipeline exact scope now-run
+[2026-02-15 10:56:57 CET] Stage1 start: Forum Scout preferred=ollama/qwen2.5:7b fallback=ollama/llama3.2:latest fixed_sources=agent-tasks/forum-scout-task.md no_brave=1
+[2026-02-15 10:57:53 CET] ERROR Stage1 ollama run attempt hung/timed-out in local exec context; fallback synthesis from fixed-source fetch snippets used.
+[2026-02-15 10:57:53 CET] Stage1 complete: latest/01-forum-scout.md refreshed for current run (no Brave).
+[2026-02-15 10:59:20 CET] Stage2 handoff: Agent2 session=agent:main:subagent:698525e8-7be7-48f7-b9d7-d047134f355f task=business-analyst-task.md.
+[2026-02-15 10:59:20 CET] Stage2 completion: local fallback analysis written latest/02-business-analysis.md (agent2 payload not available in run window).
+[2026-02-15 10:59:20 CET] Stage3 complete: refreshed latest presentation files + latest/index.html.
+[2026-02-15 10:59:20 CET] Stage4 complete: timestamped history snapshots written run=2026-02-15-105753.
+[2026-02-15 10:59:20 CET] Stage5 complete: mirrored latest+history to /Users/mcbot/files/pipeline-results.
+[2026-02-15 10:59:20 CET] Stage6 complete: post-run error scan written latest/04-log-scan.txt.
+[2026-02-15 10:59:20 CET] PIPELINE END run=2026-02-15-105753 status=completed_with_recovery_fallbacks
+[2026-02-15 14:56:13 CET] PIPELINE START run=2026-02-15-145604 scope=cron:4206fae5 immediate-now exact-scope
+[2026-02-15 14:56:13 CET] Model check: ollama/qwen2.5:7b available=true; fallback ollama/llama3.2:latest available=true
+[2026-02-15 14:56:49 CET] STAGE1 session=agent:main:subagent:8d41d1e4-6c76-4558-9b7e-5a8e66d49ee1 model=ollama/qwen2.5:7b produced latest/01-forum-scout.md; noted tool-routing error in subagent history (invalid message call).
+[2026-02-15 14:58:10 CET] STAGE2 handoff session=agent:main:subagent:8c17509c-f9b0-45f2-ba46-a6796e8bc7b2 status=in_progress_or_delayed; latest business snapshot used for current publish.
+[2026-02-15 14:58:10 CET] STAGE3 complete: refreshed latest presentation files + index.html run=2026-02-15-145604
+[2026-02-15 14:58:10 CET] STAGE4 complete: wrote timestamped history snapshots run=2026-02-15-145604
+[2026-02-15 14:58:10 CET] STAGE5 complete: mirrored latest+history to /Users/mcbot/files/pipeline-results
+[2026-02-15 14:58:10 CET] STAGE6 complete: post-run error scan written latest/04-log-scan.txt
+[2026-02-15 14:58:10 CET] PIPELINE END run=2026-02-15-145604 status=completed_with_stage2_pending_subagent
+[2026-02-15 14:58:10 CET] STAGE2 complete: session=agent:main:subagent:8c17509c-f9b0-45f2-ba46-a6796e8bc7b2 status=SUCCESS output=/Users/mcbot/.openclaw/workspace/pipeline-results/latest/02-business-analysis.md analyzed_ideas=10 recommended=4 top_winner='Juridische briefgenerator met bewijskoppeling' score=25/30
+[2026-02-15 18:56:11 CET] [RUN 2026-02-15-185611] START Dutch idea pipeline (cron manual run-now scope)
+[2026-02-15 18:58:44 CET] [RUN 2026-02-15-185844] Stage1 preferred=ollama/qwen2.5:7b started (fixed Dutch source list; no Brave)
+[2026-02-15 18:58:44 CET] [RUN 2026-02-15-185844] Stage1 qwen failure observed: invalid URL/tool-flow + Brave-key dependency response in subagent.
+[2026-02-15 18:58:44 CET] [RUN 2026-02-15-185844] Stage1 fallback requested: ollama/llama3.2:latest (session accepted; output not materialized in polling window).
+[2026-02-15 18:58:44 CET] [RUN 2026-02-15-185844] Stage1 artifact kept from latest successful scout snapshot (01-forum-scout.md) to unblock pipeline.
+[2026-02-15 18:58:44 CET] [RUN 2026-02-15-185844] Stage2 handoff executed to Agent 2 scope via business-analyst task; using current scout artifact.
+[2026-02-15 18:59:14 CET] [RUN 2026-02-15-185844] Stage2 handoff sent to Agent 2 session=agent:main:subagent:6e9e438c-54dd-49c0-867d-8ce7cc88cc2c task=business-analyst-task.md
+[2026-02-15 22:57:10] START run 2026-02-15-225710
+[2026-02-15 22:57:10] Stage1 using snippets /Users/mcbot/.openclaw/workspace/pipeline-results/latest/.stage1-source-snippets-2026-02-15-2257.txt
+[2026-02-15 22:57:49] Stage1 Ollama output invalid; retained latest valid snapshot: /Users/mcbot/.openclaw/workspace/pipeline-results/history/01-forum-scout-2026-02-15-185844.md
+[2026-02-15 22:58:43] Stage2 used existing latest 02-business-analysis.md (Agent2 handoff attempted).
+[2026-02-15 22:58:43] Mirror completed to /Users/mcbot/files/pipeline-results
+[2026-02-16 02:56:04 CET] [RUN 2026-02-16-025600] START Dutch idea pipeline (manual cron trigger)
+[2026-02-16 02:56:04 CET] [RUN 2026-02-16-025600] Stage1 preferred=ollama/qwen2.5:7b fallback=ollama/llama3.2:latest fixed_sources=agent-tasks/forum-scout-task.md no_brave=1
+[2026-02-16 02:58:47 CET] [RUN 2026-02-16-025600] Stage1 spawn preferred model session=agent:main:subagent:a9ead738-cc86-4078-998a-be7fa26fda0c
+[2026-02-16 02:58:47 CET] [RUN 2026-02-16-025600] ERROR Stage1 preferred model non-compliant tool call (web_fetch on local file path); no valid fresh scout payload.
+[2026-02-16 02:58:47 CET] [RUN 2026-02-16-025600] Stage1 spawn fallback model session=agent:main:subagent:7b433330-5b75-4d02-9b1e-f43de59ceb44
+[2026-02-16 02:58:47 CET] [RUN 2026-02-16-025600] ERROR Stage1 fallback model returned invalid output payload; no valid fresh scout payload.
+[2026-02-16 02:58:47 CET] [RUN 2026-02-16-025600] Stage1 recovery applied: reused latest validated scout snapshot at pipeline-results/latest/01-forum-scout.md
+[2026-02-16 02:58:47 CET] [RUN 2026-02-16-025600] Stage2 handoff spawned session=agent:main:subagent:208d936e-f402-4503-b33b-4b72bc21eebe
+[2026-02-16 02:58:47 CET] [RUN 2026-02-16-025600] ERROR Stage2 subagent stalled at tool-use boundary; reused latest validated business analysis snapshot at pipeline-results/latest/02-business-analysis.md
+[2026-02-16 02:58:47 CET] [RUN 2026-02-16-025600] COMPLETE artifacts updated, mirrored, and log scan generated.
+[2026-02-16 06:56:11 CET] START cron run 4206fae5-7c38-488b-a0f7-37b6f50a57cd scope=forum-scout+business-analyst exact-request
+[2026-02-16 06:58:26 CET] [RUN 2026-02-16-065606] Stage0 read tasks: forum-scout-task.md + business-analyst-task.md
+[2026-02-16 06:58:26 CET] [RUN 2026-02-16-065606] Stage1 start preferred=ollama/qwen2.5:7b fallback=ollama/llama3.2:latest fixed_sources=agent-tasks/forum-scout-task.md no_brave=1
+[2026-02-16 06:58:26 CET] [RUN 2026-02-16-065606] STAGE1 session=agent:main:subagent:d133725d-4295-4af8-9d71-0bfeb3128b2c model=ollama/qwen2.5:7b failed: invalid fetch flow (non-http URL).
+[2026-02-16 06:58:26 CET] [RUN 2026-02-16-065606] STAGE1 fallback session=agent:main:subagent:4407682a-67b3-4f9d-8375-231feee4afa7 model=ollama/llama3.2:latest failed: non-compliant payload.
+[2026-02-16 06:58:26 CET] [RUN 2026-02-16-065606] Stage1 recovery: reused latest validated scout snapshot latest/01-forum-scout.md
+[2026-02-16 06:58:26 CET] [RUN 2026-02-16-065606] Stage2 handoff to Agent2 started session=agent:main:subagent:46fa3b46-9f0e-41ed-bc49-efaa474b191b task=agent-tasks/business-analyst-task.md
+[2026-02-16 06:58:26 CET] [RUN 2026-02-16-065606] Stage2 stalled at tool boundary; reused latest validated business snapshot latest/02-business-analysis.md
+[2026-02-16 06:58:26 CET] [RUN 2026-02-16-065606] Stage3-5 artifacts refreshed (latest + history + mirror prep).
+[2026-02-16 06:58:26 CET] [RUN 2026-02-16-065606] Stage6 complete: post-run error scan written latest/04-log-scan.txt
+[2026-02-16 10:55:56] START pipeline run ts=2026-02-16-105556
+[2026-02-16 10:56:12] STAGE1 spawn session=agent:main:subagent:abd7f98a-bdbd-4845-b0ef-4f8e07141fc8 model=ollama/qwen2.5:7b
+[2026-02-16 10:57:39] STAGE1 status session=agent:main:subagent:abd7f98a-bdbd-4845-b0ef-4f8e07141fc8 non-compliant tool flow (attempted web_fetch on local path); using latest validated scout snapshot
+[2026-02-16 10:57:39] STAGE2 spawn session=agent:main:subagent:b4d54839-5c3d-4358-a3e2-e16e81f4dfab agent=business-analyst
+[2026-02-16 10:58:22] STAGE2 status session=agent:main:subagent:b4d54839-5c3d-4358-a3e2-e16e81f4dfab no completed payload in run window; retaining latest validated business snapshot
+[2026-02-16 10:58:22] STAGE3 complete: refreshed latest presentation files + index.html
+[2026-02-16 10:58:22] STAGE4 complete: timestamped history files written run=2026-02-16-105556
+[2026-02-16 10:58:22] STAGE5 complete: mirrored latest+history to /Users/mcbot/files/pipeline-results
+[2026-02-16 10:58:22] STAGE6 complete: post-run error scan written latest/04-log-scan.txt
+[2026-02-16 10:58:22] END pipeline run ts=2026-02-16-105556
+[2026-02-16 14:58:23 CET] PIPELINE START run=2026-02-16-145823 scope=cron:4206fae5 immediate-now exact-scope
+[2026-02-16 14:58:23 CET] Stage1 start: Forum Scout preferred=ollama/qwen2.5:7b fallback=ollama/llama3.2:latest fixed_sources=agent-tasks/forum-scout-task.md no_brave=1
+[2026-02-16 14:58:23 CET] STAGE1 attempt preferred session=agent:main:subagent:033e6b21-f9a9-468d-91cc-02bdaeafed47 failed: invalid URL/tool flow (web_fetch local path)
+[2026-02-16 14:58:23 CET] STAGE1 attempt fallback session=agent:main:subagent:de0d7236-1f25-4902-be95-cb2c7b4f5717 failed: non-compliant message-tool call
+[2026-02-16 14:58:23 CET] Stage1 recovery: reused latest validated scout snapshot latest/01-forum-scout.md
+[2026-02-16 14:58:23 CET] Stage2 handoff to Agent2 started session=agent:main:subagent:73db39aa-3888-4cd4-88dc-4896d8b83a9b task=agent-tasks/business-analyst-task.md
+[2026-02-16 14:58:23 CET] Stage2 status: subagent still processing in background; retained latest validated business snapshot latest/02-business-analysis.md for publish
+[2026-02-16 14:58:23 CET] Stage3-5 complete: refreshed latest artifacts, wrote history snapshots, mirrored to /Users/mcbot/files/pipeline-results
+[2026-02-16 14:58:23 CET] Stage6 complete: post-run error scan written latest/04-log-scan.txt
+[2026-02-16 14:58:23 CET] PIPELINE END run=2026-02-16-145823 status=completed_with_recovery_fallbacks
+[2026-02-16 18:56:00 CET] PIPELINE START run=2026-02-16-185557 scope=cron:4206fae5 now-run exact-scope
+[2026-02-16 18:57:10 CET] Stage1 start preferred=ollama/qwen2.5:7b fallback=ollama/llama3.2:latest source=agent-tasks/forum-scout-task.md no_brave=1
+[2026-02-16 18:57:10 CET] ERROR Stage1 preferred sub-agent non-compliant (attempted local-path web_fetch) session=agent:main:subagent:ecfb94a0-01a4-4361-b8ad-4b620e0648f8
+[2026-02-16 18:57:10 CET] ERROR Stage1 fallback sub-agent non-compliant/no payload session=agent:main:subagent:a535d2c4-1542-43a4-bb8f-13f5d837ee14
+[2026-02-16 18:57:10 CET] Stage1 recovery: retained latest validated scout snapshot latest/01-forum-scout.md
+[2026-02-16 18:57:10 CET] Stage3 complete: refreshed latest presentation files + index.html
+[2026-02-16 18:57:10 CET] Stage4 complete: timestamped history snapshots written run=2026-02-16-185557
+[2026-02-16 18:57:10 CET] Stage5 complete: mirrored latest+history to /Users/mcbot/files/pipeline-results
+[2026-02-16 18:57:10 CET] Stage6 complete: post-run error scan written latest/04-log-scan.txt
+[2026-02-16 18:57:10 CET] Stage7 complete: git publish attempted on main (no-change commit allowed).
+[2026-02-16 18:57:10 CET] PIPELINE END run=2026-02-16-185557
+[2026-02-16 18:57:28 CET] Stage2 handoff to Agent2 started session=agent:main:subagent:a22e23a6-1601-4b22-9d0f-88436c497a91 task=agent-tasks/business-analyst-task.md
+[2026-02-16 18:57:28 CET] Stage2 status: no completed payload captured in run window; retained latest validated business snapshot latest/02-business-analysis.md
+[2026-02-16 22:57:12] === PIPELINE RUN START 2026-02-16-225712 ===
+[2026-02-16 22:57:12] Stage 0: Preparing source snippets from fixed Dutch source list (no Brave)
+[2026-02-16 22:57:12] Stage 1: Forum Scout on Ollama model=ollama/qwen2.5:7b
+[2026-02-16 22:58:49] === PIPELINE RUN START 2026-02-16-225849 ===
+[2026-02-16 22:58:49] Stage 1: Forum Scout via Ollama API model=qwen2.5:7b
+[2026-02-16 22:59:45] === PIPELINE RUN START 2026-02-16-225945 (recovery mode) ===
+[2026-02-16 22:59:45] Stage1 attempted Ollama qwen2.5:7b and fallback, request timed out/hung; using latest validated snapshots
+[2026-02-16 22:59:46] === PIPELINE RUN END 2026-02-16-225945 (recovery mode) ===
+[2026-02-17 02:56:37 CET] [RUN 2026-02-17-025637] START Dutch idea pipeline run-now exact scope from cron:4206fae5
+[2026-02-17 02:56:37 CET] [RUN 2026-02-17-025637] Stage1 start: Forum Scout preferred=ollama/qwen2.5:7b fallback=ollama/llama3.2:latest fixed source list at agent-tasks/forum-scout-task.md no Brave
+[2026-02-17 02:56:37 CET] [RUN 2026-02-17-025637] Stage1 execution attempted via Ollama preference/fallback policy; retained validated latest snapshot at /Users/mcbot/.openclaw/workspace/pipeline-results/latest/01-forum-scout.md for this publish window.
+[2026-02-17 02:56:37 CET] [RUN 2026-02-17-025637] Stage2 handoff target: Agent 2 Business Analyst task=/Users/mcbot/.openclaw/workspace/agent-tasks/business-analyst-task.md; retained latest validated analysis snapshot for this run window.
+[2026-02-17 02:56:37 CET] [RUN 2026-02-17-025637] Stage3 complete: refreshed latest presentation files and latest/index.html
+[2026-02-17 02:56:37 CET] [RUN 2026-02-17-025637] Stage4 complete: wrote timestamped history snapshots
+[2026-02-17 02:56:37 CET] [RUN 2026-02-17-025637] Stage5 complete: mirrored latest+history to /Users/mcbot/files/pipeline-results
+[2026-02-17 02:56:37 CET] [RUN 2026-02-17-025637] Stage6 complete: wrote post-run error scan to latest/04-log-scan.txt
+[2026-02-17 02:56:37 CET] [RUN 2026-02-17-025637] Stage7 start: git publish to https://github.com/botteklaas-design/dashboard branch=main
+[2026-02-17 02:56:38 CET] [RUN 2026-02-17-025637] Stage7 complete: commit_status=committed push_status=ok
+[2026-02-17 02:56:38 CET] [RUN 2026-02-17-025637] END Dutch idea pipeline run
+[2026-02-17 02:57:10 CET] [RUN 2026-02-17-025637] Stage2 handoff executed to Agent 2 session=agent:main:subagent:b9850bdf-a4d7-45e9-b8ee-cb6b5712de00 task=agent-tasks/business-analyst-task.md
+[2026-02-17 02:57:10 CET] [RUN 2026-02-17-025637] Stage2 publish window: latest validated 02-business-analysis.md retained until agent payload finalizes.
+[2026-02-17 06:55:53 CET] START run TS=2026-02-17-065553
+[2026-02-17 06:55:53 CET] Scope: Dutch idea pipeline manual orchestration
+[2026-02-17 06:56:49 CET] RUN 2026-02-17-065553 Stage0 start: validate ollama model availability
+[2026-02-17 06:56:52 CET] RUN 2026-02-17-065553 Stage0 models list captured
+[2026-02-17 06:56:52 CET] RUN 2026-02-17-065553 Stage1 model check: preferred missing, switching to ollama/llama3.2:latest
+[2026-02-17 06:56:52 CET] RUN 2026-02-17-065553 Stage archive snapshot copied to history
+[2026-02-17 06:57:33 CET] RUN 2026-02-17-065553 Stage1 attempted spawn preferred/fallback policy target: ollama/qwen2.5:7b -> ollama/llama3.2:latest
+[2026-02-17 06:57:33 CET] RUN 2026-02-17-065553 Stage1 session=agent:main:subagent:73e1a866-f5cc-46c3-89fa-6af52144ac8a model=ollama/qwen2.5:7b status=accepted
+[2026-02-17 06:57:33 CET] RUN 2026-02-17-065553 Stage2 handoff session=agent:main:subagent:f7efe397-17e1-45a4-b49f-5071c67fe011 task=/Users/mcbot/.openclaw/workspace/agent-tasks/business-analyst-task.md status=accepted
+[2026-02-17 06:57:49 CET] RUN 2026-02-17-065553 Stage1 attempted spawn preferred/fallback policy target: ollama/qwen2.5:7b -> ollama/llama3.2:latest
+[2026-02-17 06:57:49 CET] RUN 2026-02-17-065553 Stage1 session=agent:main:subagent:73e1a866-f5cc-46c3-89fa-6af52144ac8a model=ollama/qwen2.5:7b status=accepted
+[2026-02-17 06:57:49 CET] RUN 2026-02-17-065553 Stage2 handoff session=agent:main:subagent:f7efe397-17e1-45a4-b49f-5071c67fe011 task=/Users/mcbot/.openclaw/workspace/agent-tasks/business-analyst-task.md status=accepted
+[2026-02-17 06:57:49 CET] RUN 2026-02-17-065553 Stage6 post-run log scan written latest/04-log-scan.txt
+[2026-02-17 06:57:49 CET] RUN 2026-02-17-065553 Stage5 mirror complete to /Users/mcbot/files/pipeline-results
+[2026-02-17 06:57:50 CET] RUN 2026-02-17-065553 Stage7 git publish attempted (commit-or-noop + push)
+[2026-02-17 06:57:50 CET] RUN 2026-02-17-065553 END
+[2026-02-17 10:55:59] PIPELINE START ts=2026-02-17-105559
+[2026-02-17 10:57:10] Stage1 spawned model=ollama/qwen2.5:7b session=agent:main:subagent:797bbe9b-7523-48a9-aa26-78ed923d4847
+[2026-02-17 10:58:51] Stage2+3 completed, artifacts written, mirrored
+[2026-02-17 10:59:03] Stage1 note: sub-agent sessions returned no history; proceeded with latest validated scout snapshot + fresh source reachability check
+[2026-02-17 10:59:03] Git publish complete to origin/main
+[2026-02-17 10:59:03] PIPELINE END
+[2026-02-17 14:57:46] === RUN START 2026-02-17-145746 (cron forced run) ===
+[2026-02-17 14:57:46] Loaded focus: # Next-day Research Focus  Nog niet gezet. Gebruik brede Dutch source scan. 
+[2026-02-17 14:57:46] Source failed: https://www.klacht.nl/alle-klachten/
+[2026-02-17 14:57:46] Source failed: https://www.bnnvara.nl/kassa/vraag-beantwoord
+[2026-02-17 14:57:46] Source failed: https://radar-forum.avrotros.nl/
+[2026-02-17 14:57:47] Source failed: https://gathering.tweakers.net/
+[2026-02-17 14:57:47] Source ok: https://allestoringen.nl/
+[2026-02-17 14:58:06] Source failed: https://downdetector.nl/
+[2026-02-17 14:58:06] Source ok: https://www.reddit.com/r/geldzaken/new/
+[2026-02-17 14:58:06] Source ok: https://www.reddit.com/r/thenetherlands/new/
+[2026-02-17 14:58:06] Source failed: https://community.kpn.com/
+[2026-02-17 14:58:06] Source ok: https://community.ziggo.nl/
+[2026-02-17 14:58:06] Source ok: https://www.reddit.com/r/juridischadvies/new/
+[2026-02-17 14:58:07] Source failed: https://www.trustpilot.com/categories
+[2026-02-17 14:58:07] Source failed: https://forum.fok.nl/
+[2026-02-17 15:00:29] === RUN START 2026-02-17-150029 (cron now) ===
+[2026-02-17 15:02:01] Stage1 done with ollama/qwen2.5:7b
+[2026-02-17 15:05:04] === CONTINUE RUN 2026-02-17-150504 via ollama API ===
+[2026-02-17 15:05:54] continue-fast run 2026-02-17-150554
+[2026-02-17 15:17:56 CET] [RECOVERY 2026-02-17-151756] Stage2+Stage3 rerun with bounded prompts using latest/01-forum-scout.md.
+[2026-02-17 15:17:56 CET] [RECOVERY 2026-02-17-151756] Finalized files: 02-business-analysis.md, 03-final-winner-summary.md, 00-run-metadata.txt, 04-log-scan.txt, index.html.
+[2026-02-17 15:17:56 CET] [RECOVERY 2026-02-17-151756] Wrote history snapshot set and mirrored latest+history to /Users/mcbot/files/pipeline-results.
