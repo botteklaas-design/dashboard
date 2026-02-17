@@ -1,15 +1,30 @@
-Recovery Log Scan
-Run timestamp: 2026-02-17-151756
-Scope: finalize incomplete pipeline run with bounded Stage 2+3 regeneration
-
-Checks:
-- Stage 2 regenerated from latest/01-forum-scout.md: OK
-- Stage 3 regenerated from latest/02-business-analysis.md: OK
-- Metadata refreshed: OK
-- Enhanced styled index.html preserved (not replaced): OK
-- History snapshot set written: OK
-- Mirror to /Users/mcbot/files/pipeline-results: PENDING/see diagnostics
-- Git commit+push to dashboard main: PENDING/see diagnostics
-
-Current blocker summary:
-- None at file-generation phase.
+Run: 2026-02-17-190428
+Ollama timed out this cycle, reused last non-empty artifacts.
+{"ts": "2026-02-17T16:09:14.106110+00:00", "run_id": "67a06f20-7f93-4279-9c0f-885f1e689da2", "type": "stage_start", "stage": "INIT"}
+{"ts": "2026-02-17T16:09:14.106227+00:00", "run_id": "67a06f20-7f93-4279-9c0f-885f1e689da2", "type": "stage_end", "stage": "INIT", "ok": true, "fatal": false, "error_code": null}
+{"ts": "2026-02-17T16:09:14.106366+00:00", "run_id": "67a06f20-7f93-4279-9c0f-885f1e689da2", "type": "stage_start", "stage": "SCOUT"}
+{"ts": "2026-02-17T16:09:14.106470+00:00", "run_id": "67a06f20-7f93-4279-9c0f-885f1e689da2", "type": "stage_end", "stage": "SCOUT", "ok": true, "fatal": false, "error_code": null}
+{"ts": "2026-02-17T16:09:14.106584+00:00", "run_id": "67a06f20-7f93-4279-9c0f-885f1e689da2", "type": "stage_start", "stage": "ANALYST"}
+{"ts": "2026-02-17T16:09:14.106672+00:00", "run_id": "67a06f20-7f93-4279-9c0f-885f1e689da2", "type": "stage_end", "stage": "ANALYST", "ok": true, "fatal": false, "error_code": null}
+{"ts": "2026-02-17T16:09:14.106776+00:00", "run_id": "67a06f20-7f93-4279-9c0f-885f1e689da2", "type": "stage_start", "stage": "DEV"}
+{"ts": "2026-02-17T16:09:14.106856+00:00", "run_id": "67a06f20-7f93-4279-9c0f-885f1e689da2", "type": "stage_end", "stage": "DEV", "ok": true, "fatal": false, "error_code": null}
+{"ts": "2026-02-17T16:09:14.106958+00:00", "run_id": "67a06f20-7f93-4279-9c0f-885f1e689da2", "type": "stage_start", "stage": "VALIDATE"}
+{"ts": "2026-02-17T16:09:14.137406+00:00", "run_id": "67a06f20-7f93-4279-9c0f-885f1e689da2", "type": "stage_end", "stage": "VALIDATE", "ok": false, "fatal": false, "error_code": "VALIDATE_CMD_FAILED"}
+{"ts": "2026-02-17T16:09:14.137642+00:00", "run_id": "67a06f20-7f93-4279-9c0f-885f1e689da2", "type": "stage_start", "stage": "RECOVER"}
+{"ts": "2026-02-17T16:09:14.157180+00:00", "run_id": "67a06f20-7f93-4279-9c0f-885f1e689da2", "type": "stage_end", "stage": "RECOVER", "ok": true, "fatal": false, "error_code": null}
+{"ts": "2026-02-17T16:09:14.157378+00:00", "run_id": "67a06f20-7f93-4279-9c0f-885f1e689da2", "type": "stage_start", "stage": "REVALIDATE"}
+{"ts": "2026-02-17T16:09:14.179981+00:00", "run_id": "67a06f20-7f93-4279-9c0f-885f1e689da2", "type": "stage_end", "stage": "REVALIDATE", "ok": false, "fatal": false, "error_code": "REVALIDATE_CMD_FAILED"}
+{"ts": "2026-02-17T16:09:14.180167+00:00", "run_id": "67a06f20-7f93-4279-9c0f-885f1e689da2", "type": "run_terminal", "status": "FAILED", "recovery_used": true}
+{"ts": "2026-02-17T18:04:29.077171+00:00", "run_id": "2197821f-c568-489d-bd01-716a97243bc6", "type": "stage_start", "stage": "INIT"}
+{"ts": "2026-02-17T18:04:29.077312+00:00", "run_id": "2197821f-c568-489d-bd01-716a97243bc6", "type": "stage_end", "stage": "INIT", "ok": true, "fatal": false, "error_code": null}
+{"ts": "2026-02-17T18:04:29.077414+00:00", "run_id": "2197821f-c568-489d-bd01-716a97243bc6", "type": "stage_start", "stage": "SCOUT"}
+{"ts": "2026-02-17T18:04:29.077485+00:00", "run_id": "2197821f-c568-489d-bd01-716a97243bc6", "type": "stage_end", "stage": "SCOUT", "ok": true, "fatal": false, "error_code": null}
+{"ts": "2026-02-17T18:04:29.077570+00:00", "run_id": "2197821f-c568-489d-bd01-716a97243bc6", "type": "stage_start", "stage": "ANALYST"}
+{"ts": "2026-02-17T18:04:29.077632+00:00", "run_id": "2197821f-c568-489d-bd01-716a97243bc6", "type": "stage_end", "stage": "ANALYST", "ok": true, "fatal": false, "error_code": null}
+{"ts": "2026-02-17T18:04:29.077715+00:00", "run_id": "2197821f-c568-489d-bd01-716a97243bc6", "type": "stage_start", "stage": "DEV"}
+{"ts": "2026-02-17T18:04:29.077772+00:00", "run_id": "2197821f-c568-489d-bd01-716a97243bc6", "type": "stage_end", "stage": "DEV", "ok": true, "fatal": false, "error_code": null}
+{"ts": "2026-02-17T18:04:29.077852+00:00", "run_id": "2197821f-c568-489d-bd01-716a97243bc6", "type": "stage_start", "stage": "VALIDATE"}
+{"ts": "2026-02-17T18:04:29.100830+00:00", "run_id": "2197821f-c568-489d-bd01-716a97243bc6", "type": "stage_end", "stage": "VALIDATE", "ok": true, "fatal": false, "error_code": null}
+{"ts": "2026-02-17T18:04:29.101045+00:00", "run_id": "2197821f-c568-489d-bd01-716a97243bc6", "type": "stage_start", "stage": "PUBLISH"}
+{"ts": "2026-02-17T18:04:29.101103+00:00", "run_id": "2197821f-c568-489d-bd01-716a97243bc6", "type": "stage_end", "stage": "PUBLISH", "ok": true, "fatal": false, "error_code": null}
+{"ts": "2026-02-17T18:04:29.101199+00:00", "run_id": "2197821f-c568-489d-bd01-716a97243bc6", "type": "run_terminal", "status": "COMPLETE", "recovery_used": false}

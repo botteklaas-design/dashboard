@@ -1,23 +1,19 @@
 {
-  "runTimestamp": "2026-02-17-151756",
+  "runTimestamp": "2026-02-17-190428",
   "winner": "**SMS-kosten transparantie-assistent** — 24/35 (business), Tech Feasibility **8/10**",
   "winnerScore": "24/35",
   "ideasCount": 10,
   "recommendedCount": null,
   "status": "amber",
   "quality": {
-    "freshness": "fallback",
-    "validationPass": false,
-    "errorCodes": [
-      "SCOUT_TOO_FEW_IDEAS"
-    ]
+    "freshness": {
+      "label": "fresh",
+      "minutes": -60
+    },
+    "validationPass": true,
+    "errorCodes": []
   },
   "trend": [
-    {
-      "timestamp": "2026-02-16-105556",
-      "winner": "Juridische briefgenerator met bewijskoppeling",
-      "score": "25/30"
-    },
     {
       "timestamp": "2026-02-16-145823",
       "winner": "Juridische briefgenerator met bewijskoppeling",
@@ -52,7 +48,12 @@
       "timestamp": "2026-02-17-151756",
       "winner": "**SMS-kosten transparantie-assistent** — 24/35 (business), Tech Feasibility **8/10**",
       "score": "24/35"
+    },
+    {
+      "timestamp": "2026-02-17-190345",
+      "winner": "**SMS-kosten transparantie-assistent** — 24/35 (business), Tech Feasibility **8/10**",
+      "score": "24/35"
     }
   ],
-  "generatedAt": "2026-02-17T17:09:17.024478"
+  "generatedAt": "2026-02-17T19:04:29.166562"
 }

@@ -1,119 +1,126 @@
 {
-  "runs": [
+  "generated_from": "history winner summaries",
+  "count": 24,
+  "items": [
     {
       "timestamp": "2026-02-13-230056",
-      "winner": "-",
-      "score": null
+      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-13-230056.md",
+      "summary": "**Winner:** Bezorgbewijs-forensische tool"
     },
     {
       "timestamp": "2026-02-14-025947",
-      "winner": "Inname van track&trace + afleverbewijs + communicatie",
-      "score": null
+      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-14-025947.md",
+      "summary": "Datum: 2026-02-14"
     },
     {
       "timestamp": "2026-02-14-065604",
-      "winner": "Huurgeschil triage + dossierbouwer",
-      "score": null
+      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-14-065604.md",
+      "summary": "Datum: 14 februari 2026"
     },
     {
       "timestamp": "2026-02-14-105555",
-      "winner": "Huurgeschil triage + dossierbouwer",
-      "score": null
+      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-14-105555.md",
+      "summary": "Datum: 14 februari 2026"
     },
     {
       "timestamp": "2026-02-14-145654",
-      "winner": "Huurgeschil triage + dossierbouwer",
-      "score": null
+      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-14-145654.md",
+      "summary": "Datum: 14 februari 2026"
     },
     {
       "timestamp": "2026-02-14-193223",
-      "winner": "MVP op 2 casetypes (onderhoud + servicekosten)",
-      "score": null
+      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-14-193223.md",
+      "summary": "Datum: 2026-02-14"
     },
     {
       "timestamp": "2026-02-14-225946",
-      "winner": "Huurgeschil triage + dossierbouwer (27/30)",
-      "score": "27/30"
+      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-14-225946.md",
+      "summary": "Run timestamp: 2026-02-14-225946"
     },
     {
       "timestamp": "2026-02-15-025558",
-      "winner": "Bewijsverzameling (foto/video/tijdlijn)",
-      "score": null
+      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-15-025558.md",
+      "summary": "Datum: 2026-02-15 02:55 CET"
     },
     {
       "timestamp": "2026-02-15-065555",
-      "winner": "-",
-      "score": null
+      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-15-065555.md",
+      "summary": "Run: 2026-02-15-065555"
     },
     {
       "timestamp": "2026-02-15-105753",
-      "winner": "-",
-      "score": null
+      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-15-105753.md",
+      "summary": "Run: 2026-02-15-105753"
     },
     {
       "timestamp": "2026-02-15-145604",
-      "winner": "Huurgebreken dossierbouwer",
-      "score": "26/30"
+      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-15-145604.md",
+      "summary": "Run: 2026-02-15-145604"
     },
     {
       "timestamp": "2026-02-15-185844",
-      "winner": "Juridische briefgenerator",
-      "score": null
+      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-15-185844.md",
+      "summary": "Run: 2026-02-15-185844"
     },
     {
       "timestamp": "2026-02-15-225744",
-      "winner": "Juridische briefgenerator",
-      "score": null
+      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-15-225744.md",
+      "summary": "Run: 2026-02-15-185844"
     },
     {
       "timestamp": "2026-02-16-025600",
-      "winner": "Juridische briefgenerator",
-      "score": "25/30"
+      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-16-025600.md",
+      "summary": "Run: 2026-02-16-025600"
     },
     {
       "timestamp": "2026-02-16-065606",
-      "winner": "Juridische briefgenerator met bewijskoppeling",
-      "score": "25/30"
+      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-16-065606.md",
+      "summary": "Run: 2026-02-16-065606"
     },
     {
       "timestamp": "2026-02-16-105556",
-      "winner": "Juridische briefgenerator met bewijskoppeling",
-      "score": "25/30"
+      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-16-105556.md",
+      "summary": "Run: 2026-02-16-105556"
     },
     {
       "timestamp": "2026-02-16-145823",
-      "winner": "Juridische briefgenerator met bewijskoppeling",
-      "score": "25/30"
+      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-16-145823.md",
+      "summary": "Run: 2026-02-16-065606"
     },
     {
       "timestamp": "2026-02-16-185557",
-      "winner": "Juridische briefgenerator met bewijskoppeling",
-      "score": "25/30"
+      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-16-185557.md",
+      "summary": "Run: 2026-02-16-065606"
     },
     {
       "timestamp": "2026-02-16-225945",
-      "winner": "-",
-      "score": null
+      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-16-225945.md",
+      "summary": "Datum: 2026-02-16 22:59:45 CET"
     },
     {
       "timestamp": "2026-02-17-025637",
-      "winner": "-",
-      "score": null
+      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-17-025637.md",
+      "summary": "Datum: 2026-02-16 22:59:45 CET"
     },
     {
       "timestamp": "2026-02-17-065553",
-      "winner": "-",
-      "score": null
+      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-17-065553.md",
+      "summary": "Datum: 2026-02-16 22:59:45 CET"
     },
     {
       "timestamp": "2026-02-17-105559",
-      "winner": "Pakketconflict claimbuilder — Tech 9/10",
-      "score": "9/10"
+      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-17-105559.md",
+      "summary": "Datum: 2026-02-17"
     },
     {
       "timestamp": "2026-02-17-151756",
-      "winner": "**SMS-kosten transparantie-assistent** — 24/35 (business), Tech Feasibility **8/10**",
-      "score": "24/35"
+      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-17-151756.md",
+      "summary": "Datum: 2026-02-17"
+    },
+    {
+      "timestamp": "2026-02-17-190345",
+      "file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/03-final-winner-summary-2026-02-17-190345.md",
+      "summary": "Datum: 2026-02-17"
     }
   ]
 }

@@ -1,26 +1,39 @@
 {
   "version": "2.0",
-  "generatedAt": "2026-02-17T16:09:16.971221+00:00",
-  "runId": "67a06f20-7f93-4279-9c0f-885f1e689da2",
-  "status": "FAILED",
-  "currentStage": "FAILED",
-  "recoveryUsed": true,
-  "errorCodes": [
-    "REVALIDATE_CMD_FAILED",
-    "SCOUT_TOO_FEW_IDEAS",
-    "VALIDATE_CMD_FAILED"
-  ],
+  "generatedAt": "2026-02-17T18:04:29.122676+00:00",
+  "runId": "2197821f-c568-489d-bd01-716a97243bc6",
+  "status": "COMPLETE",
+  "currentStage": "COMPLETE",
+  "recoveryUsed": false,
+  "errorCodes": [],
   "winner": "**SMS-kosten transparantie-assistent** — 24/35 (business), Tech Feasibility **8/10**",
   "winnerScore": "24/35",
   "ideasCount": 10,
   "recommendedCount": null,
   "quality": {
-    "freshness": {
-      "label": "fresh",
-      "minutes": 21
-    },
-    "validationPass": true,
-    "errorCodes": []
+    "freshness": "fallback",
+    "validationPass": false,
+    "errorCodes": [
+      "SCOUT_TOO_FEW_IDEAS"
+    ]
   },
-  "weeklyDecision": null
+  "weeklyDecision": {
+    "version": "2.0",
+    "generatedAt": "2026-02-17T16:09:17.004535+00:00",
+    "singleProductBet": {
+      "title": "**SMS-kosten transparantie-assistent** — 24/35 (business), Tech Feasibility **8/10**",
+      "confidence": 0.61,
+      "rationale": [
+        "Latest validated winner remains: **SMS-kosten transparantie-assistent** — 24/35 (business), Tech Feasibility **8/10**.",
+        "Trend repetition count (last 10): 1.",
+        "Operational reliability context: success30=0.0, fallback30=100.0.",
+        "Recommendation favors a narrow MVP with single painful workflow and payment trigger."
+      ],
+      "killCriteria": [
+        "If <10 qualified users complete core flow in 14 days, stop.",
+        "If no clear willingness-to-pay signal (>=3 paid pilots/LOIs) in 21 days, stop.",
+        "If support burden exceeds target (manual ops >2h/day) by week 3, pivot."
+      ]
+    }
+  }
 }

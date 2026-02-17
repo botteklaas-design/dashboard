@@ -1,7 +1,6 @@
-timestamp=2026-02-17-151756
-started_at=2026-02-17 15:17:56 CET
-mode=recovery_finalize
-stage2_input=latest/01-forum-scout.md
-stage2_prompt=bounded_short
-stage3_prompt=bounded_short
-status=completed
+run_timestamp=2026-02-17-190428
+platform_mode=v2.0
+scope=exact
+policy_file=/Users/mcbot/.openclaw/workspace/config/pipeline-model-policy.json
+focus_file=/Users/mcbot/.openclaw/workspace/agent-tasks/research-focus-next-day.md
+status=ollama_timeout_used_latest_nonempty_artifacts

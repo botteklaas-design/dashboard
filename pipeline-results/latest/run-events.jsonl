@@ -13,3 +13,16 @@
 {"ts": "2026-02-17T16:09:14.157378+00:00", "run_id": "67a06f20-7f93-4279-9c0f-885f1e689da2", "type": "stage_start", "stage": "REVALIDATE"}
 {"ts": "2026-02-17T16:09:14.179981+00:00", "run_id": "67a06f20-7f93-4279-9c0f-885f1e689da2", "type": "stage_end", "stage": "REVALIDATE", "ok": false, "fatal": false, "error_code": "REVALIDATE_CMD_FAILED"}
 {"ts": "2026-02-17T16:09:14.180167+00:00", "run_id": "67a06f20-7f93-4279-9c0f-885f1e689da2", "type": "run_terminal", "status": "FAILED", "recovery_used": true}
+{"ts": "2026-02-17T18:04:29.077171+00:00", "run_id": "2197821f-c568-489d-bd01-716a97243bc6", "type": "stage_start", "stage": "INIT"}
+{"ts": "2026-02-17T18:04:29.077312+00:00", "run_id": "2197821f-c568-489d-bd01-716a97243bc6", "type": "stage_end", "stage": "INIT", "ok": true, "fatal": false, "error_code": null}
+{"ts": "2026-02-17T18:04:29.077414+00:00", "run_id": "2197821f-c568-489d-bd01-716a97243bc6", "type": "stage_start", "stage": "SCOUT"}
+{"ts": "2026-02-17T18:04:29.077485+00:00", "run_id": "2197821f-c568-489d-bd01-716a97243bc6", "type": "stage_end", "stage": "SCOUT", "ok": true, "fatal": false, "error_code": null}
+{"ts": "2026-02-17T18:04:29.077570+00:00", "run_id": "2197821f-c568-489d-bd01-716a97243bc6", "type": "stage_start", "stage": "ANALYST"}
+{"ts": "2026-02-17T18:04:29.077632+00:00", "run_id": "2197821f-c568-489d-bd01-716a97243bc6", "type": "stage_end", "stage": "ANALYST", "ok": true, "fatal": false, "error_code": null}
+{"ts": "2026-02-17T18:04:29.077715+00:00", "run_id": "2197821f-c568-489d-bd01-716a97243bc6", "type": "stage_start", "stage": "DEV"}
+{"ts": "2026-02-17T18:04:29.077772+00:00", "run_id": "2197821f-c568-489d-bd01-716a97243bc6", "type": "stage_end", "stage": "DEV", "ok": true, "fatal": false, "error_code": null}
+{"ts": "2026-02-17T18:04:29.077852+00:00", "run_id": "2197821f-c568-489d-bd01-716a97243bc6", "type": "stage_start", "stage": "VALIDATE"}
+{"ts": "2026-02-17T18:04:29.100830+00:00", "run_id": "2197821f-c568-489d-bd01-716a97243bc6", "type": "stage_end", "stage": "VALIDATE", "ok": true, "fatal": false, "error_code": null}
+{"ts": "2026-02-17T18:04:29.101045+00:00", "run_id": "2197821f-c568-489d-bd01-716a97243bc6", "type": "stage_start", "stage": "PUBLISH"}
+{"ts": "2026-02-17T18:04:29.101103+00:00", "run_id": "2197821f-c568-489d-bd01-716a97243bc6", "type": "stage_end", "stage": "PUBLISH", "ok": true, "fatal": false, "error_code": null}
+{"ts": "2026-02-17T18:04:29.101199+00:00", "run_id": "2197821f-c568-489d-bd01-716a97243bc6", "type": "run_terminal", "status": "COMPLETE", "recovery_used": false}
