@@ -86,7 +86,8 @@ function statusPill(s){
 }
 function m(re,s,d='-'){ const x=s.match(re); return x?x[1].trim():d; }
 function parseIdeas(md){
-  const re=/## Idee\s+\d+:\s+(.+)\n([\s\S]*?)(?=\n---\n\n## Idee\s+\d+:|\n# Final Ranking|$)/g;
+  // Split each idea block by the next idea header or final ranking
+  const re=/## Idee\s+\d+:\s+(.+)\n([\s\S]*?)(?=\n## Idee\s+\d+:|\n# Final Ranking|$)/g;
   const arr=[]; let x;
   while((x=re.exec(md))){
     const body=x[2];
