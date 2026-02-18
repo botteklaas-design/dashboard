@@ -1,16 +1,16 @@
 {
   "version": "2.0",
-  "generatedAt": "2026-02-18T17:58:17.693618+00:00",
+  "generatedAt": "2026-02-18T21:59:11.051172+00:00",
   "runWindow": {
     "last7": 7,
-    "last30": 9
+    "last30": 10
   },
   "successRate": {
     "last7": 85.7,
-    "last30": 77.8
+    "last30": 80.0
   },
   "fallbackRate": {
-    "last30": 11.1
+    "last30": 10.0
   },
   "runtimeTrend": [
     {
@@ -48,6 +48,10 @@
     {
       "run_id": "681d9e18-18d0-42f7-9124-ce17a5279afc",
       "runtime_sec": 130
+    },
+    {
+      "run_id": "7a33c3dd-c17d-4a06-ba5e-ff91799beeed",
+      "runtime_sec": 170
     }
   ],
   "blockerHeatmap": [

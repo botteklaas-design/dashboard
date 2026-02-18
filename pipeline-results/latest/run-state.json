@@ -5,8 +5,8 @@
   "winnerScore": "24/35",
   "quality": {
     "freshness": {
-      "label": "fresh",
-      "minutes": 181
+      "label": "stale",
+      "minutes": 422
     },
     "validationPass": true,
     "errorCodes": [],
@@ -14,5 +14,5 @@
   },
   "scoutFresh": true,
   "scoutSource": "fresh",
-  "updatedAt": "2026-02-18T18:58:25.553825"
+  "updatedAt": "2026-02-18T22:59:18.287258"
 }

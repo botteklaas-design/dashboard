@@ -1,19 +1,19 @@
 {
   "version": "2.0",
-  "generatedAt": "2026-02-18T17:58:17.693618+00:00",
+  "generatedAt": "2026-02-18T21:59:11.051172+00:00",
   "count": 10,
   "selectedIdeaId": 1,
   "ideas": [
     {
       "id": 1,
-      "title": "Klachten en Klachtensites",
+      "title": "Klachten en Oplossingen",
       "score": "-",
       "repetition": "-",
       "confidence": "scout-only",
       "bmc": {
-        "problem": "Het systeem voor inlossen van klachten kan verbeterd worden, omdat vele consumenten hulp nodig hebben bij het aanvangen en voltooien van klachten.",
+        "problem": "Klachten blijven een belangrijk probleem in Nederland, met vele klanten die hulp zoeken bij het oplossen van diverse problemen.",
         "icp": "Consumenten/KB",
-        "value": "Klachten en Klachtensites — scout-signaal (nog niet volledig geanalyseerd)",
+        "value": "Klachten en Oplossingen — scout-signaal (nog niet volledig geanalyseerd)",
         "revenue": "-",
         "mvp": "-",
         "risk": "-"
@@ -21,14 +21,14 @@
     },
     {
       "id": 2,
-      "title": "Onbeschikbare Forums",
+      "title": "Online Forum Discussies",
       "score": "-",
       "repetition": "-",
       "confidence": "scout-only",
       "bmc": {
-        "problem": "Er kunnen problemen zijn met het hosting en beheer van de forums, wat kan leiden tot onveilige of niet-functionele platformen voor consumentenadvies.",
+        "problem": "Technische problemen zijn een algemeen probleem die talloze gebruikers helpen op te lossen door interactie in online community-forums.",
         "icp": "Consumenten/KB",
-        "value": "Onbeschikbare Forums — scout-signaal (nog niet volledig geanalyseerd)",
+        "value": "Online Forum Discussies — scout-signaal (nog niet volledig geanalyseerd)",
         "revenue": "-",
         "mvp": "-",
         "risk": "-"
@@ -36,14 +36,14 @@
     },
     {
       "id": 3,
-      "title": "Huurcommissie.nl Problemen",
+      "title": "Huurcommissie Problemen",
       "score": "-",
       "repetition": "-",
       "confidence": "scout-only",
       "bmc": {
-        "problem": "Er kunnen problemen zijn met het hosting of beheer van de website, wat kan leiden tot onveilige of niet-functionele platformen voor consumentenadvies.",
+        "problem": "De Huurcommissie biedt een belangrijke service voor consumenten en huurders die juridisch advies nodig hebben.",
         "icp": "Consumenten/KB",
-        "value": "Huurcommissie.nl Problemen — scout-signaal (nog niet volledig geanalyseerd)",
+        "value": "Huurcommissie Problemen — scout-signaal (nog niet volledig geanalyseerd)",
         "revenue": "-",
         "mvp": "-",
         "risk": "-"
@@ -51,14 +51,14 @@
     },
     {
       "id": 4,
-      "title": "Fok.nl Forum Problemen",
+      "title": "Consumentenadvies",
       "score": "-",
       "repetition": "-",
       "confidence": "scout-only",
       "bmc": {
-        "problem": "Problemen met de forum-site kunnen leiden tot gebrekkige service voor consumentenadvies en discussie over klachten.",
+        "problem": "Het ontbreken van voldoende en betrouwbare informatie kan leiden tot problemen voor consumenten, die op zoek zijn naar betrouwbaar advies.",
         "icp": "Consumenten/KB",
-        "value": "Fok.nl Forum Problemen — scout-signaal (nog niet volledig geanalyseerd)",
+        "value": "Consumentenadvies — scout-signaal (nog niet volledig geanalyseerd)",
         "revenue": "-",
         "mvp": "-",
         "risk": "-"
@@ -66,14 +66,14 @@
     },
     {
       "id": 5,
-      "title": "JuridischAdvies en Geldzaken",
+      "title": "Geschillencommissie Klachten",
       "score": "-",
       "repetition": "-",
       "confidence": "scout-only",
       "bmc": {
-        "problem": "Problemen met deze subreddits kunnen leiden tot gebrekkige service voor consumentenadvies en discussie over klachten.",
+        "problem": "De Geschillencommissie speelt een cruciale rol in het resolvatieproces, en gebruikers zoeken hulp via hun website.",
         "icp": "Consumenten/KB",
-        "value": "JuridischAdvies en Geldzaken — scout-signaal (nog niet volledig geanalyseerd)",
+        "value": "Geschillencommissie Klachten — scout-signaal (nog niet volledig geanalyseerd)",
         "revenue": "-",
         "mvp": "-",
         "risk": "-"
@@ -81,14 +81,14 @@
     },
     {
       "id": 6,
-      "title": "Geschillencommissie.nl",
+      "title": "Juridische Loopen",
       "score": "-",
       "repetition": "-",
       "confidence": "scout-only",
       "bmc": {
-        "problem": "Problemen met het hosting of beheer kunnen leiden tot gebrekkige service voor consumenten die hulp nodig hebben bij geschillen.",
+        "problem": "De complexiteit van het recht kan ervoor zorgen dat consumenten op zoek zijn naar professionele hulp via online resources.",
         "icp": "Consumenten/KB",
-        "value": "Geschillencommissie.nl — scout-signaal (nog niet volledig geanalyseerd)",
+        "value": "Juridische Loopen — scout-signaal (nog niet volledig geanalyseerd)",
         "revenue": "-",
         "mvp": "-",
         "risk": "-"
@@ -96,14 +96,14 @@
     },
     {
       "id": 7,
-      "title": "ConsuWijzer.nl",
+      "title": "Huurdershulp Opzoeken",
       "score": "-",
       "repetition": "-",
       "confidence": "scout-only",
       "bmc": {
-        "problem": "Problemen met de hosting en beheer kunnen leiden tot gebrekkige service voor consumentenadvicesite.",
+        "problem": "De Huurcommissie biedt cruciaal hulp bij juridische kwesties voor huurders, wat aantoont hoeveel vraag er is naar deze service.",
         "icp": "Consumenten/KB",
-        "value": "ConsuWijzer.nl — scout-signaal (nog niet volledig geanalyseerd)",
+        "value": "Huurdershulp Opzoeken — scout-signaal (nog niet volledig geanalyseerd)",
         "revenue": "-",
         "mvp": "-",
         "risk": "-"
@@ -111,14 +111,14 @@
     },
     {
       "id": 8,
-      "title": "X.com Zoeken Problemen",
+      "title": "Storingen en Technische Problemen",
       "score": "-",
       "repetition": "-",
       "confidence": "scout-only",
       "bmc": {
-        "problem": "Dit kan problemen veroorzaken voor consumenten die hulp nodig hebben bij het vinden van informatie over storing.",
+        "problem": "Technische problemen zijn een voortdurende drukte in de technologie-wereld, met consumenten op zoek naar oplossingen.",
         "icp": "Consumenten/KB",
-        "value": "X.com Zoeken Problemen — scout-signaal (nog niet volledig geanalyseerd)",
+        "value": "Storingen en Technische Problemen — scout-signaal (nog niet volledig geanalyseerd)",
         "revenue": "-",
         "mvp": "-",
         "risk": "-"
@@ -126,14 +126,14 @@
     },
     {
       "id": 9,
-      "title": "De Schillencommissie.nl Problemen",
+      "title": "Online Consumentenservice",
       "score": "-",
       "repetition": "-",
       "confidence": "scout-only",
       "bmc": {
-        "problem": "Dit kan problemen veroorzaken voor consumenten die hulp nodig hebben bij geschillen en juridische kwesties.",
+        "problem": "Online consumentenservice kan helpen bij het voorkomen van problemen voor consumenten, die op zoek zijn naar kennis en advies.",
         "icp": "Consumenten/KB",
-        "value": "De Schillencommissie.nl Problemen — scout-signaal (nog niet volledig geanalyseerd)",
+        "value": "Online Consumentenservice — scout-signaal (nog niet volledig geanalyseerd)",
         "revenue": "-",
         "mvp": "-",
         "risk": "-"
@@ -141,14 +141,14 @@
     },
     {
       "id": 10,
-      "title": "Juridischloket.nl Problemen",
+      "title": "Geschillen Resolutie",
       "score": "-",
       "repetition": "-",
       "confidence": "scout-only",
       "bmc": {
-        "problem": "Dit kan problemen veroorzaken voor consumenten die hulp nodig hebben bij juridische kwesties en geschillen.",
+        "problem": "Geschillen resolutie is een cruciaal aspect van consumentenbescherming, en de website van de Geschillencommissie blijkt populair te zijn.",
         "icp": "Consumenten/KB",
-        "value": "Juridischloket.nl Problemen — scout-signaal (nog niet volledig geanalyseerd)",
+        "value": "Geschillen Resolutie — scout-signaal (nog niet volledig geanalyseerd)",
         "revenue": "-",
         "mvp": "-",
         "risk": "-"

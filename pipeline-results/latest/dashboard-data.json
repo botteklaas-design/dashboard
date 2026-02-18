@@ -7,8 +7,8 @@
   "status": "amber",
   "quality": {
     "freshness": {
-      "label": "fresh",
-      "minutes": 181
+      "label": "stale",
+      "minutes": 422
     },
     "validationPass": true,
     "errorCodes": [],
@@ -58,5 +58,5 @@
       "score": "24/35"
     }
   ],
-  "generatedAt": "2026-02-18T18:58:25.553633"
+  "generatedAt": "2026-02-18T22:59:18.287036"
 }
