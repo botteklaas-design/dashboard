@@ -1,19 +1,154 @@
 {
   "version": "2.0",
-  "generatedAt": "2026-02-18T13:57:00.725582+00:00",
-  "count": 1,
+  "generatedAt": "2026-02-18T14:11:02.888667+00:00",
+  "count": 10,
   "selectedIdeaId": 1,
   "ideas": [
     {
       "id": 1,
-      "title": "Generieke klantfrictie-oplosser",
-      "score": "17/35",
+      "title": "Probleem met UPS/DPD Pakketproblemen",
+      "score": "-",
       "repetition": "-",
-      "confidence": "medium",
+      "confidence": "scout-only",
       "bmc": {
-        "problem": "-",
-        "icp": "-",
-        "value": "Generieke klantfrictie-oplosser — concrete probleemoplossing",
+        "problem": "Veel consumenten zijn frustraties over de onvoorspelbaarheid van UPS/DPD, wat leidt tot problemen bij voorbereiden op thuisbezorgd producten.",
+        "icp": "Consumenten/KB",
+        "value": "Probleem met UPS/DPD Pakketproblemen — scout-signaal (nog niet volledig geanalyseerd)",
+        "revenue": "-",
+        "mvp": "-",
+        "risk": "-"
+      }
+    },
+    {
+      "id": 2,
+      "title": "SMS-Kosten (CMTelecom)",
+      "score": "-",
+      "repetition": "-",
+      "confidence": "scout-only",
+      "bmc": {
+        "problem": "Veel klachten over niet-beschikbare of duurzame informatie over het aantal te verwachten berichten, wat leidt tot onnodige kosten.",
+        "icp": "Consumenten/KB",
+        "value": "SMS-Kosten (CMTelecom) — scout-signaal (nog niet volledig geanalyseerd)",
+        "revenue": "-",
+        "mvp": "-",
+        "risk": "-"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Krantbezorging (Algemeen Dagblad)",
+      "score": "-",
+      "repetition": "-",
+      "confidence": "scout-only",
+      "bmc": {
+        "problem": "Vandaag zijn klanten meer geïnteresseerd in op tijd bezorgde kranten. Late bezorgingen kunnen leiden tot problemen bij het lezen van actuele nieuwsberichten.",
+        "icp": "Consumenten/KB",
+        "value": "Krantbezorging (Algemeen Dagblad) — scout-signaal (nog niet volledig geanalyseerd)",
+        "revenue": "-",
+        "mvp": "-",
+        "risk": "-"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Internet/Wifi Problemen (KPN)",
+      "score": "-",
+      "repetition": "-",
+      "confidence": "scout-only",
+      "bmc": {
+        "problem": "Veel klachten over onstabiliteit, langzame download- en uploadtijden en vertragingen bij internetdiensten. Dit kan leiden tot problemen met online diensten zoals video streaming of werkopdrachten.",
+        "icp": "Consumenten/KB",
+        "value": "Internet/Wifi Problemen (KPN) — scout-signaal (nog niet volledig geanalyseerd)",
+        "revenue": "-",
+        "mvp": "-",
+        "risk": "-"
+      }
+    },
+    {
+      "id": 5,
+      "title": "TV Problemen (KPN)",
+      "score": "-",
+      "repetition": "-",
+      "confidence": "scout-only",
+      "bmc": {
+        "problem": "Veel klanten zijn teleurgesteld in de beperkte kabelkansies en het gebrek aan nieuwste programmatuur. Dit kan een frustratie zijn voor klanten die graag nieuwe content willen streamen.",
+        "icp": "Consumenten/KB",
+        "value": "TV Problemen (KPN) — scout-signaal (nog niet volledig geanalyseerd)",
+        "revenue": "-",
+        "mvp": "-",
+        "risk": "-"
+      }
+    },
+    {
+      "id": 6,
+      "title": "Telefoon Beveiliging (KPN)",
+      "score": "-",
+      "repetition": "-",
+      "confidence": "scout-only",
+      "bmc": {
+        "problem": "Veel klanten zijn teleurgesteld in de lage kwaliteit van beveiligingssoftware op hun mobiele apparaten. Dit kan leiden tot zekerheidsoverwegingen en problemen met privacy.",
+        "icp": "Consumenten/KB",
+        "value": "Telefoon Beveiliging (KPN) — scout-signaal (nog niet volledig geanalyseerd)",
+        "revenue": "-",
+        "mvp": "-",
+        "risk": "-"
+      }
+    },
+    {
+      "id": 7,
+      "title": "Energiesparen (Ziggo)",
+      "score": "-",
+      "repetition": "-",
+      "confidence": "scout-only",
+      "bmc": {
+        "problem": "Veel klanten zijn geïnteresseerd in eenvoudige manieren om energie te besparen en de kosten te verminderen. Dit kan een grote behoefte zijn voor consumenten die belangen hebben in milieuvriendelijkheid.",
+        "icp": "Consumenten/KB",
+        "value": "Energiesparen (Ziggo) — scout-signaal (nog niet volledig geanalyseerd)",
+        "revenue": "-",
+        "mvp": "-",
+        "risk": "-"
+      }
+    },
+    {
+      "id": 8,
+      "title": "Softwareontwikkeling (Tweakers)",
+      "score": "-",
+      "repetition": "-",
+      "confidence": "scout-only",
+      "bmc": {
+        "problem": "Veel klanten zijn frustraties over de complexiteit en duur van sommige software. Het ontbreken van eenvoudige interfacen kan leiden tot vertraging bij productiviteitsoplossingen.",
+        "icp": "Consumenten/KB",
+        "value": "Softwareontwikkeling (Tweakers) — scout-signaal (nog niet volledig geanalyseerd)",
+        "revenue": "-",
+        "mvp": "-",
+        "risk": "-"
+      }
+    },
+    {
+      "id": 9,
+      "title": "Garantieproblemen (Garantie & Verzekeringen)",
+      "score": "-",
+      "repetition": "-",
+      "confidence": "scout-only",
+      "bmc": {
+        "problem": "Veel klanten zijn teleurgesteld in de tijd die nodig is om garantieproblemen op te lossen. Deze kwesties kunnen leiden tot vertraging en financiële stress.",
+        "icp": "Consumenten/KB",
+        "value": "Garantieproblemen (Garantie & Verzekeringen) — scout-signaal (nog niet volledig geanalyseerd)",
+        "revenue": "-",
+        "mvp": "-",
+        "risk": "-"
+      }
+    },
+    {
+      "id": 10,
+      "title": "Telefoon Service Beveiliging (KPN)",
+      "score": "-",
+      "repetition": "-",
+      "confidence": "scout-only",
+      "bmc": {
+        "problem": "Veel klanten zijn bezorgd om de privacy van hun telefoon informatie. Er is een dringende behoefte aan vertrouwenswaardige beveiligingsfuncties in mobiele diensten.",
+        "icp": "Consumenten/KB",
+        "value": "Telefoon Service Beveiliging (KPN) — scout-signaal (nog niet volledig geanalyseerd)",
         "revenue": "-",
         "mvp": "-",
         "risk": "-"

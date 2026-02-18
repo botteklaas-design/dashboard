@@ -49,6 +49,33 @@ def parse_ideas(md: str):
     return out
 
 
+def parse_scout_ideas(md: str):
+    out = []
+    re_block = re.compile(r'## Idee\s+(\d+):\s+(.+)\n([\s\S]*?)(?=\n---\n\n## Idee\s+\d+:|\n# Samenvatting|\Z)')
+    def g(pat, body, default='-'):
+        m = re.search(pat, body, re.I)
+        return m.group(1).strip() if m else default
+    for m in re_block.finditer(md or ''):
+        body = m.group(3)
+        title = m.group(2).strip()
+        out.append({
+            'id': int(m.group(1)),
+            'title': title,
+            'score': '-',
+            'repetition': '-',
+            'confidence': 'scout-only',
+            'bmc': {
+                'problem': g(r'\*\*Context\*\*: ([^\n]+)', body),
+                'icp': 'Consumenten/KB',
+                'value': f"{title} — scout-signaal (nog niet volledig geanalyseerd)",
+                'revenue': '-',
+                'mvp': '-',
+                'risk': '-',
+            }
+        })
+    return out
+
+
 def load_history_runs():
     hist = load(BASE / 'history-manifest.json', {'runs': []}).get('runs', [])
     return hist if isinstance(hist, list) else []
@@ -79,7 +106,14 @@ def main() -> int:
     validation = load(BASE / 'validation-report.json', {})
     weekly = load(BASE / 'weekly-decision.json', {})
 
-    ideas = parse_ideas(read(BASE / '02-business-analysis.md'))
+    analysis_md = read(BASE / '02-business-analysis.md')
+    scout_md = read(BASE / '01-forum-scout.md')
+    ideas = parse_ideas(analysis_md)
+    analysis_is_recovery = 'RECOVERY_DRAFT: true' in analysis_md
+    if analysis_is_recovery or len(ideas) <= 1:
+        scout_ideas = parse_scout_ideas(scout_md)
+        if len(scout_ideas) > len(ideas):
+            ideas = scout_ideas
     trend = load_history_runs()
     run_hist = load_run_history()
 

@@ -8,17 +8,12 @@
   "quality": {
     "freshness": {
       "label": "fresh",
-      "minutes": -60
+      "minutes": -46
     },
     "validationPass": true,
     "errorCodes": []
   },
   "trend": [
-    {
-      "timestamp": "2026-02-17-065553",
-      "winner": "-",
-      "score": null
-    },
     {
       "timestamp": "2026-02-17-105559",
       "winner": "Pakketconflict claimbuilder — Tech 9/10",
@@ -53,7 +48,12 @@
       "timestamp": "2026-02-18-065744",
       "winner": "**SMS-kosten transparantie-assistent** — 24/35 (business), Tech Feasibility **8/10**",
       "score": "24/35"
+    },
+    {
+      "timestamp": "2026-02-18-145700",
+      "winner": "**SMS-kosten transparantie-assistent** — 24/35 (business), Tech Feasibility **8/10**",
+      "score": "24/35"
     }
   ],
-  "generatedAt": "2026-02-18T14:57:00.773493"
+  "generatedAt": "2026-02-18T15:11:02.936649"
 }
