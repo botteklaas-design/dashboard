@@ -119,6 +119,11 @@ def main() -> int:
 
     now = datetime.now(timezone.utc).isoformat()
 
+    scout_source = state_machine.get('scout_source') or 'history_fallback'
+    scout_fresh = bool(state_machine.get('scout_fresh', False))
+    quality = dash.get('quality', {}) or {}
+    quality['scoutSource'] = scout_source
+
     run_manifest = {
         'version': '2.0',
         'generatedAt': now,
@@ -131,7 +136,9 @@ def main() -> int:
         'winnerScore': dash.get('winnerScore') or run_state.get('winnerScore'),
         'ideasCount': dash.get('ideasCount') if dash.get('ideasCount') is not None else len(ideas),
         'recommendedCount': dash.get('recommendedCount'),
-        'quality': dash.get('quality', {}),
+        'quality': quality,
+        'scoutFresh': scout_fresh,
+        'scoutSource': scout_source,
         'weeklyDecision': weekly if weekly else None,
     }
 

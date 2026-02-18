@@ -2,6 +2,7 @@
 """Pipeline v2.0 state machine orchestrator with resume + event logging."""
 import argparse
 import json
+import shutil
 import subprocess
 import uuid
 from dataclasses import dataclass
@@ -71,11 +72,47 @@ def check_file_nonempty(path: Path, code: str) -> StageResult:
     return StageResult(ok=True)
 
 
+def count_scout_ideas(path: Path) -> int:
+    if not path.exists():
+        return 0
+    txt = path.read_text(encoding='utf-8', errors='ignore')
+    return txt.count('## Idee ')
+
+
+def history_fallback_scout() -> Optional[Dict]:
+    hist = Path('/Users/mcbot/.openclaw/workspace/pipeline-results/history')
+    candidates = sorted(hist.glob('01-forum-scout-*.md'), reverse=True)
+    target = BASE / '01-forum-scout.md'
+    for p in candidates:
+        if count_scout_ideas(p) >= 5:
+            shutil.copy2(p, target)
+            return {'fallback_file': str(p), 'ideas_count': count_scout_ideas(target)}
+    return None
+
+
+def run_scout_stage() -> StageResult:
+    runner = ['/usr/bin/env', 'python3', '/Users/mcbot/.openclaw/workspace/scripts/run_scout_stage.py']
+    res = run_cmd(runner, 'SCOUT')
+    report = load_json(BASE / 'scout-run-report.json', {})
+    failure_code = report.get('failureCode')
+    if res.ok:
+        ideas = count_scout_ideas(BASE / '01-forum-scout.md')
+        return StageResult(ok=ideas >= 5, fatal=False, error_code=None if ideas >= 5 else 'SCOUT_TOO_FEW_IDEAS', details={**(res.details or {}), 'scout_source': 'fresh', 'scout_fresh': True, 'ideas_count': ideas})
+
+    fb = history_fallback_scout()
+    if fb:
+        details = {**(res.details or {}), **fb, 'runner_failure_code': failure_code, 'scout_source': 'history_fallback', 'scout_fresh': False}
+        return StageResult(ok=True, fatal=False, error_code='SCOUT_FRESH_FAILED_USED_HISTORY', details=details)
+
+    details = {**(res.details or {}), 'runner_failure_code': failure_code, 'scout_source': 'none', 'scout_fresh': False}
+    return StageResult(ok=False, fatal=True, error_code=failure_code or 'SCOUT_FAILED_NO_FALLBACK', details=details)
+
+
 def stage_action(stage: str) -> StageResult:
     if stage == 'INIT':
         return StageResult(ok=True)
     if stage == 'SCOUT':
-        return check_file_nonempty(BASE / '01-forum-scout.md', 'SCOUT_ARTIFACT')
+        return run_scout_stage()
     if stage == 'ANALYST':
         return check_file_nonempty(BASE / '02-business-analysis.md', 'ANALYST_ARTIFACT')
     if stage == 'DEV':
@@ -139,6 +176,8 @@ def write_run_history(state: Dict) -> None:
         'fallback_used': bool(state.get('recovery_used', False)),
         'error_codes': state.get('error_codes', []),
         'winner': state.get('winner'),
+        'scout_source': state.get('scout_source'),
+        'scout_fresh': state.get('scout_fresh'),
     }
     RUN_HISTORY_PATH.parent.mkdir(parents=True, exist_ok=True)
     with RUN_HISTORY_PATH.open('a', encoding='utf-8') as f:
@@ -180,6 +219,8 @@ def main() -> int:
             'stages': {},
             'error_codes': [],
             'recovery_used': False,
+            'scout_source': None,
+            'scout_fresh': None,
         }
         start = 'INIT'
 
@@ -200,6 +241,10 @@ def main() -> int:
             'error_code': result.error_code,
             'details': result.details or {},
         })
+        if stage == 'SCOUT':
+            det = result.details or {}
+            state['scout_source'] = det.get('scout_source', 'fresh' if result.ok else 'none')
+            state['scout_fresh'] = bool(det.get('scout_fresh', False))
         state['current_stage'] = stage
         if stage == 'RECOVER' and result.ok:
             state['recovery_used'] = True
@@ -207,7 +252,7 @@ def main() -> int:
             if result.error_code not in state['error_codes']:
                 state['error_codes'].append(result.error_code)
 
-        append_event({
+        event = {
             'ts': ended,
             'run_id': run_id,
             'type': 'stage_end',
@@ -215,7 +260,11 @@ def main() -> int:
             'ok': result.ok,
             'fatal': result.fatal,
             'error_code': result.error_code,
-        })
+        }
+        if stage == 'SCOUT':
+            event['scout_source'] = state.get('scout_source')
+            event['scout_fresh'] = state.get('scout_fresh')
+        append_event(event)
         save_state(state)
 
         nxt = next_stage(stage, result)

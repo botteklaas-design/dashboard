@@ -36,6 +36,7 @@
     <h3 style="margin:0">Quality Signal</h3>
     <div class="k" id="freshness">Freshness: -</div>
     <div class="k" id="validationPass">Validation: -</div>
+    <div class="k" id="scoutSource">Scout source: -</div>
     <div class="badges" id="errorCodes"><span class="k">Geen error codes</span></div>
   </div>
 
@@ -111,6 +112,7 @@ function statusColorFromRun(st){ if(st==='COMPLETE'||st==='green') return 'green
   const quality=run.quality||{}; const fresh=quality.freshness||{};
   $('freshness').textContent=`Freshness: ${fresh.label||quality.freshness||'unknown'}${fresh.minutes==null?'':` (${fresh.minutes} min)`}`;
   $('validationPass').textContent=`Validation: ${quality.validationPass===true?'PASS':(quality.validationPass===false?'FAIL':'UNKNOWN')}`;
+  $('scoutSource').textContent=`Scout source: ${(run.scoutSource||quality.scoutSource||'history_fallback')}`;
   const codes=(run.errorCodes||[]).slice(0,10);
   $('errorCodes').innerHTML=codes.length?codes.map(c=>`<span class="badge">${c}</span>`).join(''):'<span class="k">Geen error codes</span>';
 

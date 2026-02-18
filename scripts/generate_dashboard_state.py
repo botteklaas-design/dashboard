@@ -94,6 +94,11 @@ final = read('03-final-winner-summary.md')
 biz = read('02-business-analysis.md')
 logscan = read('04-log-scan.txt')
 meta = read('00-run-metadata.txt')
+state_machine = {}
+try:
+    state_machine = json.loads((BASE / 'state-machine.json').read_text(encoding='utf-8', errors='ignore')) if (BASE / 'state-machine.json').exists() else {}
+except Exception:
+    state_machine = {}
 
 run_ts = None
 for src in (meta, final):
@@ -128,10 +133,12 @@ validation = parse_validation_report()
 recovery_mode, recovery_codes = parse_recovery_metadata(meta)
 status = classify_status(validation['pass'], logscan, recovery_mode=recovery_mode)
 error_codes = sorted(list({*(validation['errorCodes'] or []), *recovery_codes}))
+scout_source = state_machine.get('scout_source') or 'history_fallback'
 quality = {
     'freshness': 'fallback' if recovery_mode else freshness(meta, run_ts),
     'validationPass': validation['pass'],
     'errorCodes': error_codes,
+    'scoutSource': scout_source,
 }
 
 # Trend from history summaries
@@ -156,6 +163,8 @@ payload = {
     'recommendedCount': recommended,
     'status': status,
     'quality': quality,
+    'scoutFresh': bool(state_machine.get('scout_fresh', False)),
+    'scoutSource': scout_source,
     'trend': runs[-8:],
     'generatedAt': datetime.now().isoformat(),
 }
@@ -167,6 +176,8 @@ payload = {
     'winner': winner,
     'winnerScore': score,
     'quality': quality,
+    'scoutFresh': bool(state_machine.get('scout_fresh', False)),
+    'scoutSource': scout_source,
     'updatedAt': datetime.now().isoformat(),
 }, ensure_ascii=False, indent=2), encoding='utf-8')
 

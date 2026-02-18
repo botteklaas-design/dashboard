@@ -27,7 +27,9 @@ If run is interrupted or failed:
 
 ## Cron integration (4-hour job)
 Cron job `4206fae5-7c38-488b-a0f7-37b6f50a57cd` must execute, in order:
-1. `pipeline_state_machine.py`
+1. `pipeline_state_machine.py` (includes SCOUT via `run_scout_stage.py` fresh-first path)
 2. `generate_manifests.py`
 3. `weekly_decision_engine.py`
 4. `generate_dashboard_state.py`
+
+Important: do not run a separate parallel Scout call in cron. Stage 1 is owned by state-machine flow.
