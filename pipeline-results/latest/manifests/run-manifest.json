@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "generatedAt": "2026-02-18T14:11:02.888667+00:00",
-  "runId": "a76a772f-bc0f-4ee6-945a-529adda6b389",
+  "generatedAt": "2026-02-18T17:58:17.693618+00:00",
+  "runId": "681d9e18-18d0-42f7-9124-ce17a5279afc",
   "status": "COMPLETE",
   "currentStage": "COMPLETE",
   "recoveryUsed": false,
@@ -13,11 +13,14 @@
   "quality": {
     "freshness": {
       "label": "fresh",
-      "minutes": -60
+      "minutes": -41
     },
     "validationPass": true,
-    "errorCodes": []
+    "errorCodes": [],
+    "scoutSource": "fresh"
   },
+  "scoutFresh": true,
+  "scoutSource": "fresh",
   "weeklyDecision": {
     "version": "2.0",
     "generatedAt": "2026-02-18T13:57:00.745150+00:00",

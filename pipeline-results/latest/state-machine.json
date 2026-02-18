@@ -1,43 +1,55 @@
 {
   "version": "2.0",
-  "run_id": "a76a772f-bc0f-4ee6-945a-529adda6b389",
+  "run_id": "681d9e18-18d0-42f7-9124-ce17a5279afc",
   "status": "COMPLETE",
   "current_stage": "COMPLETE",
-  "started_at": "2026-02-18T13:57:00.676459+00:00",
-  "ended_at": "2026-02-18T13:57:00.702793+00:00",
+  "started_at": "2026-02-18T17:56:01.148223+00:00",
+  "ended_at": "2026-02-18T17:58:11.620772+00:00",
   "stages": {
     "INIT": {
       "status": "success",
-      "started_at": "2026-02-18T13:57:00.676700+00:00",
-      "ended_at": "2026-02-18T13:57:00.676893+00:00",
+      "started_at": "2026-02-18T17:56:01.148940+00:00",
+      "ended_at": "2026-02-18T17:56:01.149040+00:00",
       "error_code": null,
       "details": {}
     },
     "SCOUT": {
       "status": "success",
-      "started_at": "2026-02-18T13:57:00.677008+00:00",
-      "ended_at": "2026-02-18T13:57:00.677079+00:00",
+      "started_at": "2026-02-18T17:56:01.149186+00:00",
+      "ended_at": "2026-02-18T17:58:11.578161+00:00",
       "error_code": null,
-      "details": {}
+      "details": {
+        "command": [
+          "/usr/bin/env",
+          "python3",
+          "/Users/mcbot/.openclaw/workspace/scripts/run_scout_stage.py"
+        ],
+        "returncode": 0,
+        "stdout": " failed https://www.klacht.nl/alle-klachten/: The read operation timed out\n[2026-02-18 18:56:16] [SCOUT] source 3/19 ok https://www.bnnvara.nl/kassa/vraag-beantwoord\n[2026-02-18 18:56:16] [SCOUT] source 4/19 ok https://radar-forum.avrotros.nl/\n[2026-02-18 18:56:17] [SCOUT] source 5/19 ok https://gathering.tweakers.net/\n[2026-02-18 18:56:17] [SCOUT] source 6/19 failed https://allestoringen.nl/: HTTP Error 403: Forbidden\n[2026-02-18 18:56:32] [SCOUT] source 7/19 failed https://downdetector.nl/: <urlopen error [Errno 54] Connection reset by peer>\n[2026-02-18 18:56:32] [SCOUT] source 8/19 failed https://www.reddit.com/r/geldzaken/new/: HTTP Error 403: Blocked\n[2026-02-18 18:56:32] [SCOUT] source 9/19 failed https://www.reddit.com/r/thenetherlands/new/: HTTP Error 403: Blocked\n[2026-02-18 18:56:33] [SCOUT] source 10/19 ok https://community.kpn.com/\n[2026-02-18 18:56:33] [SCOUT] source 11/19 ok https://community.ziggo.nl/\n[2026-02-18 18:56:33] [SCOUT] source 12/19 failed https://www.reddit.com/r/juridischadvies/new/: HTTP Error 403: Blocked\n[2026-02-18 18:56:33] [SCOUT] source 13/19 ok https://www.trustpilot.com/categories\n[2026-02-18 18:56:33] [SCOUT] source 14/19 ok https://forum.fok.nl/\n[2026-02-18 18:56:34] [SCOUT] source 15/19 ok https://x.com/search?q=%22storing%22%20(lang%3Anl\n[2026-02-18 18:56:34] [SCOUT] source 16/19 ok https://www.consuwijzer.nl\n[2026-02-18 18:56:34] [SCOUT] source 17/19 ok https://www.huurcommissie.nl\n[2026-02-18 18:56:35] [SCOUT] source 18/19 failed https://www.juridischloket.nl: HTTP Error 403: Forbidden\n[2026-02-18 18:56:45] [SCOUT] source 19/19 ok https://www.degeschillencommissie.nl\n[2026-02-18 18:56:45] [SCOUT] A_QWEN_SHORT start model=qwen2.5:7b chunked=false timeout=220s\n[2026-02-18 18:58:11] [SCOUT] A_QWEN_SHORT end mode=direct ideas=10 ok=True\n[2026-02-18 18:58:11] [SCOUT] runner success ideas=10 attempt=A_QWEN_SHORT\n{\"status\": \"ok\", \"ideas\": 10, \"artifact\": \"/Users/mcbot/.openclaw/workspace/pipeline-results/latest/01-forum-scout.md\"}",
+        "stderr": "",
+        "scout_source": "fresh",
+        "scout_fresh": true,
+        "ideas_count": 10
+      }
     },
     "ANALYST": {
       "status": "success",
-      "started_at": "2026-02-18T13:57:00.677169+00:00",
-      "ended_at": "2026-02-18T13:57:00.677230+00:00",
+      "started_at": "2026-02-18T17:58:11.578655+00:00",
+      "ended_at": "2026-02-18T17:58:11.578977+00:00",
       "error_code": null,
       "details": {}
     },
     "DEV": {
       "status": "success",
-      "started_at": "2026-02-18T13:57:00.677332+00:00",
-      "ended_at": "2026-02-18T13:57:00.677397+00:00",
+      "started_at": "2026-02-18T17:58:11.579076+00:00",
+      "ended_at": "2026-02-18T17:58:11.579226+00:00",
       "error_code": null,
       "details": {}
     },
     "VALIDATE": {
       "status": "success",
-      "started_at": "2026-02-18T13:57:00.677475+00:00",
-      "ended_at": "2026-02-18T13:57:00.702425+00:00",
+      "started_at": "2026-02-18T17:58:11.579314+00:00",
+      "ended_at": "2026-02-18T17:58:11.620346+00:00",
       "error_code": null,
       "details": {
         "command": [
@@ -51,8 +63,8 @@
     },
     "PUBLISH": {
       "status": "success",
-      "started_at": "2026-02-18T13:57:00.702660+00:00",
-      "ended_at": "2026-02-18T13:57:00.702703+00:00",
+      "started_at": "2026-02-18T17:58:11.620596+00:00",
+      "ended_at": "2026-02-18T17:58:11.620659+00:00",
       "error_code": null,
       "details": {
         "note": "publish-prep stage complete"
@@ -61,5 +73,7 @@
   },
   "error_codes": [],
   "recovery_used": false,
+  "scout_source": "fresh",
+  "scout_fresh": true,
   "winner": "SMS-kosten transparantie-assistent"
 }

@@ -6,10 +6,13 @@
   "quality": {
     "freshness": {
       "label": "fresh",
-      "minutes": -46
+      "minutes": 181
     },
     "validationPass": true,
-    "errorCodes": []
+    "errorCodes": [],
+    "scoutSource": "fresh"
   },
-  "updatedAt": "2026-02-18T15:11:02.936793"
+  "scoutFresh": true,
+  "scoutSource": "fresh",
+  "updatedAt": "2026-02-18T18:58:25.553825"
 }
