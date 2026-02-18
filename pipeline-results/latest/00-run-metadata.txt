@@ -1,12 +1,9 @@
-run_timestamp: 2026-02-18-065744
-pipeline_mode: v2.0_exact_scope
-model_policy: /Users/mcbot/.openclaw/workspace/config/pipeline-model-policy.json
-scout_model_preferred: ollama/qwen2.5:7b
-scout_model_fallback: ollama/llama3.2:latest
-focus_file: /Users/mcbot/.openclaw/workspace/agent-tasks/research-focus-next-day.md
-focus_applied: # Next-day Research Focus Nog niet gezet. Gebruik brede Dutch source scan.
-forum_task: /Users/mcbot/.openclaw/workspace/agent-tasks/forum-scout-task.md
-analyst_task: /Users/mcbot/.openclaw/workspace/agent-tasks/business-analyst-task.md
-senior_dev_task: /Users/mcbot/.openclaw/workspace/agent-tasks/senior-developer-task.md
-scout_session_attempted: agent:main:subagent:0f09e416-7588-4a59-acbc-d719934ab183
-execution_note: forum_scout/business_analyst/senior_dev refreshed from latest valid history artifacts for deterministic v2.0 flow
+run_timestamp=2026-02-18_10-56-11
+run_iso=2026-02-18T10:56:11+01:00
+platform_mode=v2.0
+scope=exact
+policy_file=/Users/mcbot/.openclaw/workspace/config/pipeline-model-policy.json
+forum_task=/Users/mcbot/.openclaw/workspace/agent-tasks/forum-scout-task.md
+focus_file=/Users/mcbot/.openclaw/workspace/agent-tasks/research-focus-next-day.md
+analyst_task=/Users/mcbot/.openclaw/workspace/agent-tasks/business-analyst-task.md
+senior_dev_task=/Users/mcbot/.openclaw/workspace/agent-tasks/senior-developer-task.md

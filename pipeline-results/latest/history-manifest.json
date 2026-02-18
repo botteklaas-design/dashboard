@@ -1,194 +1,20 @@
 {
-  "generated_at": "2026-02-18T05:57:45.129423Z",
+  "generatedAt": "2026-02-18T10:56:11.441657",
   "runs": [
     {
-      "ts": "2026-02-13-230056",
-      "winner_summary": "# Final Winner Summary",
-      "files": {
-        "winner": "pipeline-results/history/03-final-winner-summary-2026-02-13-230056.md"
-      }
+      "run": "2026-02-13",
+      "winnerSource": null,
+      "path": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/2026-02-13"
     },
     {
-      "ts": "2026-02-14-025947",
-      "winner_summary": "# Final Winner Summary",
-      "files": {
-        "winner": "pipeline-results/history/03-final-winner-summary-2026-02-14-025947.md"
-      }
+      "run": "2026-02-18_10-56-11",
+      "winnerSource": "weekly-decision.json",
+      "path": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/2026-02-18_10-56-11"
     },
     {
-      "ts": "2026-02-14-065604",
-      "winner_summary": "# Final Winner Summary",
-      "files": {
-        "winner": "pipeline-results/history/03-final-winner-summary-2026-02-14-065604.md"
-      }
-    },
-    {
-      "ts": "2026-02-14-105555",
-      "winner_summary": "# Final Winner Summary",
-      "files": {
-        "winner": "pipeline-results/history/03-final-winner-summary-2026-02-14-105555.md"
-      }
-    },
-    {
-      "ts": "2026-02-14-145654",
-      "winner_summary": "# Final Winner Summary",
-      "files": {
-        "winner": "pipeline-results/history/03-final-winner-summary-2026-02-14-145654.md"
-      }
-    },
-    {
-      "ts": "2026-02-14-193223",
-      "winner_summary": "# Final Winner Summary",
-      "files": {
-        "winner": "pipeline-results/history/03-final-winner-summary-2026-02-14-193223.md"
-      }
-    },
-    {
-      "ts": "2026-02-14-225946",
-      "winner_summary": "# Final Winner Summary",
-      "files": {
-        "winner": "pipeline-results/history/03-final-winner-summary-2026-02-14-225946.md"
-      }
-    },
-    {
-      "ts": "2026-02-15-025558",
-      "winner_summary": "# Final Winner Summary",
-      "files": {
-        "winner": "pipeline-results/history/03-final-winner-summary-2026-02-15-025558.md"
-      }
-    },
-    {
-      "ts": "2026-02-15-065555",
-      "winner_summary": "# Final Winner Summary",
-      "files": {
-        "winner": "pipeline-results/history/03-final-winner-summary-2026-02-15-065555.md"
-      }
-    },
-    {
-      "ts": "2026-02-15-105753",
-      "winner_summary": "# Final Winner Summary",
-      "files": {
-        "winner": "pipeline-results/history/03-final-winner-summary-2026-02-15-105753.md"
-      }
-    },
-    {
-      "ts": "2026-02-15-145604",
-      "winner_summary": "# Final Winner Summary",
-      "files": {
-        "winner": "pipeline-results/history/03-final-winner-summary-2026-02-15-145604.md"
-      }
-    },
-    {
-      "ts": "2026-02-15-185844",
-      "winner_summary": "# Final Winner Summary",
-      "files": {
-        "winner": "pipeline-results/history/03-final-winner-summary-2026-02-15-185844.md"
-      }
-    },
-    {
-      "ts": "2026-02-15-225744",
-      "winner_summary": "# Final Winner Summary",
-      "files": {
-        "winner": "pipeline-results/history/03-final-winner-summary-2026-02-15-225744.md"
-      }
-    },
-    {
-      "ts": "2026-02-16-025600",
-      "winner_summary": "# Final Winner Summary",
-      "files": {
-        "winner": "pipeline-results/history/03-final-winner-summary-2026-02-16-025600.md"
-      }
-    },
-    {
-      "ts": "2026-02-16-065606",
-      "winner_summary": "# Final Winner Summary",
-      "files": {
-        "winner": "pipeline-results/history/03-final-winner-summary-2026-02-16-065606.md"
-      }
-    },
-    {
-      "ts": "2026-02-16-105556",
-      "winner_summary": "# Final Winner Summary",
-      "files": {
-        "winner": "pipeline-results/history/03-final-winner-summary-2026-02-16-105556.md"
-      }
-    },
-    {
-      "ts": "2026-02-16-145823",
-      "winner_summary": "# Final Winner Summary",
-      "files": {
-        "winner": "pipeline-results/history/03-final-winner-summary-2026-02-16-145823.md"
-      }
-    },
-    {
-      "ts": "2026-02-16-185557",
-      "winner_summary": "# Final Winner Summary",
-      "files": {
-        "winner": "pipeline-results/history/03-final-winner-summary-2026-02-16-185557.md"
-      }
-    },
-    {
-      "ts": "2026-02-16-225945",
-      "winner_summary": "# Final Winner Summary",
-      "files": {
-        "winner": "pipeline-results/history/03-final-winner-summary-2026-02-16-225945.md"
-      }
-    },
-    {
-      "ts": "2026-02-17-025637",
-      "winner_summary": "# Final Winner Summary",
-      "files": {
-        "winner": "pipeline-results/history/03-final-winner-summary-2026-02-17-025637.md"
-      }
-    },
-    {
-      "ts": "2026-02-17-065553",
-      "winner_summary": "# Final Winner Summary",
-      "files": {
-        "winner": "pipeline-results/history/03-final-winner-summary-2026-02-17-065553.md"
-      }
-    },
-    {
-      "ts": "2026-02-17-105559",
-      "winner_summary": "## Combined Winner",
-      "files": {
-        "winner": "pipeline-results/history/03-final-winner-summary-2026-02-17-105559.md"
-      }
-    },
-    {
-      "ts": "2026-02-17-151756",
-      "winner_summary": "## Combined Winner",
-      "files": {
-        "winner": "pipeline-results/history/03-final-winner-summary-2026-02-17-151756.md"
-      }
-    },
-    {
-      "ts": "2026-02-17-190345",
-      "winner_summary": "## Combined Winner",
-      "files": {
-        "winner": "pipeline-results/history/03-final-winner-summary-2026-02-17-190345.md"
-      }
-    },
-    {
-      "ts": "2026-02-17-190428",
-      "winner_summary": "## Combined Winner",
-      "files": {
-        "winner": "pipeline-results/history/03-final-winner-summary-2026-02-17-190428.md"
-      }
-    },
-    {
-      "ts": "2026-02-17-225807",
-      "winner_summary": "## Combined Winner",
-      "files": {
-        "winner": "pipeline-results/history/03-final-winner-summary-2026-02-17-225807.md"
-      }
-    },
-    {
-      "ts": "2026-02-18-025744",
-      "winner_summary": "## Combined Winner",
-      "files": {
-        "winner": "pipeline-results/history/03-final-winner-summary-2026-02-18-025744.md"
-      }
+      "run": "manifests-2026-02-18-065744",
+      "winnerSource": null,
+      "path": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/manifests-2026-02-18-065744"
     }
   ]
 }

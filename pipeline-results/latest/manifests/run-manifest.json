@@ -1,7 +1,7 @@
 {
   "version": "2.0",
-  "generatedAt": "2026-02-18T05:57:45.072757+00:00",
-  "runId": "4a5a9ed1-4a2d-494d-a5d2-b3370267e4b9",
+  "generatedAt": "2026-02-18T09:56:11.381785+00:00",
+  "runId": "0af77fc6-47a9-423b-a831-2e6e029469f7",
   "status": "COMPLETE",
   "currentStage": "COMPLETE",
   "recoveryUsed": false,
@@ -20,14 +20,14 @@
   },
   "weeklyDecision": {
     "version": "2.0",
-    "generatedAt": "2026-02-18T01:57:45.240245+00:00",
+    "generatedAt": "2026-02-18T05:57:45.090983+00:00",
     "singleProductBet": {
       "title": "**SMS-kosten transparantie-assistent** — 24/35 (business), Tech Feasibility **8/10**",
       "confidence": 0.49,
       "rationale": [
         "Latest validated winner remains: **SMS-kosten transparantie-assistent** — 24/35 (business), Tech Feasibility **8/10**.",
         "Trend repetition count (last 10): 0.",
-        "Operational reliability context: success30=60.0, fallback30=20.0.",
+        "Operational reliability context: success30=66.7, fallback30=16.7.",
         "Recommendation favors a narrow MVP with single painful workflow and payment trigger."
       ],
       "killCriteria": [

@@ -1,0 +1,22 @@
+Pipeline Log Scan - 2026-02-18T10:56:11+01:00
+========================================
+
+Recent WARN/ERROR lines:
+2:[2026-02-18 02:57:15] AUTO_RECOVERY triggered reason_codes=ANALYST_MISSING_SCORES,SCOUT_TOO_FEW_IDEAS changed=02-business-analysis.md
+16:[2026-02-18T10:56:11+01:00] WARN: No top-level pipeline runner found; proceeding with downstream required scripts.
+18:{"pass": true, "errorCodes": []}
+21:{"pass": true, "errorCodes": []}
+
+Recent validator/recovery/state-machine markers:
+1:[2026-02-17 22:56] Stage 1 (Forum Scout) COMPLETED | 10 ideas validated | Sources: Klacht.nl, Tweakers GoT, Reddit r/geldzaken, Reddit r/juridischadvies, KPN Community, Trustpilot, ConsuWijzer | Top signals: PostNL claims, OPP delays, Box 3 advisory, energie thuisbatterij | web_fetch method used (browser unavailable) | Output: 01-forum-scout.md
+2:[2026-02-18 02:57:15] AUTO_RECOVERY triggered reason_codes=ANALYST_MISSING_SCORES,SCOUT_TOO_FEW_IDEAS changed=02-business-analysis.md
+3:[2026-02-18 02:57:45] AUTO_RECOVERY validation passed; no-op
+6:[2026-02-18 06:57:44] AUTO_RECOVERY validation passed; no-op
+9:[2026-02-18 06:57:45 CET] validator+recovery+state-machine complete
+19:[2026-02-18 10:56:11] AUTO_RECOVERY validation passed; no-op
+20:{"recovery": false, "reasonCodes": []}
+22:{"run_id": "0af77fc6-47a9-423b-a831-2e6e029469f7", "status": "COMPLETE", "recovery_used": false}
+23:generated manifests
+24:generated weekly decision
+25:generated dashboard-data.json and run-state.json
+26:wrote /Users/mcbot/.openclaw/workspace/pipeline-results/latest/history-manifest.json with 3 runs
