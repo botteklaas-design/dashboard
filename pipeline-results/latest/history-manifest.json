@@ -1,20 +1,146 @@
 {
-  "generatedAt": "2026-02-18T10:56:11.441657",
+  "generatedAt": "2026-02-18T13:57:00.793964Z",
+  "count": 28,
   "runs": [
     {
-      "run": "2026-02-13",
-      "winnerSource": null,
-      "path": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/2026-02-13"
+      "timestamp": "2026-02-13-230056",
+      "file": "03-final-winner-summary-2026-02-13-230056.md",
+      "winner": "UNKNOWN"
     },
     {
-      "run": "2026-02-18_10-56-11",
-      "winnerSource": "weekly-decision.json",
-      "path": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/2026-02-18_10-56-11"
+      "timestamp": "2026-02-14-025947",
+      "file": "03-final-winner-summary-2026-02-14-025947.md",
+      "winner": "UNKNOWN"
     },
     {
-      "run": "manifests-2026-02-18-065744",
-      "winnerSource": null,
-      "path": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/manifests-2026-02-18-065744"
+      "timestamp": "2026-02-14-065604",
+      "file": "03-final-winner-summary-2026-02-14-065604.md",
+      "winner": "**Garantie- en retour-escalatie assistent**"
+    },
+    {
+      "timestamp": "2026-02-14-105555",
+      "file": "03-final-winner-summary-2026-02-14-105555.md",
+      "winner": "**Garantie- en retour-escalatie assistent**"
+    },
+    {
+      "timestamp": "2026-02-14-145654",
+      "file": "03-final-winner-summary-2026-02-14-145654.md",
+      "winner": "**Garantie- en retour-escalatie assistent**"
+    },
+    {
+      "timestamp": "2026-02-14-193223",
+      "file": "03-final-winner-summary-2026-02-14-193223.md",
+      "winner": "UNKNOWN"
+    },
+    {
+      "timestamp": "2026-02-14-225946",
+      "file": "03-final-winner-summary-2026-02-14-225946.md",
+      "winner": "UNKNOWN"
+    },
+    {
+      "timestamp": "2026-02-15-025558",
+      "file": "03-final-winner-summary-2026-02-15-025558.md",
+      "winner": "UNKNOWN"
+    },
+    {
+      "timestamp": "2026-02-15-065555",
+      "file": "03-final-winner-summary-2026-02-15-065555.md",
+      "winner": "UNKNOWN"
+    },
+    {
+      "timestamp": "2026-02-15-105753",
+      "file": "03-final-winner-summary-2026-02-15-105753.md",
+      "winner": "UNKNOWN"
+    },
+    {
+      "timestamp": "2026-02-15-145604",
+      "file": "03-final-winner-summary-2026-02-15-145604.md",
+      "winner": "UNKNOWN"
+    },
+    {
+      "timestamp": "2026-02-15-185844",
+      "file": "03-final-winner-summary-2026-02-15-185844.md",
+      "winner": "UNKNOWN"
+    },
+    {
+      "timestamp": "2026-02-15-225744",
+      "file": "03-final-winner-summary-2026-02-15-225744.md",
+      "winner": "UNKNOWN"
+    },
+    {
+      "timestamp": "2026-02-16-025600",
+      "file": "03-final-winner-summary-2026-02-16-025600.md",
+      "winner": "UNKNOWN"
+    },
+    {
+      "timestamp": "2026-02-16-065606",
+      "file": "03-final-winner-summary-2026-02-16-065606.md",
+      "winner": "UNKNOWN"
+    },
+    {
+      "timestamp": "2026-02-16-105556",
+      "file": "03-final-winner-summary-2026-02-16-105556.md",
+      "winner": "UNKNOWN"
+    },
+    {
+      "timestamp": "2026-02-16-145823",
+      "file": "03-final-winner-summary-2026-02-16-145823.md",
+      "winner": "UNKNOWN"
+    },
+    {
+      "timestamp": "2026-02-16-185557",
+      "file": "03-final-winner-summary-2026-02-16-185557.md",
+      "winner": "UNKNOWN"
+    },
+    {
+      "timestamp": "2026-02-16-225945",
+      "file": "03-final-winner-summary-2026-02-16-225945.md",
+      "winner": "UNKNOWN"
+    },
+    {
+      "timestamp": "2026-02-17-025637",
+      "file": "03-final-winner-summary-2026-02-17-025637.md",
+      "winner": "UNKNOWN"
+    },
+    {
+      "timestamp": "2026-02-17-065553",
+      "file": "03-final-winner-summary-2026-02-17-065553.md",
+      "winner": "UNKNOWN"
+    },
+    {
+      "timestamp": "2026-02-17-105559",
+      "file": "03-final-winner-summary-2026-02-17-105559.md",
+      "winner": "UNKNOWN"
+    },
+    {
+      "timestamp": "2026-02-17-151756",
+      "file": "03-final-winner-summary-2026-02-17-151756.md",
+      "winner": "UNKNOWN"
+    },
+    {
+      "timestamp": "2026-02-17-190345",
+      "file": "03-final-winner-summary-2026-02-17-190345.md",
+      "winner": "UNKNOWN"
+    },
+    {
+      "timestamp": "2026-02-17-190428",
+      "file": "03-final-winner-summary-2026-02-17-190428.md",
+      "winner": "UNKNOWN"
+    },
+    {
+      "timestamp": "2026-02-17-225807",
+      "file": "03-final-winner-summary-2026-02-17-225807.md",
+      "winner": "UNKNOWN"
+    },
+    {
+      "timestamp": "2026-02-18-025744",
+      "file": "03-final-winner-summary-2026-02-18-025744.md",
+      "winner": "UNKNOWN"
+    },
+    {
+      "timestamp": "2026-02-18-065744",
+      "file": "03-final-winner-summary-2026-02-18-065744.md",
+      "winner": "UNKNOWN"
     }
   ]
 }

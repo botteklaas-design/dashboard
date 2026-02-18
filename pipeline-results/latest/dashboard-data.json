@@ -1,10 +1,10 @@
 {
-  "runTimestamp": "2026-02-18-105611",
+  "runTimestamp": "2026-02-18-145700",
   "winner": "**SMS-kosten transparantie-assistent** — 24/35 (business), Tech Feasibility **8/10**",
   "winnerScore": "24/35",
   "ideasCount": 1,
   "recommendedCount": null,
-  "status": "green",
+  "status": "amber",
   "quality": {
     "freshness": {
       "label": "fresh",
@@ -55,5 +55,5 @@
       "score": "24/35"
     }
   ],
-  "generatedAt": "2026-02-18T10:56:11.424969"
+  "generatedAt": "2026-02-18T14:57:00.773493"
 }

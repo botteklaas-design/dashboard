@@ -1,43 +1,43 @@
 {
   "version": "2.0",
-  "run_id": "0af77fc6-47a9-423b-a831-2e6e029469f7",
+  "run_id": "a76a772f-bc0f-4ee6-945a-529adda6b389",
   "status": "COMPLETE",
   "current_stage": "COMPLETE",
-  "started_at": "2026-02-18T09:56:11.337033+00:00",
-  "ended_at": "2026-02-18T09:56:11.361423+00:00",
+  "started_at": "2026-02-18T13:57:00.676459+00:00",
+  "ended_at": "2026-02-18T13:57:00.702793+00:00",
   "stages": {
     "INIT": {
       "status": "success",
-      "started_at": "2026-02-18T09:56:11.337272+00:00",
-      "ended_at": "2026-02-18T09:56:11.337341+00:00",
+      "started_at": "2026-02-18T13:57:00.676700+00:00",
+      "ended_at": "2026-02-18T13:57:00.676893+00:00",
       "error_code": null,
       "details": {}
     },
     "SCOUT": {
       "status": "success",
-      "started_at": "2026-02-18T09:56:11.337452+00:00",
-      "ended_at": "2026-02-18T09:56:11.337528+00:00",
+      "started_at": "2026-02-18T13:57:00.677008+00:00",
+      "ended_at": "2026-02-18T13:57:00.677079+00:00",
       "error_code": null,
       "details": {}
     },
     "ANALYST": {
       "status": "success",
-      "started_at": "2026-02-18T09:56:11.337622+00:00",
-      "ended_at": "2026-02-18T09:56:11.337682+00:00",
+      "started_at": "2026-02-18T13:57:00.677169+00:00",
+      "ended_at": "2026-02-18T13:57:00.677230+00:00",
       "error_code": null,
       "details": {}
     },
     "DEV": {
       "status": "success",
-      "started_at": "2026-02-18T09:56:11.337766+00:00",
-      "ended_at": "2026-02-18T09:56:11.337830+00:00",
+      "started_at": "2026-02-18T13:57:00.677332+00:00",
+      "ended_at": "2026-02-18T13:57:00.677397+00:00",
       "error_code": null,
       "details": {}
     },
     "VALIDATE": {
       "status": "success",
-      "started_at": "2026-02-18T09:56:11.337911+00:00",
-      "ended_at": "2026-02-18T09:56:11.361038+00:00",
+      "started_at": "2026-02-18T13:57:00.677475+00:00",
+      "ended_at": "2026-02-18T13:57:00.702425+00:00",
       "error_code": null,
       "details": {
         "command": [
@@ -51,8 +51,8 @@
     },
     "PUBLISH": {
       "status": "success",
-      "started_at": "2026-02-18T09:56:11.361250+00:00",
-      "ended_at": "2026-02-18T09:56:11.361311+00:00",
+      "started_at": "2026-02-18T13:57:00.702660+00:00",
+      "ended_at": "2026-02-18T13:57:00.702703+00:00",
       "error_code": null,
       "details": {
         "note": "publish-prep stage complete"
