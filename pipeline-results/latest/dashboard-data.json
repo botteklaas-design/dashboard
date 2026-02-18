@@ -1,10 +1,10 @@
 {
-  "runTimestamp": "2026-02-18-025744",
+  "runTimestamp": "2026-02-18-065744",
   "winner": "**SMS-kosten transparantie-assistent** — 24/35 (business), Tech Feasibility **8/10**",
   "winnerScore": "24/35",
   "ideasCount": 1,
   "recommendedCount": null,
-  "status": "amber",
+  "status": "green",
   "quality": {
     "freshness": {
       "label": "fresh",
@@ -14,11 +14,6 @@
     "errorCodes": []
   },
   "trend": [
-    {
-      "timestamp": "2026-02-16-225945",
-      "winner": "-",
-      "score": null
-    },
     {
       "timestamp": "2026-02-17-025637",
       "winner": "-",
@@ -53,7 +48,12 @@
       "timestamp": "2026-02-17-225807",
       "winner": "**SMS-kosten transparantie-assistent** — 24/35 (business), Tech Feasibility **8/10**",
       "score": "24/35"
+    },
+    {
+      "timestamp": "2026-02-18-025744",
+      "winner": "**SMS-kosten transparantie-assistent** — 24/35 (business), Tech Feasibility **8/10**",
+      "score": "24/35"
     }
   ],
-  "generatedAt": "2026-02-18T02:57:45.265491"
+  "generatedAt": "2026-02-18T06:57:45.111039"
 }
