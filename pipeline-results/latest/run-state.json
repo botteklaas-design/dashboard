@@ -1,6 +1,6 @@
 {
-  "runTimestamp": "2026-02-17-225807",
-  "status": "red",
+  "runTimestamp": "2026-02-18-025744",
+  "status": "amber",
   "winner": "**SMS-kosten transparantie-assistent** — 24/35 (business), Tech Feasibility **8/10**",
   "winnerScore": "24/35",
   "quality": {
@@ -11,5 +11,5 @@
     "validationPass": true,
     "errorCodes": []
   },
-  "updatedAt": "2026-02-17T22:58:07.988608"
+  "updatedAt": "2026-02-18T02:57:45.265603"
 }

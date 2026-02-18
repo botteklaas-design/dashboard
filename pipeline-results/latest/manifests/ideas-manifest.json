@@ -1,154 +1,19 @@
 {
   "version": "2.0",
-  "generatedAt": "2026-02-17T21:58:07.936769+00:00",
-  "count": 10,
+  "generatedAt": "2026-02-18T01:57:45.221626+00:00",
+  "count": 1,
   "selectedIdeaId": 1,
   "ideas": [
     {
       "id": 1,
-      "title": "UPS/DPD pakketproblemen",
-      "score": "22/35",
-      "repetition": "-",
-      "confidence": "Medium",
-      "bmc": {
-        "problem": "late bezorging, ontbrekende pakketten, frustratie bij consumenten.",
-        "icp": "-",
-        "value": "UPS/DPD pakketproblemen — concrete probleemoplossing",
-        "revenue": "-",
-        "mvp": "-",
-        "risk": "-"
-      }
-    },
-    {
-      "id": 2,
-      "title": "SMS-kosten (CMTelecom/vergelijkbare flows)",
-      "score": "24/35",
-      "repetition": "-",
-      "confidence": "Medium-High",
-      "bmc": {
-        "problem": "onverwacht hoge SMS-kosten en onduidelijke voorwaarden.",
-        "icp": "ZZP/KB met SMS-diensten + consumenten met premium-SMS risico",
-        "value": "SMS-kosten (CMTelecom/vergelijkbare flows) — concrete probleemoplossing",
-        "revenue": "Freemium monitoring + premium alerting/claim templates",
-        "mvp": "kostenwaarschuwingen, drempelalerts, factuur-uitleg, klachttemplate",
-        "risk": "afhankelijkheid van providerdatakwaliteit"
-      }
-    },
-    {
-      "id": 3,
-      "title": "Krantbezorging",
-      "score": "16/35",
-      "repetition": "-",
-      "confidence": "Medium-Low",
-      "bmc": {
-        "problem": "structureel te late bezorging.",
-        "icp": "-",
-        "value": "Krantbezorging — concrete probleemoplossing",
-        "revenue": "-",
-        "mvp": "-",
-        "risk": "-"
-      }
-    },
-    {
-      "id": 4,
-      "title": "Internet/Wifi problemen",
+      "title": "Generieke klantfrictie-oplosser",
       "score": "17/35",
       "repetition": "-",
-      "confidence": "Medium-Low",
+      "confidence": "medium",
       "bmc": {
-        "problem": "instabiele verbinding en snelheidsissues.",
+        "problem": "-",
         "icp": "-",
-        "value": "Internet/Wifi problemen — concrete probleemoplossing",
-        "revenue": "-",
-        "mvp": "-",
-        "risk": "-"
-      }
-    },
-    {
-      "id": 5,
-      "title": "TV content/ervaring",
-      "score": "14/35",
-      "repetition": "-",
-      "confidence": "Low",
-      "bmc": {
-        "problem": "beperkte contentkeuze en frustratie in aanbod.",
-        "icp": "-",
-        "value": "TV content/ervaring — concrete probleemoplossing",
-        "revenue": "-",
-        "mvp": "-",
-        "risk": "-"
-      }
-    },
-    {
-      "id": 6,
-      "title": "Telefoonbeveiliging",
-      "score": "18/35",
-      "repetition": "-",
-      "confidence": "Medium-Low",
-      "bmc": {
-        "problem": "gebrek aan vertrouwen in mobiele beveiliging.",
-        "icp": "-",
-        "value": "Telefoonbeveiliging — concrete probleemoplossing",
-        "revenue": "-",
-        "mvp": "-",
-        "risk": "-"
-      }
-    },
-    {
-      "id": 7,
-      "title": "Energiesparen hulp",
-      "score": "19/35",
-      "repetition": "-",
-      "confidence": "Medium",
-      "bmc": {
-        "problem": "vraag naar makkelijke bespaaradviezen.",
-        "icp": "-",
-        "value": "Energiesparen hulp — concrete probleemoplossing",
-        "revenue": "-",
-        "mvp": "-",
-        "risk": "-"
-      }
-    },
-    {
-      "id": 8,
-      "title": "Gebruiksvriendelijke software tooling",
-      "score": "20/35",
-      "repetition": "-",
-      "confidence": "Medium",
-      "bmc": {
-        "problem": "tools zijn complex en tijdrovend.",
-        "icp": "-",
-        "value": "Gebruiksvriendelijke software tooling — concrete probleemoplossing",
-        "revenue": "-",
-        "mvp": "-",
-        "risk": "-"
-      }
-    },
-    {
-      "id": 9,
-      "title": "Garantieproblemen",
-      "score": "21/35",
-      "repetition": "-",
-      "confidence": "Medium",
-      "bmc": {
-        "problem": "trage afhandeling en slechte statuscommunicatie.",
-        "icp": "-",
-        "value": "Garantieproblemen — concrete probleemoplossing",
-        "revenue": "-",
-        "mvp": "-",
-        "risk": "-"
-      }
-    },
-    {
-      "id": 10,
-      "title": "Telefoonservice beveiliging",
-      "score": "18/35",
-      "repetition": "-",
-      "confidence": "Medium-Low",
-      "bmc": {
-        "problem": "zorgen over privacy en servicebeveiliging.",
-        "icp": "-",
-        "value": "Telefoonservice beveiliging — concrete probleemoplossing",
+        "value": "Generieke klantfrictie-oplosser — concrete probleemoplossing",
         "revenue": "-",
         "mvp": "-",
         "risk": "-"

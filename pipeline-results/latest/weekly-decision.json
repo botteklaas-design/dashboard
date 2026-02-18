@@ -1,13 +1,13 @@
 {
   "version": "2.0",
-  "generatedAt": "2026-02-17T21:58:07.960062+00:00",
+  "generatedAt": "2026-02-18T01:57:45.240245+00:00",
   "singleProductBet": {
     "title": "**SMS-kosten transparantie-assistent** — 24/35 (business), Tech Feasibility **8/10**",
-    "confidence": 0.61,
+    "confidence": 0.49,
     "rationale": [
       "Latest validated winner remains: **SMS-kosten transparantie-assistent** — 24/35 (business), Tech Feasibility **8/10**.",
       "Trend repetition count (last 10): 0.",
-      "Operational reliability context: success30=66.7, fallback30=33.3.",
+      "Operational reliability context: success30=60.0, fallback30=20.0.",
       "Recommendation favors a narrow MVP with single painful workflow and payment trigger."
     ],
     "killCriteria": [

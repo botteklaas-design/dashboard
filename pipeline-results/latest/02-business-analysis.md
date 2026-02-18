@@ -1,27 +1,8 @@
-# Business Analysis Report (Recovery Pass)
-Datum: 2026-02-17
-Run: RECOVERY
-Input: latest/01-forum-scout.md
-Aantal ideeën geanalyseerd: 10
-
----
-
-## Executive Summary
-Top 3 kansen (op basis van concrete pijn + betalingsprikkel + MVP-snelheid):
-
-1. **SMS-kosten transparantie-assistent (B2C/B2B light)** — **24/35** — Confidence: **Medium-High**
-2. **Pakketvertraging predictor + claim assistent** — **22/35** — Confidence: **Medium**
-3. **Garantie claim/repair dossierbouwer** — **21/35** — Confidence: **Medium**
-
-**Aanbevolen winnaar voor Stage 3:**
-- **Idee 2: SMS-kosten transparantie-assistent**
-
-### Waarom deze top-3
-- Ze koppelen frustratie direct aan geldverlies of directe tijdswinst.
-- MVP kan zonder diepe telecom/logistieke integraties starten.
-- Herhalende use-cases (maandelijkse facturen, terugkerende klachten, support-conflicten).
-
----
+# Business Analysis Report (AUTO RECOVERY)
+RECOVERY_DRAFT: true
+Datum: 2026-02-18
+Run: AUTO_RECOVERY
+Aantal ideeën geanalyseerd: 1
 
 ## Scoringskader (/35)
 - Business Value (0–10)
@@ -29,117 +10,21 @@ Top 3 kansen (op basis van concrete pijn + betalingsprikkel + MVP-snelheid):
 - Payment Willingness (0–10)
 - Repetition Score (0–5)
 
----
+## Top 3 (deterministische fallback)
+1. Idee 1 — Generieke klantfrictie-oplosser — 17/35
+   - Business Value: 5/10
+   - Viability: 5/10
+   - Payment Willingness: 5/10
+   - Repetition Score: 2/5
 
 ## Idea-by-idea (bounded)
 
-## Idee 1: UPS/DPD pakketproblemen
-**Original Context**: late bezorging, ontbrekende pakketten, frustratie bij consumenten.
-**Totaalscore**: **22/35**
-- Business Value: 7/10
-- Viability: 6/10
-- Payment Willingness: 5/10
-- Repetition Score: 4/5
-**Confidence**: Medium
-**Recommendation**: RESEARCH MORE (partner-first GTM)
-
-## Idee 2: SMS-kosten (CMTelecom/vergelijkbare flows)
-**Original Context**: onverwacht hoge SMS-kosten en onduidelijke voorwaarden.
-**Totaalscore**: **24/35**
-- Business Value: 8/10
-- Viability: 7/10
-- Payment Willingness: 6/10
-- Repetition Score: 3/5
-**Confidence**: Medium-High
-**Recommendation**: BUILD MVP NOW
-**Target segment**: ZZP/KB met SMS-diensten + consumenten met premium-SMS risico
-**Revenue model**: Freemium monitoring + premium alerting/claim templates
-**MVP scope**: kostenwaarschuwingen, drempelalerts, factuur-uitleg, klachttemplate
-⚠️ **Risk 1**: afhankelijkheid van providerdatakwaliteit
-
-## Idee 3: Krantbezorging
-**Original Context**: structureel te late bezorging.
-**Totaalscore**: **16/35**
-- Business Value: 5/10
-- Viability: 6/10
-- Payment Willingness: 3/10
-- Repetition Score: 2/5
-**Confidence**: Medium-Low
-**Recommendation**: PASS (lage directe monetisatie)
-
-## Idee 4: Internet/Wifi problemen
-**Original Context**: instabiele verbinding en snelheidsissues.
+## Idee 1: Generieke klantfrictie-oplosser
 **Totaalscore**: **17/35**
-- Business Value: 6/10
-- Viability: 5/10
-- Payment Willingness: 4/10
-- Repetition Score: 2/5
-**Confidence**: Medium-Low
-**Recommendation**: PASS (hoge support/diagnostiek-complexiteit)
-
-## Idee 5: TV content/ervaring
-**Original Context**: beperkte contentkeuze en frustratie in aanbod.
-**Totaalscore**: **14/35**
 - Business Value: 5/10
-- Viability: 4/10
-- Payment Willingness: 3/10
+- Viability: 5/10
+- Payment Willingness: 5/10
 - Repetition Score: 2/5
-**Confidence**: Low
-**Recommendation**: PASS
-
-## Idee 6: Telefoonbeveiliging
-**Original Context**: gebrek aan vertrouwen in mobiele beveiliging.
-**Totaalscore**: **18/35**
-- Business Value: 6/10
-- Viability: 5/10
-- Payment Willingness: 4/10
-- Repetition Score: 3/5
-**Confidence**: Medium-Low
-**Recommendation**: RESEARCH MORE (sterke concurrentie security-apps)
-
-## Idee 7: Energiesparen hulp
-**Original Context**: vraag naar makkelijke bespaaradviezen.
-**Totaalscore**: **19/35**
-- Business Value: 6/10
-- Viability: 6/10
-- Payment Willingness: 4/10
-- Repetition Score: 3/5
-**Confidence**: Medium
-**Recommendation**: RESEARCH MORE
-
-## Idee 8: Gebruiksvriendelijke software tooling
-**Original Context**: tools zijn complex en tijdrovend.
-**Totaalscore**: **20/35**
-- Business Value: 7/10
-- Viability: 6/10
-- Payment Willingness: 4/10
-- Repetition Score: 3/5
-**Confidence**: Medium
-**Recommendation**: RESEARCH MORE (scherpe niche nodig)
-
-## Idee 9: Garantieproblemen
-**Original Context**: trage afhandeling en slechte statuscommunicatie.
-**Totaalscore**: **21/35**
-- Business Value: 7/10
-- Viability: 6/10
-- Payment Willingness: 4/10
-- Repetition Score: 4/5
-**Confidence**: Medium
-**Recommendation**: RESEARCH MORE
-
-## Idee 10: Telefoonservice beveiliging
-**Original Context**: zorgen over privacy en servicebeveiliging.
-**Totaalscore**: **18/35**
-- Business Value: 6/10
-- Viability: 5/10
-- Payment Willingness: 4/10
-- Repetition Score: 3/5
-**Confidence**: Medium-Low
-**Recommendation**: PASS
-
----
 
 ## Final Ranking
-1. Idee 2 — SMS-kosten transparantie-assistent — 24/35
-2. Idee 1 — Pakketvertraging predictor + claim assistent — 22/35
-3. Idee 9 — Garantie dossierbouwer — 21/35
+1. Idee 1 — Generieke klantfrictie-oplosser — 17/35
