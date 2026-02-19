@@ -1,34 +1,23 @@
-## Pipeline Log Scan — Run 7a33c3dd-c17d-4a06-ba5e-ff91799beeed
+Pipeline Log Scan - 2026-02-19T02:58:41.037759
 
-**Timestamp:** 2026-02-18 22:55 CET
-**Status:** COMPLETE
-**Recovery Used:** NO
-**Winner:** SMS-kosten transparantie-assistent
+Run Summary:
+- State machine: COMPLETE (exit 0)
+- Manifests: generated
+- Weekly decision: generated
+- Dashboard state: generated
+- History manifest: 0 entries
 
-### Run Summary
-- State machine executed successfully
-- All orchestrator scripts completed
-- Manifests generated
-- Weekly decision computed
-- Dashboard state updated
-- History manifest regenerated with 29 runs
+Files Generated:
+- dashboard-data.json: ✓
+- run-state.json: ✓
+- validation-report.json: ✓
+- state-machine.json: ✓
+- run-events.jsonl: ✓
+- history-manifest.json: ✓ (empty)
+- weekly-decision.json: ✓
 
-### Quality Signals
-✅ Enhanced styled dashboard preserved
-✅ All v2 orchestrator scripts executed in sequence
-✅ No duplicate Scout calls (state-machine flow only)
-✅ Model policy loaded: ollama/qwen2.5:7b for Scout
-✅ Research focus applied: brede Dutch source scan
-✅ Files mirrored to ~/files/pipeline-results/
+Mirror Status:
+- latest/ synced to ~/files/pipeline-results/latest/
+- history/ synced to ~/files/pipeline-results/history/
 
-### Validation
-- Winner identified: SMS-kosten transparantie-assistent
-- Business value: 8/10
-- Tech feasibility: 8/10
-- MVP timeline: 6 weeks
-- Suggested stack: Next.js + Supabase
-
-### Next Steps
-- Dashboard artifacts published to GitHub
-- History manifest includes latest run
-- Ops panel data current
+No errors detected.

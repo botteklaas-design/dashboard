@@ -1,13 +1,13 @@
 # Weekly Product Bet (Latest)
-Generated: 2026-02-18T21:59:14.672467+00:00
+Generated: 2026-02-19T01:58:05.409292+00:00
 
 ## Single Product Bet: **SMS-kosten transparantie-assistent** — 24/35 (business), Tech Feasibility **8/10**
 **Confidence:** 0.54
 
 ### Rationale
 - Latest validated winner remains: **SMS-kosten transparantie-assistent** — 24/35 (business), Tech Feasibility **8/10**.
-- Trend repetition count (last 10): 0.
-- Operational reliability context: success30=80.0, fallback30=10.0.
+- Trend repetition count (last 10): 1.
+- Operational reliability context: success30=81.8, fallback30=9.1.
 - Recommendation favors a narrow MVP with single painful workflow and payment trigger.
 
 ### Kill Criteria

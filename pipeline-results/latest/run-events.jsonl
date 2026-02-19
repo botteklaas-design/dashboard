@@ -117,3 +117,16 @@
 {"ts": "2026-02-18T21:58:50.212329+00:00", "run_id": "7a33c3dd-c17d-4a06-ba5e-ff91799beeed", "type": "stage_start", "stage": "PUBLISH"}
 {"ts": "2026-02-18T21:58:50.212368+00:00", "run_id": "7a33c3dd-c17d-4a06-ba5e-ff91799beeed", "type": "stage_end", "stage": "PUBLISH", "ok": true, "fatal": false, "error_code": null}
 {"ts": "2026-02-18T21:58:50.212483+00:00", "run_id": "7a33c3dd-c17d-4a06-ba5e-ff91799beeed", "type": "run_terminal", "status": "COMPLETE", "recovery_used": false}
+{"ts": "2026-02-19T01:56:00.429453+00:00", "run_id": "5ef23c72-6ba4-4c81-8a80-c5b770429023", "type": "stage_start", "stage": "INIT"}
+{"ts": "2026-02-19T01:56:00.429704+00:00", "run_id": "5ef23c72-6ba4-4c81-8a80-c5b770429023", "type": "stage_end", "stage": "INIT", "ok": true, "fatal": false, "error_code": null}
+{"ts": "2026-02-19T01:56:00.429904+00:00", "run_id": "5ef23c72-6ba4-4c81-8a80-c5b770429023", "type": "stage_start", "stage": "SCOUT"}
+{"ts": "2026-02-19T01:57:54.690210+00:00", "run_id": "5ef23c72-6ba4-4c81-8a80-c5b770429023", "type": "stage_end", "stage": "SCOUT", "ok": true, "fatal": false, "error_code": null, "scout_source": "fresh", "scout_fresh": true}
+{"ts": "2026-02-19T01:57:54.690661+00:00", "run_id": "5ef23c72-6ba4-4c81-8a80-c5b770429023", "type": "stage_start", "stage": "ANALYST"}
+{"ts": "2026-02-19T01:57:54.690883+00:00", "run_id": "5ef23c72-6ba4-4c81-8a80-c5b770429023", "type": "stage_end", "stage": "ANALYST", "ok": true, "fatal": false, "error_code": null}
+{"ts": "2026-02-19T01:57:54.690982+00:00", "run_id": "5ef23c72-6ba4-4c81-8a80-c5b770429023", "type": "stage_start", "stage": "DEV"}
+{"ts": "2026-02-19T01:57:54.691139+00:00", "run_id": "5ef23c72-6ba4-4c81-8a80-c5b770429023", "type": "stage_end", "stage": "DEV", "ok": true, "fatal": false, "error_code": null}
+{"ts": "2026-02-19T01:57:54.691227+00:00", "run_id": "5ef23c72-6ba4-4c81-8a80-c5b770429023", "type": "stage_start", "stage": "VALIDATE"}
+{"ts": "2026-02-19T01:57:54.719655+00:00", "run_id": "5ef23c72-6ba4-4c81-8a80-c5b770429023", "type": "stage_end", "stage": "VALIDATE", "ok": true, "fatal": false, "error_code": null}
+{"ts": "2026-02-19T01:57:54.719892+00:00", "run_id": "5ef23c72-6ba4-4c81-8a80-c5b770429023", "type": "stage_start", "stage": "PUBLISH"}
+{"ts": "2026-02-19T01:57:54.719930+00:00", "run_id": "5ef23c72-6ba4-4c81-8a80-c5b770429023", "type": "stage_end", "stage": "PUBLISH", "ok": true, "fatal": false, "error_code": null}
+{"ts": "2026-02-19T01:57:54.720031+00:00", "run_id": "5ef23c72-6ba4-4c81-8a80-c5b770429023", "type": "run_terminal", "status": "COMPLETE", "recovery_used": false}

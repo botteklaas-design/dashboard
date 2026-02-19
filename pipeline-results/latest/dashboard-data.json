@@ -8,7 +8,7 @@
   "quality": {
     "freshness": {
       "label": "stale",
-      "minutes": 422
+      "minutes": 661
     },
     "validationPass": true,
     "errorCodes": [],
@@ -58,5 +58,5 @@
       "score": "24/35"
     }
   ],
-  "generatedAt": "2026-02-18T22:59:18.287036"
+  "generatedAt": "2026-02-19T02:58:09.269928"
 }

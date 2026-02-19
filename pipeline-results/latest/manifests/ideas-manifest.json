@@ -1,19 +1,19 @@
 {
   "version": "2.0",
-  "generatedAt": "2026-02-18T21:59:11.051172+00:00",
+  "generatedAt": "2026-02-19T01:58:01.944472+00:00",
   "count": 10,
   "selectedIdeaId": 1,
   "ideas": [
     {
       "id": 1,
-      "title": "Klachten en Oplossingen",
+      "title": "Klachten en klachtweergave bij consumenten",
       "score": "-",
       "repetition": "-",
       "confidence": "scout-only",
       "bmc": {
-        "problem": "Klachten blijven een belangrijk probleem in Nederland, met vele klanten die hulp zoeken bij het oplossen van diverse problemen.",
+        "problem": "Klachten zijn een belangrijk aspect van de consumentenbescherming, maar de efficiëntie en transparantie in klachtweergave is vaak twijfelachtig.",
         "icp": "Consumenten/KB",
-        "value": "Klachten en Oplossingen — scout-signaal (nog niet volledig geanalyseerd)",
+        "value": "Klachten en klachtweergave bij consumenten — scout-signaal (nog niet volledig geanalyseerd)",
         "revenue": "-",
         "mvp": "-",
         "risk": "-"
@@ -21,14 +21,14 @@
     },
     {
       "id": 2,
-      "title": "Online Forum Discussies",
+      "title": "Problemen met huurcontracten",
       "score": "-",
       "repetition": "-",
       "confidence": "scout-only",
       "bmc": {
-        "problem": "Technische problemen zijn een algemeen probleem die talloze gebruikers helpen op te lossen door interactie in online community-forums.",
+        "problem": "Huurcontracten zijn een algemeen probleem in Nederland, wat bijdraagt aan de stress en onzekerheid van huishoudens.",
         "icp": "Consumenten/KB",
-        "value": "Online Forum Discussies — scout-signaal (nog niet volledig geanalyseerd)",
+        "value": "Problemen met huurcontracten — scout-signaal (nog niet volledig geanalyseerd)",
         "revenue": "-",
         "mvp": "-",
         "risk": "-"
@@ -36,14 +36,14 @@
     },
     {
       "id": 3,
-      "title": "Huurcommissie Problemen",
+      "title": "Huurcommissie ondernemingen",
       "score": "-",
       "repetition": "-",
       "confidence": "scout-only",
       "bmc": {
-        "problem": "De Huurcommissie biedt een belangrijke service voor consumenten en huurders die juridisch advies nodig hebben.",
+        "problem": "De Huurcommissie speelt een cruciale rol in het beschermdhouden van huishoudens tegen onrechtmatige behandelwijzen.",
         "icp": "Consumenten/KB",
-        "value": "Huurcommissie Problemen — scout-signaal (nog niet volledig geanalyseerd)",
+        "value": "Huurcommissie ondernemingen — scout-signaal (nog niet volledig geanalyseerd)",
         "revenue": "-",
         "mvp": "-",
         "risk": "-"
@@ -51,14 +51,14 @@
     },
     {
       "id": 4,
-      "title": "Consumentenadvies",
+      "title": "Geschillenkommissie en klachtweergave",
       "score": "-",
       "repetition": "-",
       "confidence": "scout-only",
       "bmc": {
-        "problem": "Het ontbreken van voldoende en betrouwbare informatie kan leiden tot problemen voor consumenten, die op zoek zijn naar betrouwbaar advies.",
+        "problem": "Geschillenkommissies spelen een cruciale rol in het beschermdhouden van consumenten, maar hun werking kan vaak verbeterd worden.",
         "icp": "Consumenten/KB",
-        "value": "Consumentenadvies — scout-signaal (nog niet volledig geanalyseerd)",
+        "value": "Geschillenkommissie en klachtweergave — scout-signaal (nog niet volledig geanalyseerd)",
         "revenue": "-",
         "mvp": "-",
         "risk": "-"
@@ -66,14 +66,14 @@
     },
     {
       "id": 5,
-      "title": "Geschillencommissie Klachten",
+      "title": "Juridische advies en juridische looppapier",
       "score": "-",
       "repetition": "-",
       "confidence": "scout-only",
       "bmc": {
-        "problem": "De Geschillencommissie speelt een cruciale rol in het resolvatieproces, en gebruikers zoeken hulp via hun website.",
+        "problem": "Juridische advies kan lastig en duur zijn, wat bijdraagt aan de onzekerheid van consumenten.",
         "icp": "Consumenten/KB",
-        "value": "Geschillencommissie Klachten — scout-signaal (nog niet volledig geanalyseerd)",
+        "value": "Juridische advies en juridische looppapier — scout-signaal (nog niet volledig geanalyseerd)",
         "revenue": "-",
         "mvp": "-",
         "risk": "-"
@@ -81,14 +81,14 @@
     },
     {
       "id": 6,
-      "title": "Juridische Loopen",
+      "title": "Storingen en technische problemen",
       "score": "-",
       "repetition": "-",
       "confidence": "scout-only",
       "bmc": {
-        "problem": "De complexiteit van het recht kan ervoor zorgen dat consumenten op zoek zijn naar professionele hulp via online resources.",
+        "problem": "Storingen kunnen ernstige problemen veroorzaken voor consumenten, wat bijdraagt aan de frustratie en ongemak.",
         "icp": "Consumenten/KB",
-        "value": "Juridische Loopen — scout-signaal (nog niet volledig geanalyseerd)",
+        "value": "Storingen en technische problemen — scout-signaal (nog niet volledig geanalyseerd)",
         "revenue": "-",
         "mvp": "-",
         "risk": "-"
@@ -96,14 +96,14 @@
     },
     {
       "id": 7,
-      "title": "Huurdershulp Opzoeken",
+      "title": "Consumentenwijzer en consumentenbescherming",
       "score": "-",
       "repetition": "-",
       "confidence": "scout-only",
       "bmc": {
-        "problem": "De Huurcommissie biedt cruciaal hulp bij juridische kwesties voor huurders, wat aantoont hoeveel vraag er is naar deze service.",
+        "problem": "Consumenten beschermen moet zeker, transparant en doeltreffend zijn, wat niet altijd het geval is.",
         "icp": "Consumenten/KB",
-        "value": "Huurdershulp Opzoeken — scout-signaal (nog niet volledig geanalyseerd)",
+        "value": "Consumentenwijzer en consumentenbescherming — scout-signaal (nog niet volledig geanalyseerd)",
         "revenue": "-",
         "mvp": "-",
         "risk": "-"
@@ -111,14 +111,14 @@
     },
     {
       "id": 8,
-      "title": "Storingen en Technische Problemen",
+      "title": "Zorgklachten en klachtweergave",
       "score": "-",
       "repetition": "-",
       "confidence": "scout-only",
       "bmc": {
-        "problem": "Technische problemen zijn een voortdurende drukte in de technologie-wereld, met consumenten op zoek naar oplossingen.",
+        "problem": "Zorgklachten kunnen ernstige gevolgen hebben voor patiënten, wat bijdraagt aan de stress en onzekerheid van consumenten.",
         "icp": "Consumenten/KB",
-        "value": "Storingen en Technische Problemen — scout-signaal (nog niet volledig geanalyseerd)",
+        "value": "Zorgklachten en klachtweergave — scout-signaal (nog niet volledig geanalyseerd)",
         "revenue": "-",
         "mvp": "-",
         "risk": "-"
@@ -126,14 +126,14 @@
     },
     {
       "id": 9,
-      "title": "Online Consumentenservice",
+      "title": "Problemen met huizen en woningen",
       "score": "-",
       "repetition": "-",
       "confidence": "scout-only",
       "bmc": {
-        "problem": "Online consumentenservice kan helpen bij het voorkomen van problemen voor consumenten, die op zoek zijn naar kennis en advies.",
+        "problem": "Problemen met huizen en woningen kunnen ernstige problemen veroorzaken voor consumenten, wat bijdraagt aan de onzekerheid en stress.",
         "icp": "Consumenten/KB",
-        "value": "Online Consumentenservice — scout-signaal (nog niet volledig geanalyseerd)",
+        "value": "Problemen met huizen en woningen — scout-signaal (nog niet volledig geanalyseerd)",
         "revenue": "-",
         "mvp": "-",
         "risk": "-"
@@ -141,14 +141,14 @@
     },
     {
       "id": 10,
-      "title": "Geschillen Resolutie",
+      "title": "Problemen met energiediensten",
       "score": "-",
       "repetition": "-",
       "confidence": "scout-only",
       "bmc": {
-        "problem": "Geschillen resolutie is een cruciaal aspect van consumentenbescherming, en de website van de Geschillencommissie blijkt populair te zijn.",
+        "problem": "Problemen met energiediensten kunnen ernstige gevolgen hebben voor consumenten, wat bijdraagt aan de stress en ongemak.",
         "icp": "Consumenten/KB",
-        "value": "Geschillen Resolutie — scout-signaal (nog niet volledig geanalyseerd)",
+        "value": "Problemen met energiediensten — scout-signaal (nog niet volledig geanalyseerd)",
         "revenue": "-",
         "mvp": "-",
         "risk": "-"
