@@ -77,7 +77,11 @@ def parse_scout_ideas(md: str):
 
 
 def load_history_runs():
-    hist = load(BASE / 'history-manifest.json', {'runs': []}).get('runs', [])
+    data = load(BASE / 'history-manifest.json', {'runs': []})
+    # Handle both old format (list) and new format (dict with runs key)
+    if isinstance(data, list):
+        return data
+    hist = data.get('runs', [])
     return hist if isinstance(hist, list) else []
 
 

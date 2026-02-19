@@ -1,23 +1,18 @@
-Pipeline Log Scan - 2026-02-19T02:58:41.037759
+=== Pipeline Log Scan ===
+Scan Time: 2026-02-19 06:59:00
 
-Run Summary:
-- State machine: COMPLETE (exit 0)
-- Manifests: generated
-- Weekly decision: generated
-- Dashboard state: generated
-- History manifest: 0 entries
+Pipeline Execution Summary:
+- State Machine: ✓ COMPLETE
+- Manifest Generation: ✓ COMPLETE
+- Weekly Decision Engine: ✓ COMPLETE
+- Dashboard State: ✓ COMPLETE
+- History Manifest: ✓ REGENERATED (29 runs)
+- File Mirror: ✓ SYNCED
 
-Files Generated:
-- dashboard-data.json: ✓
-- run-state.json: ✓
-- validation-report.json: ✓
-- state-machine.json: ✓
-- run-events.jsonl: ✓
-- history-manifest.json: ✓ (empty)
-- weekly-decision.json: ✓
-
-Mirror Status:
-- latest/ synced to ~/files/pipeline-results/latest/
-- history/ synced to ~/files/pipeline-results/history/
+Run Details:
+  Run ID: 41873196-9f8d-45e1-a766-d6eb77bdc507
+  Recovery Used: No
+  Model Policy: Qwen2.5:7b (Scout), GPT-5.3-Codex (Analyst/Dev)
+  Research Focus: Broad Dutch source scan
 
 No errors detected.

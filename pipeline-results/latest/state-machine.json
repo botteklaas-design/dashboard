@@ -1,55 +1,57 @@
 {
   "version": "2.0",
-  "run_id": "5ef23c72-6ba4-4c81-8a80-c5b770429023",
+  "run_id": "41873196-9f8d-45e1-a766-d6eb77bdc507",
   "status": "COMPLETE",
   "current_stage": "COMPLETE",
-  "started_at": "2026-02-19T01:56:00.428965+00:00",
-  "ended_at": "2026-02-19T01:57:54.720031+00:00",
+  "started_at": "2026-02-19T05:55:56.316644+00:00",
+  "ended_at": "2026-02-19T05:57:39.909166+00:00",
   "stages": {
     "INIT": {
       "status": "success",
-      "started_at": "2026-02-19T01:56:00.429453+00:00",
-      "ended_at": "2026-02-19T01:56:00.429704+00:00",
+      "started_at": "2026-02-19T05:55:56.317509+00:00",
+      "ended_at": "2026-02-19T05:55:56.317614+00:00",
       "error_code": null,
       "details": {}
     },
     "SCOUT": {
       "status": "success",
-      "started_at": "2026-02-19T01:56:00.429904+00:00",
-      "ended_at": "2026-02-19T01:57:54.690210+00:00",
-      "error_code": null,
+      "started_at": "2026-02-19T05:55:56.317777+00:00",
+      "ended_at": "2026-02-19T05:57:39.872341+00:00",
+      "error_code": "SCOUT_FRESH_FAILED_USED_HISTORY",
       "details": {
         "command": [
           "/usr/bin/env",
           "python3",
           "/Users/mcbot/.openclaw/workspace/scripts/run_scout_stage.py"
         ],
-        "returncode": 0,
-        "stdout": "2-19 02:56:00] [SCOUT] source 2/19 ok https://www.klacht.nl/alle-klachten/\n[2026-02-19 02:56:00] [SCOUT] source 3/19 ok https://www.bnnvara.nl/kassa/vraag-beantwoord\n[2026-02-19 02:56:01] [SCOUT] source 4/19 ok https://radar-forum.avrotros.nl/\n[2026-02-19 02:56:01] [SCOUT] source 5/19 ok https://gathering.tweakers.net/\n[2026-02-19 02:56:01] [SCOUT] source 6/19 failed https://allestoringen.nl/: HTTP Error 403: Forbidden\n[2026-02-19 02:56:01] [SCOUT] source 7/19 failed https://downdetector.nl/: <urlopen error [Errno 54] Connection reset by peer>\n[2026-02-19 02:56:02] [SCOUT] source 8/19 failed https://www.reddit.com/r/geldzaken/new/: HTTP Error 403: Blocked\n[2026-02-19 02:56:02] [SCOUT] source 9/19 failed https://www.reddit.com/r/thenetherlands/new/: HTTP Error 403: Blocked\n[2026-02-19 02:56:02] [SCOUT] source 10/19 ok https://community.kpn.com/\n[2026-02-19 02:56:02] [SCOUT] source 11/19 ok https://community.ziggo.nl/\n[2026-02-19 02:56:02] [SCOUT] source 12/19 failed https://www.reddit.com/r/juridischadvies/new/: HTTP Error 403: Blocked\n[2026-02-19 02:56:03] [SCOUT] source 13/19 ok https://www.trustpilot.com/categories\n[2026-02-19 02:56:03] [SCOUT] source 14/19 ok https://forum.fok.nl/\n[2026-02-19 02:56:03] [SCOUT] source 15/19 ok https://x.com/search?q=%22storing%22%20(lang%3Anl\n[2026-02-19 02:56:03] [SCOUT] source 16/19 ok https://www.consuwijzer.nl\n[2026-02-19 02:56:04] [SCOUT] source 17/19 ok https://www.huurcommissie.nl\n[2026-02-19 02:56:04] [SCOUT] source 18/19 failed https://www.juridischloket.nl: HTTP Error 403: Forbidden\n[2026-02-19 02:56:05] [SCOUT] source 19/19 ok https://www.degeschillencommissie.nl\n[2026-02-19 02:56:05] [SCOUT] A_QWEN_SHORT start model=qwen2.5:7b chunked=false timeout=220s\n[2026-02-19 02:57:54] [SCOUT] A_QWEN_SHORT end mode=direct ideas=10 ok=True\n[2026-02-19 02:57:54] [SCOUT] runner success ideas=10 attempt=A_QWEN_SHORT\n{\"status\": \"ok\", \"ideas\": 10, \"artifact\": \"/Users/mcbot/.openclaw/workspace/pipeline-results/latest/01-forum-scout.md\"}",
+        "returncode": 3,
+        "stdout": "or.nl/: <urlopen error [Errno 54] Connection reset by peer>\n[2026-02-19 06:55:58] [SCOUT] source 8/19 ok https://www.reddit.com/r/geldzaken/new/\n[2026-02-19 06:55:58] [SCOUT] source 9/19 ok https://www.reddit.com/r/thenetherlands/new/\n[2026-02-19 06:55:58] [SCOUT] source 10/19 ok https://community.kpn.com/\n[2026-02-19 06:55:58] [SCOUT] source 11/19 ok https://community.ziggo.nl/\n[2026-02-19 06:55:59] [SCOUT] source 12/19 ok https://www.reddit.com/r/juridischadvies/new/\n[2026-02-19 06:55:59] [SCOUT] source 13/19 ok https://www.trustpilot.com/categories\n[2026-02-19 06:55:59] [SCOUT] source 14/19 ok https://forum.fok.nl/\n[2026-02-19 06:55:59] [SCOUT] source 15/19 ok https://x.com/search?q=%22storing%22%20(lang%3Anl\n[2026-02-19 06:55:59] [SCOUT] source 16/19 ok https://www.consuwijzer.nl\n[2026-02-19 06:56:00] [SCOUT] source 17/19 ok https://www.huurcommissie.nl\n[2026-02-19 06:56:00] [SCOUT] source 18/19 failed https://www.juridischloket.nl: HTTP Error 403: Forbidden\n[2026-02-19 06:56:01] [SCOUT] source 19/19 ok https://www.degeschillencommissie.nl\n[2026-02-19 06:56:01] [SCOUT] A_QWEN_SHORT start model=qwen2.5:7b chunked=false timeout=220s\n[2026-02-19 06:56:41] [SCOUT] A_QWEN_SHORT end mode=direct ideas=0 ok=False\n[2026-02-19 06:56:41] [SCOUT] B_QWEN_CHUNKED start model=qwen2.5:7b chunked=true timeout=180s\n[2026-02-19 06:56:41] [SCOUT] B_QWEN_CHUNKED heartbeat chunk 1/1\n[2026-02-19 06:57:18] [SCOUT] B_QWEN_CHUNKED end ideas=0 ok=False\n[2026-02-19 06:57:18] [SCOUT] C_LLAMA_SHORT start model=llama3.2 chunked=false timeout=220s\n[2026-02-19 06:57:30] [SCOUT] C_LLAMA_SHORT end mode=direct ideas=0 ok=False\n[2026-02-19 06:57:30] [SCOUT] D_LLAMA_CHUNKED start model=llama3.2 chunked=true timeout=180s\n[2026-02-19 06:57:30] [SCOUT] D_LLAMA_CHUNKED heartbeat chunk 1/1\n[2026-02-19 06:57:39] [SCOUT] D_LLAMA_CHUNKED end ideas=0 ok=False\n[2026-02-19 06:57:39] [SCOUT] runner failed code=SCOUT_TOO_FEW_IDEAS bestIdeas=0\n{\"status\": \"failed\", \"failureCode\": \"SCOUT_TOO_FEW_IDEAS\", \"ideas\": 0}",
         "stderr": "",
-        "scout_source": "fresh",
-        "scout_fresh": true,
-        "ideas_count": 10
+        "fallback_file": "/Users/mcbot/.openclaw/workspace/pipeline-results/history/01-forum-scout-2026-02-18-145700.md",
+        "ideas_count": 10,
+        "runner_failure_code": "SCOUT_TOO_FEW_IDEAS",
+        "scout_source": "history_fallback",
+        "scout_fresh": false
       }
     },
     "ANALYST": {
       "status": "success",
-      "started_at": "2026-02-19T01:57:54.690661+00:00",
-      "ended_at": "2026-02-19T01:57:54.690883+00:00",
+      "started_at": "2026-02-19T05:57:39.872656+00:00",
+      "ended_at": "2026-02-19T05:57:39.872962+00:00",
       "error_code": null,
       "details": {}
     },
     "DEV": {
       "status": "success",
-      "started_at": "2026-02-19T01:57:54.690982+00:00",
-      "ended_at": "2026-02-19T01:57:54.691139+00:00",
+      "started_at": "2026-02-19T05:57:39.873180+00:00",
+      "ended_at": "2026-02-19T05:57:39.873329+00:00",
       "error_code": null,
       "details": {}
     },
     "VALIDATE": {
       "status": "success",
-      "started_at": "2026-02-19T01:57:54.691227+00:00",
-      "ended_at": "2026-02-19T01:57:54.719655+00:00",
+      "started_at": "2026-02-19T05:57:39.873421+00:00",
+      "ended_at": "2026-02-19T05:57:39.908781+00:00",
       "error_code": null,
       "details": {
         "command": [
@@ -63,17 +65,19 @@
     },
     "PUBLISH": {
       "status": "success",
-      "started_at": "2026-02-19T01:57:54.719892+00:00",
-      "ended_at": "2026-02-19T01:57:54.719930+00:00",
+      "started_at": "2026-02-19T05:57:39.909018+00:00",
+      "ended_at": "2026-02-19T05:57:39.909060+00:00",
       "error_code": null,
       "details": {
         "note": "publish-prep stage complete"
       }
     }
   },
-  "error_codes": [],
+  "error_codes": [
+    "SCOUT_FRESH_FAILED_USED_HISTORY"
+  ],
   "recovery_used": false,
-  "scout_source": "fresh",
-  "scout_fresh": true,
+  "scout_source": "history_fallback",
+  "scout_fresh": false,
   "winner": "SMS-kosten transparantie-assistent"
 }

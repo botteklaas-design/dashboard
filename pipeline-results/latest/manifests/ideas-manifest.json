@@ -1,19 +1,19 @@
 {
   "version": "2.0",
-  "generatedAt": "2026-02-19T01:58:01.944472+00:00",
+  "generatedAt": "2026-02-19T05:58:14.149924+00:00",
   "count": 10,
   "selectedIdeaId": 1,
   "ideas": [
     {
       "id": 1,
-      "title": "Klachten en klachtweergave bij consumenten",
+      "title": "Probleem met UPS/DPD Pakketproblemen",
       "score": "-",
       "repetition": "-",
       "confidence": "scout-only",
       "bmc": {
-        "problem": "Klachten zijn een belangrijk aspect van de consumentenbescherming, maar de efficiëntie en transparantie in klachtweergave is vaak twijfelachtig.",
+        "problem": "Veel consumenten zijn frustraties over de onvoorspelbaarheid van UPS/DPD, wat leidt tot problemen bij voorbereiden op thuisbezorgd producten.",
         "icp": "Consumenten/KB",
-        "value": "Klachten en klachtweergave bij consumenten — scout-signaal (nog niet volledig geanalyseerd)",
+        "value": "Probleem met UPS/DPD Pakketproblemen — scout-signaal (nog niet volledig geanalyseerd)",
         "revenue": "-",
         "mvp": "-",
         "risk": "-"
@@ -21,14 +21,14 @@
     },
     {
       "id": 2,
-      "title": "Problemen met huurcontracten",
+      "title": "SMS-Kosten (CMTelecom)",
       "score": "-",
       "repetition": "-",
       "confidence": "scout-only",
       "bmc": {
-        "problem": "Huurcontracten zijn een algemeen probleem in Nederland, wat bijdraagt aan de stress en onzekerheid van huishoudens.",
+        "problem": "Veel klachten over niet-beschikbare of duurzame informatie over het aantal te verwachten berichten, wat leidt tot onnodige kosten.",
         "icp": "Consumenten/KB",
-        "value": "Problemen met huurcontracten — scout-signaal (nog niet volledig geanalyseerd)",
+        "value": "SMS-Kosten (CMTelecom) — scout-signaal (nog niet volledig geanalyseerd)",
         "revenue": "-",
         "mvp": "-",
         "risk": "-"
@@ -36,14 +36,14 @@
     },
     {
       "id": 3,
-      "title": "Huurcommissie ondernemingen",
+      "title": "Krantbezorging (Algemeen Dagblad)",
       "score": "-",
       "repetition": "-",
       "confidence": "scout-only",
       "bmc": {
-        "problem": "De Huurcommissie speelt een cruciale rol in het beschermdhouden van huishoudens tegen onrechtmatige behandelwijzen.",
+        "problem": "Vandaag zijn klanten meer geïnteresseerd in op tijd bezorgde kranten. Late bezorgingen kunnen leiden tot problemen bij het lezen van actuele nieuwsberichten.",
         "icp": "Consumenten/KB",
-        "value": "Huurcommissie ondernemingen — scout-signaal (nog niet volledig geanalyseerd)",
+        "value": "Krantbezorging (Algemeen Dagblad) — scout-signaal (nog niet volledig geanalyseerd)",
         "revenue": "-",
         "mvp": "-",
         "risk": "-"
@@ -51,14 +51,14 @@
     },
     {
       "id": 4,
-      "title": "Geschillenkommissie en klachtweergave",
+      "title": "Internet/Wifi Problemen (KPN)",
       "score": "-",
       "repetition": "-",
       "confidence": "scout-only",
       "bmc": {
-        "problem": "Geschillenkommissies spelen een cruciale rol in het beschermdhouden van consumenten, maar hun werking kan vaak verbeterd worden.",
+        "problem": "Veel klachten over onstabiliteit, langzame download- en uploadtijden en vertragingen bij internetdiensten. Dit kan leiden tot problemen met online diensten zoals video streaming of werkopdrachten.",
         "icp": "Consumenten/KB",
-        "value": "Geschillenkommissie en klachtweergave — scout-signaal (nog niet volledig geanalyseerd)",
+        "value": "Internet/Wifi Problemen (KPN) — scout-signaal (nog niet volledig geanalyseerd)",
         "revenue": "-",
         "mvp": "-",
         "risk": "-"
@@ -66,14 +66,14 @@
     },
     {
       "id": 5,
-      "title": "Juridische advies en juridische looppapier",
+      "title": "TV Problemen (KPN)",
       "score": "-",
       "repetition": "-",
       "confidence": "scout-only",
       "bmc": {
-        "problem": "Juridische advies kan lastig en duur zijn, wat bijdraagt aan de onzekerheid van consumenten.",
+        "problem": "Veel klanten zijn teleurgesteld in de beperkte kabelkansies en het gebrek aan nieuwste programmatuur. Dit kan een frustratie zijn voor klanten die graag nieuwe content willen streamen.",
         "icp": "Consumenten/KB",
-        "value": "Juridische advies en juridische looppapier — scout-signaal (nog niet volledig geanalyseerd)",
+        "value": "TV Problemen (KPN) — scout-signaal (nog niet volledig geanalyseerd)",
         "revenue": "-",
         "mvp": "-",
         "risk": "-"
@@ -81,14 +81,14 @@
     },
     {
       "id": 6,
-      "title": "Storingen en technische problemen",
+      "title": "Telefoon Beveiliging (KPN)",
       "score": "-",
       "repetition": "-",
       "confidence": "scout-only",
       "bmc": {
-        "problem": "Storingen kunnen ernstige problemen veroorzaken voor consumenten, wat bijdraagt aan de frustratie en ongemak.",
+        "problem": "Veel klanten zijn teleurgesteld in de lage kwaliteit van beveiligingssoftware op hun mobiele apparaten. Dit kan leiden tot zekerheidsoverwegingen en problemen met privacy.",
         "icp": "Consumenten/KB",
-        "value": "Storingen en technische problemen — scout-signaal (nog niet volledig geanalyseerd)",
+        "value": "Telefoon Beveiliging (KPN) — scout-signaal (nog niet volledig geanalyseerd)",
         "revenue": "-",
         "mvp": "-",
         "risk": "-"
@@ -96,14 +96,14 @@
     },
     {
       "id": 7,
-      "title": "Consumentenwijzer en consumentenbescherming",
+      "title": "Energiesparen (Ziggo)",
       "score": "-",
       "repetition": "-",
       "confidence": "scout-only",
       "bmc": {
-        "problem": "Consumenten beschermen moet zeker, transparant en doeltreffend zijn, wat niet altijd het geval is.",
+        "problem": "Veel klanten zijn geïnteresseerd in eenvoudige manieren om energie te besparen en de kosten te verminderen. Dit kan een grote behoefte zijn voor consumenten die belangen hebben in milieuvriendelijkheid.",
         "icp": "Consumenten/KB",
-        "value": "Consumentenwijzer en consumentenbescherming — scout-signaal (nog niet volledig geanalyseerd)",
+        "value": "Energiesparen (Ziggo) — scout-signaal (nog niet volledig geanalyseerd)",
         "revenue": "-",
         "mvp": "-",
         "risk": "-"
@@ -111,14 +111,14 @@
     },
     {
       "id": 8,
-      "title": "Zorgklachten en klachtweergave",
+      "title": "Softwareontwikkeling (Tweakers)",
       "score": "-",
       "repetition": "-",
       "confidence": "scout-only",
       "bmc": {
-        "problem": "Zorgklachten kunnen ernstige gevolgen hebben voor patiënten, wat bijdraagt aan de stress en onzekerheid van consumenten.",
+        "problem": "Veel klanten zijn frustraties over de complexiteit en duur van sommige software. Het ontbreken van eenvoudige interfacen kan leiden tot vertraging bij productiviteitsoplossingen.",
         "icp": "Consumenten/KB",
-        "value": "Zorgklachten en klachtweergave — scout-signaal (nog niet volledig geanalyseerd)",
+        "value": "Softwareontwikkeling (Tweakers) — scout-signaal (nog niet volledig geanalyseerd)",
         "revenue": "-",
         "mvp": "-",
         "risk": "-"
@@ -126,14 +126,14 @@
     },
     {
       "id": 9,
-      "title": "Problemen met huizen en woningen",
+      "title": "Garantieproblemen (Garantie & Verzekeringen)",
       "score": "-",
       "repetition": "-",
       "confidence": "scout-only",
       "bmc": {
-        "problem": "Problemen met huizen en woningen kunnen ernstige problemen veroorzaken voor consumenten, wat bijdraagt aan de onzekerheid en stress.",
+        "problem": "Veel klanten zijn teleurgesteld in de tijd die nodig is om garantieproblemen op te lossen. Deze kwesties kunnen leiden tot vertraging en financiële stress.",
         "icp": "Consumenten/KB",
-        "value": "Problemen met huizen en woningen — scout-signaal (nog niet volledig geanalyseerd)",
+        "value": "Garantieproblemen (Garantie & Verzekeringen) — scout-signaal (nog niet volledig geanalyseerd)",
         "revenue": "-",
         "mvp": "-",
         "risk": "-"
@@ -141,14 +141,14 @@
     },
     {
       "id": 10,
-      "title": "Problemen met energiediensten",
+      "title": "Telefoon Service Beveiliging (KPN)",
       "score": "-",
       "repetition": "-",
       "confidence": "scout-only",
       "bmc": {
-        "problem": "Problemen met energiediensten kunnen ernstige gevolgen hebben voor consumenten, wat bijdraagt aan de stress en ongemak.",
+        "problem": "Veel klanten zijn bezorgd om de privacy van hun telefoon informatie. Er is een dringende behoefte aan vertrouwenswaardige beveiligingsfuncties in mobiele diensten.",
         "icp": "Consumenten/KB",
-        "value": "Problemen met energiediensten — scout-signaal (nog niet volledig geanalyseerd)",
+        "value": "Telefoon Service Beveiliging (KPN) — scout-signaal (nog niet volledig geanalyseerd)",
         "revenue": "-",
         "mvp": "-",
         "risk": "-"

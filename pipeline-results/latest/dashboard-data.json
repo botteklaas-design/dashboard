@@ -4,18 +4,18 @@
   "winnerScore": "24/35",
   "ideasCount": 1,
   "recommendedCount": null,
-  "status": "amber",
+  "status": "green",
   "quality": {
     "freshness": {
-      "label": "stale",
-      "minutes": 661
+      "label": "old",
+      "minutes": 901
     },
     "validationPass": true,
     "errorCodes": [],
-    "scoutSource": "fresh"
+    "scoutSource": "history_fallback"
   },
-  "scoutFresh": true,
-  "scoutSource": "fresh",
+  "scoutFresh": false,
+  "scoutSource": "history_fallback",
   "trend": [
     {
       "timestamp": "2026-02-17-105559",
@@ -58,5 +58,5 @@
       "score": "24/35"
     }
   ],
-  "generatedAt": "2026-02-19T02:58:09.269928"
+  "generatedAt": "2026-02-19T06:58:22.066987"
 }

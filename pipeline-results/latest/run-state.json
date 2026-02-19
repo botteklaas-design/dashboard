@@ -1,18 +1,18 @@
 {
   "runTimestamp": "2026-02-18-145700",
-  "status": "amber",
+  "status": "green",
   "winner": "**SMS-kosten transparantie-assistent** — 24/35 (business), Tech Feasibility **8/10**",
   "winnerScore": "24/35",
   "quality": {
     "freshness": {
-      "label": "stale",
-      "minutes": 661
+      "label": "old",
+      "minutes": 901
     },
     "validationPass": true,
     "errorCodes": [],
-    "scoutSource": "fresh"
+    "scoutSource": "history_fallback"
   },
-  "scoutFresh": true,
-  "scoutSource": "fresh",
-  "updatedAt": "2026-02-19T02:58:09.270158"
+  "scoutFresh": false,
+  "scoutSource": "history_fallback",
+  "updatedAt": "2026-02-19T06:58:22.067196"
 }
